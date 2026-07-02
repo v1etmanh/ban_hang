@@ -1,0 +1,54 @@
+{
+  "fruit": "man",
+  "rootId": "root",
+  "nodes": {
+    "root": {
+      "speaker": "npc",
+      "text": "Chao co/chu, sap co man ngon khong?",
+      "options": [
+        { "label": "Da man nha con vua hai sang nay, ngot lam a!", "next": "ask_price" },
+        { "label": "Man hoi chua, nhung re a.", "next": "ask_price_sour" }
+      ]
+    },
+    "ask_price": {
+      "speaker": "npc",
+      "text": "Vay ban sao 1 ky?",
+      "options": [
+        { "label": "Da 20 ngan 1 ky a!", "next": "ask_amount" },
+        { "label": "Da 35 ngan 1 ky a.", "next": "leaf_decline_price" }
+      ]
+    },
+    "ask_price_sour": {
+      "speaker": "npc",
+      "text": "Chua vay chac con nit no thich, cho toi it thu nha.",
+      "options": [
+        { "label": "Da, con can lien!", "next": "leaf_buy_small" },
+        { "label": "Da het hang roi a.", "next": "leaf_decline_stock" }
+      ]
+    },
+    "ask_amount": {
+      "speaker": "npc",
+      "text": "Vay cho toi 0.5 ky nha.",
+      "options": [
+        { "label": "Da con can cho co/chu lien!", "next": "leaf_buy_medium" },
+        { "label": "Da bao bi het roi a.", "next": "leaf_decline_stock" }
+      ]
+    },
+    "leaf_buy_small": {
+      "leaf": true, "outcome": "buy", "weightKg": 0.3,
+      "speaker": "npc", "text": "Cho toi 0.3 ky thoi, thu truoc da."
+    },
+    "leaf_buy_medium": {
+      "leaf": true, "outcome": "buy", "weightKg": 0.5,
+      "speaker": "npc", "text": "0.5 ky nha, can ky vo nghe!"
+    },
+    "leaf_decline_price": {
+      "leaf": true, "outcome": "no_buy",
+      "speaker": "npc", "text": "Troi, mac vay thoi toi qua sap khac."
+    },
+    "leaf_decline_stock": {
+      "leaf": true, "outcome": "no_buy",
+      "speaker": "npc", "text": "Vay thoi, lan sau ghe lai."
+    }
+  }
+}

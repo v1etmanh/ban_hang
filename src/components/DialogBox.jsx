@@ -1,13 +1,26 @@
 import React, { useState } from 'react'
-import { DIALOG_TREE, DIALOG_ROOT_ID } from '../game/dialogTree.js'
 
-// Hộp thoại hỏi-đáp dạng cây. Khi chạm tới node lá -> gọi onFinish(success).
-export default function DialogBox({ customerName, onFinish }) {
-  const [nodeId, setNodeId] = useState(DIALOG_ROOT_ID)
-  const node = DIALOG_TREE[nodeId]
+// Hộp thoại hỏi-đáp dạng cây. `tree` là 1 object { rootId, nodes } được
+// GameCanvas truyền vào (chọn ngẫu nhiên theo loại trái cây, xem
+// dialogRegistry.js) - KHÔNG còn import cứng 1 cây cố định như trước.
+//
+// Khi chạm tới node lá:
+//   - outcome === 'buy'   -> onFinish({ buy: true, weightKg })
+//   - outcome === 'no_buy'-> onFinish({ buy: false })
+export default function DialogBox({ customerName, tree, onFinish }) {
+  const [nodeId, setNodeId] = useState(tree.rootId)
+  const node = tree.nodes[nodeId]
 
   function choose(option) {
     if (option.next) setNodeId(option.next)
+  }
+
+  function finishFromLeaf() {
+    if (node.outcome === 'buy') {
+      onFinish({ buy: true, weightKg: node.weightKg })
+    } else {
+      onFinish({ buy: false })
+    }
   }
 
   return (
@@ -17,8 +30,8 @@ export default function DialogBox({ customerName, onFinish }) {
         <div style={styles.text}>{node.text}</div>
 
         {node.leaf ? (
-          <button style={styles.btn} onClick={() => onFinish(node.success)}>
-            {node.success ? 'Tuyệt vời!' : 'Thôi vậy...'}
+          <button style={styles.btn} onClick={finishFromLeaf}>
+            {node.outcome === 'buy' ? 'Can hang ngay!' : 'Thoi vay...'}
           </button>
         ) : (
           <div style={styles.options}>

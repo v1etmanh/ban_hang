@@ -1,0 +1,293 @@
+{
+  "characterId": "ba_tu",
+  "fruits": {
+    "khoai": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Uh thoi ba mang trai cay ve nha day, con ban buon tiep di nha. Khi nao ranh rỗi cu ghe qua nha ba choi, ba ke chuyen dan bau cho nghe. Chao con nương!"
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Con be buon ban vua kheo leo, vua co tam long huong ve coi nguon am nhac dan toc nhu vay la quy bau lam. De ba mang trai cay ve got san, lát cho van khach con nho ghe nha ba choi, ba dan cho nghe nhe! Chao con nha!",
+          "weightKg": 0.16
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Duoc chu con, lát cho vắng khach ba dat con ve. Ma thoi, ba lay 2 ky khoai luon di, de lat luoc len moi con an chung luon roi minh quay phim chup hinh cho no tu nhien.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ hay quá bà ơi! Vậy con cân cho bà 2 ký khoai ngon nhất sạp luôn, con lấy bà 20k chẵn thôi ạ.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ 2 ký là 30k, nhưng con bớt bà còn 25k nha, con gửi bà mang về luộc ạ.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Dan bau la \"nhat luc khoi thanh\", chi mot day ma ngan vang moi cung bac cam xuc cua con nguoi. Con tinh con sau sac lam do. Hay la ba mua them may cu khoai nho nay ve lam qua cho may dua tre con hang xom, tinh them tien cho ba di.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ mấy củ nhỏ này con tặng thêm cho bà luôn chứ không tính tiền đâu, bà cứ mang về cho mấy đứa nhỏ nha.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ mấy củ nhỏ này con tính thêm bà 5k thôi ạ, tổng cộng của bà là 15k nha bà.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] Con ngoan qua, biet thuong ba gia neo don nay. Ma con viet bao ve van hoa thi co can chup hinh cay dan bau cua ba khong? Ba de o nha ngay gan cho nay thoi.",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ có chứ ạ, nếu được bà cho con qua chụp hình cây đàn và diện kiến ngón đàn của bà nha.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 3] Dạ con chỉ viết bài phân tích sâu thôi chứ không cần hình ảnh đâu bà, con muốn nghe bà kể về nguồn gốc tiếng đàn hơn.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Lua gium ba di. Ma con di viet bao khap noi nhu vay co thay nho nhà khong? Xu nay la que chong con dung khong, o day yen binh lam, cu o day lau lau cho vui con nha.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ con về đây thấy bình yên lắm bà ạ, con cân cho bà 1 ký khoai mật tính bà 12k thôi nha bà.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ con cũng nhớ nhà, nhưng vì đam mê văn hóa nên con đi thôi ạ. Khoai của bà đúng giá 15k đây ạ.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n7": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Do la nho ky thuat nhan bóp va khua am do con, doi nguoi cung nhu day dan, phai trải qua dau thuong thi tieng dan moi sau xac. Con hoi cau nay chung to co kieu kien thuc am nhac lam. Tinh tien khoai gium ba di con.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ nghe bà giảng con thông suốt nhiều điều quá, con tính bà 12k ký khoai này thôi, con cảm ơn bà ạ.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ của bà hết 15k chẵn ạ, con gửi bà khoai nha.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n8": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] Thoi, doi ba co gi dau ma viet, cuoc song troi dat an phan qua ngay thoi con oi. Ma con thich tim hieu am nhac dan toc thi ba rat hoan nghênh. Cu khoai nay em mat, de ba mua ve nuong len an cho thom.",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ khoai này nướng lên mật chảy ra thơm phức luôn bà ơi, để con lựa củ nhiều mật nhất cho bà nhé.",
+              "next": "n6"
+            },
+            {
+              "label": "[TẦNG 3] Dạ bà ơi, đàn bầu một dây khó đánh lắm đúng không bà, làm sao để nó phát ra nhiều nốt hay vậy bà?",
+              "next": "n7"
+            }
+          ]
+        },
+        "n9": {
+          "speaker": "npc",
+          "text": "Troi dat oi... Con lam nha bao ha? Gia dinh ba mat het roi, chong con cung khong con ai, gio chi con cay dan bau lam tri ky thoi. Con nhac den lam ba xuc dong qua. Tieng dan bau la tieng long cua nguoi Viet minh do con, can ban cho ba cu khoai nay di, ba vua an vua ke chuyen cho nghe.",
+          "options": [
+            {
+              "label": "[TẦNG 1] Dạ con xin lỗi vì đã gợi lại chuyện buồn của bà, con tính bà 10k thôi, coi như con kính trọng tài năng của bà ạ.",
+              "next": "n5"
+            },
+            {
+              "label": "[TẦNG 1] Ôi câu chuyện của bà cảm động quá, con muốn viết riêng một bài báo về cuộc đời của bà luôn được không ạ?",
+              "next": "n8"
+            }
+          ]
+        },
+        "n10": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Sao con lai mo mieng ra xuc pham mot ba gia neo don khong con chong con nhu ba vay... Doi nguoi co nhan qua do con oi, song ac duc qua khong co ket cuc tot dau. Ba di day, toi nghiep than gia nay qua!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Co nương ơi, khoai lang mat nay nhin ngon qua, cu to ma chac tay ghe. Gia sao vay con, de ba mua vai cu ve luoc an buoi chieu cho am bung.",
+          "options": [
+            {
+              "label": "Da khoai 12k mot ky nha ba, mua gium con di.",
+              "next": "n1"
+            },
+            {
+              "label": "Dạ khoai lang mật ngọt lịm 15k một ký bà ơi. Mà bà ơi, con nghe bác phụ hồ bên kia bảo bà là nghệ nhân đàn bầu đỉnh lắm đúng không ạ? Thực ra con đang làm nhà báo viết về hành trình khám phá văn hóa Việt Nam, con muốn biết thêm về tiếng đàn bầu của một nghệ nhân như bà lắm ạ!",
+              "next": "n9"
+            },
+            {
+              "label": "Ba gia roi an khoai vao nghen do ba oi, mua trai cay nhieu nuoc an cho khoe di ba.",
+              "next": "n1"
+            },
+            {
+              "label": "Sap con khong ban cho nguoi gia neo don dau ba oi, mac cong khong co tien tra lam kho con.",
+              "next": "n10"
+            }
+          ]
+        }
+      }
+    },
+    "oi": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Uh thoi ba mang trai cay ve nha day, con ban buon tiep di nha. Khi nao ranh rỗi cu ghe qua nha ba choi, ba ke chuyen dan bau cho nghe. Chao con nương!"
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Con be buon ban vua kheo leo, vua co tam long huong ve coi nguon am nhac dan toc nhu vay la quy bau lam. De ba mang trai cay ve got san, lát cho van khach con nho ghe nha ba choi, ba dan cho nghe nhe! Chao con nha!",
+          "weightKg": 0.26
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Duoc, lat ba dan cho nghe bai \"Long Me\". Ma thoi, ba lay luon 2 ky oi di, de lat mang ve cho con an chung luon, gọt oi ra roi vua an vua nghe dan moi thấm.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ tuyệt vời quá bà ơi! Con cân đúng 2 ký ổi tuyển siêu ngon cho bà, tính tròn bà 20k thôi ạ!",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ 2 ký là 30k, con bớt bà còn 25k nha, con bỏ túi sẵn cho bà rồi đây ạ.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Khong phien gi dau con, ba o mot minh thui thui cung buon lam. Con hoi am hieu ve am nhac mien Tay khong, dan bau mien nao cung co net hay rieng do. Con tinh tien oi gium ba di nao.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ nghe bà nói con mở mang tầm mắt quá, con lấy bà 12k ký ổi này thôi, con gửi bà ạ.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ của bà hết 15k chẵn ạ, con gửi bà bịch ổi nha bà.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] Con tot bung qua, dung la nguoi lam van hoa co cai tam sang. Ma con viet bao ve dan bau thi co muon ba dan thu cho nghe mot bai khong? Nha ba o ngay sau cho nay thoi.",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ có chứ ạ! Được nghe nghệ nhân gảy đàn bầu thì bài viết của con sẽ sinh động và giá trị lắm luôn á bà.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 3] Dạ con chỉ cần ghi chép lại lời kể của bà là đủ tư liệu rồi ạ, con sợ làm phiền thời gian nghỉ ngơi của bà.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Con khéo léo qua. Ma xu nay la que chong con dung khong, o day moi nguoi song tinh nghia lam, cu o day lau lau cho vui con nha.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ vâng ạ, con thấy ở đây ai cũng dễ mến như bà vậy á. Con tính bà 12k ký ổi này thôi ạ.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ vâng con cảm ơn bà, ổi của bà hết 15k đúng giá đây ạ.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n7": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Dung roi con, doc huyen cam la niem tu hao quoc gia do. Tieng long cua nguoi Viet minh nam trong do het. Con hoi cau nay chung to rat co tam huyet voi nghe. Tinh tien gium ba di con.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ con kính trọng những nghệ nhân như bà lắm, con lấy bà 12k thôi, con gửi bà ổi ạ.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ của bà hết 15k chẵn ạ, con gửi bà bịch ổi nha.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n8": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] Ba gia ca nhen nheo roi len bia ao lam con oi, ba chi muon chia se kien thuc am nhac cho con chau doi sau thoi. Oi nay ngon, de ba mua ve lam qua cho may dua nhỏ ben xóm ngheo.",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ bà chu đáo quá, để con lựa những trái ổi nhẵn nhụi, ngọt lịm cho mấy bé ăn thích mê luôn nha bà.",
+              "next": "n6"
+            },
+            {
+              "label": "[TẦNG 3] Dạ bà ơi, tiếng đàn bầu có phải là nhạc cụ duy nhất chỉ có ở Việt Nam mình không bà?",
+              "next": "n7"
+            }
+          ]
+        },
+        "n9": {
+          "speaker": "npc",
+          "text": "Troi oi... Con lam nha bao co ah? Lau lam roi moi co nguoi tre muon nghe ba ke ve dan bau do. Chong con mat som, dua con duy nhat cung di xa roi, ba chi con tieng dan lam ban thoi. Nghe con hoi ba xuc dong qua. Con lua cho ba ky oi di, ba gui tien roi ba chau minh tro chuyen.",
+          "options": [
+            {
+              "label": "[TẦNG 1] Dạ con hiểu hoàn cảnh của bà rồi, con thương bà quá. Ký ổi này con lấy bà 10k thôi, coi như con kính lão đắc thọ ạ.",
+              "next": "n5"
+            },
+            {
+              "label": "[TẦNG 1] Dạ câu chuyện cuộc đời bà ly kỳ quá, con muốn chụp vài bức ảnh của bà để làm ảnh bìa cho phóng sự này được không bà?",
+              "next": "n8"
+            }
+          ]
+        },
+        "n10": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Sao con lai mo mieng ra xuc pham mot ba gia neo don khong con chong con nhu ba vay... Doi nguoi co nhan qua do con oi, song ac duc qua khong co ket cuc tot dau. Ba di day, toi nghiep than gia nay qua!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Oi nu hoang nhin da qua, trai to gion ma thom phuc nua. Gia sao vay con gan, ba mua mot ky ve cham muoi ot an cho thanh giong de lát ve tap dan.",
+          "options": [
+            {
+              "label": "Da oi 13k mot ky nha ba, mua gium con di ba.",
+              "next": "n1"
+            },
+            {
+              "label": "Dạ ổi nữ hoàng giòn ngọt 15k một ký bà ơi. Mà bà ơi, có phải bà là nghệ nhân đàn bầu lừng danh mà bác phụ hồ hay kể không ạ? Thực ra con là nhà báo đang viết bài nghiên cứu về hành trình văn hóa Việt Nam, con muốn được nghe bà chia sẻ về tiếng đàn bầu linh hồn dân tộc lắm ạ!",
+              "next": "n9"
+            },
+            {
+              "label": "Oi nay gion lam, rang ba yeu an vao co ngay me rang do ba oi, con khong ban dau.",
+              "next": "n1"
+            },
+            {
+              "label": "Ba di ra cho khac gium con cai, nhin ba am dam qua lam sap con bi mat via khong ban duoc cho ai gio.",
+              "next": "n10"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

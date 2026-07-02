@@ -1,0 +1,423 @@
+{
+  "characterId": "fan_m_10",
+  "fruits": {
+    "man": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thoi anh di cho khac day, sap do nhin chan qua khong hop voi dang cap thien tai cua anh 10 chut nao."
+        },
+        "n2": {
+          "speaker": "npc",
+          "text": "Thoi em oi, anh 10 nha anh vua ghi ban dang cap ma anh di an may trai man nho xiu nay sao xung tam.",
+          "options": [
+            {
+              "label": "Gia nay re nhat cho roi anh, khong mua uong lam.",
+              "next": "n1"
+            },
+            {
+              "label": "Em ban dung gia chu co thach dau ma anh che binh dan.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n3": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Em ban hang kieu nay la xung dang co muoi nguoi nguoi mua nhe! Anh 10 ma thay chac cung khen em do. Anh di day, de ve xem highlight anh 10 tiep!",
+          "weightKg": 0.2
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "Tu nhien dang vui cai em noi cau nghe thuc te phu phang vay em? Mat hung ghe. Bot xuong 16k di anh mua.",
+          "options": [
+            {
+              "label": "Da khong duoc anh oi, dung 18k em moi ban.",
+              "next": "n1"
+            },
+            {
+              "label": "Thoi duoc roi, coi nhu em ne mat fan anh 10 chan chinh, lay anh 16k do.",
+              "next": "n3"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "Nghe em vi von thong minh do. Anh 10 luon dem lai cam xuc kịch tinh, nhung ma thit man nay co chac khong do?",
+          "options": [
+            {
+              "label": "Em bao: trai nao mem xieu em den gap doi, uy tin nhu bo suu tap Qua Bong Vang cua anh 10.",
+              "next": "n3"
+            },
+            {
+              "label": "Thi man thong thuong thoi chu lam sao hoan hao 100% nhu thien tai duoc anh.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "Ha ha ha! Em noi dung y anh luon! May dua kia chi biet chay cho thoi chu lam sao biet lam bong nhu anh 10. Khoai em roi do! Ma gia 18k nay co bot chut dinh lay loc world cup khong em?",
+          "options": [
+            {
+              "label": "Khong bot duoc anh oi, nguoi dang cap nhu anh le nao lai di mac ca vai ngan le?",
+              "next": "n3"
+            },
+            {
+              "label": "Nêu anh chiu lay them 1 ky nua, em tang anh them 2 trai man to nhat sap, coi nhu qua tang cho fan GOAT.",
+              "next": "n3"
+            }
+          ]
+        },
+        "n7": {
+          "speaker": "npc",
+          "text": "Troi oi em cung thay ha?! Anh da bao roi, tren doi nay lam gi co ai san sinh ra cai keo trai ma di bong ma thuat nhu anh 10! Thien tai! Thien tai doc nhat!",
+          "options": [
+            {
+              "label": "Da dung roi, man nay em cung lua tung trai tron tria, ngot lim nhu cu sut cua anh 10 vay do. 18k la qua re cho sieu pham.",
+              "next": "n5"
+            },
+            {
+              "label": "Anh 10 kien tao dinh vay ma co nguoi suot ngay chi biet cho bong trong vong cam dem dorg thoi anh nhe.",
+              "next": "n6"
+            }
+          ]
+        },
+        "n8": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Em \"no\" con kinh hon anh nua do em gai oi. Bot bot noi xao lai di roi anh quay lai mua sau nha. Ba bai!"
+        },
+        "n9": {
+          "speaker": "npc",
+          "text": "Em nghi anh la con nit ha? Anh 10 co qua bong vang chu anh dau co ngu ma de em lua gia do!",
+          "options": [
+            {
+              "label": "Em noi thiet ma, man nay duoc tuoi bang nuoc khoang sieu tinh khiet o khach san anh 10 o do.",
+              "next": "n8"
+            },
+            {
+              "label": "Chot gia 80k vi em thay anh dep trai giong doi truong Argentina.",
+              "next": "n8"
+            }
+          ]
+        },
+        "n10": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Nói chuyện cái kiểu đụng chạm tự ái người ta quá hà! Fan anh 10 là không bao giờ thèm chấp ne mha. Anh đi luôn không bao giờ quay lại!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Sap xiec gi ma ban do giong may cho binh dan vay em? Anh day chi an do dang cap nhu anh 10 thoi.",
+          "options": [
+            {
+              "label": "Da bang ghi man 15k do anh, anh mua ung ho em di.",
+              "next": "n2"
+            },
+            {
+              "label": "Man nay 18k, hang tuyet hao. Ma anh oi, hom qua anh 10 di bong qua 4 nguoi kien tao dinh cao thiet chu!",
+              "next": "n7"
+            },
+            {
+              "label": "Man nay man hoang gia Qatar, gia 100k mot trai anh oi.",
+              "next": "n9"
+            },
+            {
+              "label": "Ui troi, nhin anh la biet fan phong trao chu biet gi anh 10 da dam ra sao ma bay dat tinh tuong.",
+              "next": "n10"
+            }
+          ]
+        }
+      }
+    },
+    "xoai": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thoi anh di cho khac day, sap do nhin chan qua khong hop voi dang cap thien tai cua anh 10 chut nao."
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Em ban hang kieu nay la xung dang co muoi nguoi nguoi mua nhe! Anh 10 ma thay chac cung khen em do. Anh di day, de ve xem highlight anh 10 tiep!",
+          "weightKg": 0.42
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "Chuoi so sanh nay hay qua ta! Chinh xac, phai giong cup vang! Ma giong cup vang roi co can phai an kem voi gi cho dung vi thien tai khong em?",
+          "options": [
+            {
+              "label": "Anh mang ve cham muoi ot cay xè, giong nhu cach anh 10 dot chay luoi do doi phuong vay anh.",
+              "next": "n2"
+            },
+            {
+              "label": "Khong anh, an song vay thoi la du dinh roi, thien tai thi dau can phu kien ruom ra.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "Dung! Anh day dau co thieu tien, chu yeu phai la do xat ra mieng. Ma em phai lua trai nao ngot, chu chua mot chut la anh tu ai do nha.",
+          "options": [
+            {
+              "label": "Anh yen tam, xoai nay em san lung ky cang giong nhu Barca tuyen trach anh 10 hoi 13 tuoi vay.",
+              "next": "n2"
+            },
+            {
+              "label": "Em lua dai thoi chu trai nao trong vo cung giong nhau ma anh.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "Chu con gi nua em! Anh day di co vu ma ai cung tram tro, dung chat King Leo luon. Xoai nay em bao ngon thit chat luong khong?",
+          "options": [
+            {
+              "label": "Da em bao, xoai nay dac ruot, thit vang uom nhu cup vang World Cup anh 10 cam tren tay vay do.",
+              "next": "n3"
+            },
+            {
+              "label": "Gia 25k la em bot lam roi, chu nguoi dang cap nhu anh tiec gi vai dong bac le cho trai xoai ngon nhat cho.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Em \"no\" con kinh hon anh nua do em gai oi. Bot bot noi xao lai di roi anh quay lai mua sau nha. Ba bai!"
+        },
+        "n7": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Nói chuyện cái kiểu đụng chạm tự ái người ta quá hà! Fan anh 10 là không bao giờ thèm chấp ne mha. Anh đi luôn không bao giờ quay lại!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Xoai nay co chua nhu cai cach doi thu bi anh 10 xo xien tren san khong em?",
+          "options": [
+            {
+              "label": "Xoai ngot lam anh, co 20k mot ky thoi, mua di anh.",
+              "next": "n1"
+            },
+            {
+              "label": "Xoai keo 25k anh oi, bao ngon. Ma nhin anh khi chat ngoi ngoi, dung la chi co fan anh 10 moi co cai tam the vo dich nay.",
+              "next": "n5"
+            },
+            {
+              "label": "Xoai nay an vo la duoc thong minh, thien tai bam sinh giong anh 10 lien do, 200k mot trai nha.",
+              "next": "n6"
+            },
+            {
+              "label": "Gap fan anh 10 la em tinh gia gap doi, tai fan anh 10 giau lam.",
+              "next": "n7"
+            }
+          ]
+        }
+      }
+    },
+    "khoai": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thoi anh di cho khac day, sap do nhin chan qua khong hop voi dang cap thien tai cua anh 10 chut nao."
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Em ban hang kieu nay la xung dang co muoi nguoi nguoi mua nhe! Anh 10 ma thay chac cung khen em do. Anh di day, de ve xem highlight anh 10 tiep!",
+          "weightKg": 0.28
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "Troi dat oi, nhac toi cup vang la anh muon khoc luon ne. Em noi chuyen cham dung tim den cua anh roi. Ma lay nhieu co duoc giam gia kieu VIP khong?",
+          "options": [
+            {
+              "label": "Em giam luon cho anh con 13k neu anh lay het cho khoai con lai tren sap nay, duoc khong anh trai?",
+              "next": "n2"
+            },
+            {
+              "label": "Dạ gia nay em sat san roi anh, nhung em se tang anh cai bao xop loai tot nhat de xach ve cho sang.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "Chuoi cau nay sat thuong cao thiet! Em noi qua dung, chi co anh 10 la GOAT chan chinh. Anh thich cai su xat muoi vao doi thu nay cua em roi do.",
+          "options": [
+            {
+              "label": "Da bơi vay anh mua khoai ung ho em di, an khoai nuong thuc dem coi anh 10 ghi ban chung ket la het bai.",
+              "next": "n2"
+            },
+            {
+              "label": "Doi thu cua anh 10 gio chac dang di ban nuoc nuoc ngoai roi chu da gi noi nua anh.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "Ha ha! Em tinh mat ghe, anh 10 tuy nho con nhung di bong la khong ai can noi. Ma khoai nay ngot lam dung khong?",
+          "options": [
+            {
+              "label": "Da ngot lim luon anh, giong nhu cam giac anh 10 nang cup vang sau bao nam cho doi vay do, ngot ngao khong gi bang.",
+              "next": "n3"
+            },
+            {
+              "label": "Anh 10 nho con ma can luon cai cup vang, chu dau nhu ai kia cao to ma chi biet khoc loc di ve nuoc som hén anh.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Em \"no\" con kinh hon anh nua do em gai oi. Bot bot noi xao lai di roi anh quay lai mua sau nha. Ba bai!"
+        },
+        "n7": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Nói chuyện cái kiểu đụng chạm tự ái người ta quá hà! Fan anh 10 là không bao giờ thèm chấp ne mha. Anh đi luôn không bao giờ quay lại!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Khoai lang mien tay ha em? Nhin cu to giong may dua do con ben doi doi thu cua anh 10 qua vay.",
+          "options": [
+            {
+              "label": "Khoai lang mat 12k anh oi, ngon ngot lam.",
+              "next": "n1"
+            },
+            {
+              "label": "Khoai mat nuong len thom phuc 15k anh oi. Ma em thay cu khoai nay giong loi da anh 10, nhin nho gon ma ngot ngao, tinh te.",
+              "next": "n5"
+            },
+            {
+              "label": "Khoai nay nhap khau tu que huong Rosario cua anh 10 luon do anh, gia 300k mot cu nha.",
+              "next": "n6"
+            },
+            {
+              "label": "Nhìn anh lùn lùn y chang anh 10 vậy, ăn khoai này vô cho nó hợp phong thủy anh ơi.",
+              "next": "n7"
+            }
+          ]
+        }
+      }
+    },
+    "oi": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thoi anh di cho khac day, sap do nhin chan qua khong hop voi dang cap thien tai cua anh 10 chut nao."
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Em ban hang kieu nay la xung dang co muoi nguoi nguoi mua nhe! Anh 10 ma thay chac cung khen em do. Anh di day, de ve xem highlight anh 10 tiep!",
+          "weightKg": 0.14
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "Em khen lam anh ngai qua... nhung ma anh thich! Mà em co chac oi nay gion khong? Anh ghet an oi mem lam.",
+          "options": [
+            {
+              "label": "Gion rôm rốp luon anh, giong nhu tieng gay cua may cai cot doc khi anh 10 sut trung bong vay do.",
+              "next": "n2"
+            },
+            {
+              "label": "Oi nay hoi mem mem chu khong gion lam dau anh oi.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n4": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Nói chuyện cái kiểu đụng chạm tự ái người ta quá hà! Fan anh 10 là không bao giờ thèm chấp ne mha. Anh đi luôn không bao giờ quay lại!"
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "Ha ha, chu con gi nua! Anh la fan ruot tu thoi xua den gio ma. Anh di toi dau la sang ruc toi do em oi!",
+          "options": [
+            {
+              "label": "Da dung roi, thien tai luon keo theo thien tai ma. Lay anh oi 13k thoi nhe, de em can luon cho le.",
+              "next": "n2"
+            },
+            {
+              "label": "Anh tu tin qua da, nhung ma thoi mua oi di chu dung no nua anh oi.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "Tat nhien roi em! Ao nay anh dat mua dac biet tu nuoc ngoai ve do, hang chinh hang de co vu tran chung ket do nhe!",
+          "options": [
+            {
+              "label": "Da hen gi nhin cai vai ao la biet sang trong roi, rat hop voi net thien tai cua anh 10 va phong thai cua anh luon. Oi 13k thoi anh trai.",
+              "next": "n3"
+            },
+            {
+              "label": "Ao dep ma nguoi mac con dep trai nua, anh 10 ma thay anh chac cung phai ton sùng vi co fan chat luong qua.",
+              "next": "n5"
+            }
+          ]
+        },
+        "n7": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Em \"no\" con kinh hon anh nua do em gai oi. Bot bot noi xao lai di roi anh quay lai mua sau nha. Ba bai!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Oi nay co giong oi que nha khong em? Hay oi dạt vay?",
+          "options": [
+            {
+              "label": "Oi 10k dung gia tren bang nha anh, mua giup em di.",
+              "next": "n1"
+            },
+            {
+              "label": "Oi nuoc 13k trai to, gion ngot chat luong lam. Mà anh oi, cai ao anh dang mac co so 10 dep qua, nhin phat biet ngay dang cap King Leo.",
+              "next": "n6"
+            },
+            {
+              "label": "Oi nay dac biet co chu ky cua anh 10 in chim tren vo do em ban 500k mot trai.",
+              "next": "n7"
+            },
+            {
+              "label": "Fan anh 10 ma di mua oi 13k cung dung gia nua ha anh, tuong phai mua het ca sap moi dung tam chu.",
+              "next": "n4"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

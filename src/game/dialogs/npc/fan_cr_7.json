@@ -1,0 +1,175 @@
+{
+  "characterId": "fan_cr_7",
+  "fruits": {
+    "khoai": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thôi anh đi chỗ khác, đang bận nghĩ xem anh 7 có ghi bàn trận Colombia không."
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Mua được rồi! Em bán hàng có duyên, lại còn biết anh 7. Anh thích! Nhớ coi trận Colombia nha, anh 7 sẽ lại ghi bàn — anh cá luôn.",
+          "weightKg": 0.31
+        },
+        "n3": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Anh 7 nói rồi — không bao giờ bỏ cuộc, nhưng túi anh thì có giới hạn. Anh đi đây."
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "Ờ ờ... 11k được không? Anh đang để dành tiền mua áo Al Nassr.",
+          "options": [
+            {
+              "label": "12k em giữ giá, nhưng khoai này xứng đáng hơn cái áo fake anh đang mặc đó.",
+              "next": "n2"
+            },
+            {
+              "label": "Anh 7 cũng không bao giờ giảm giá bàn thắng của ổng đâu anh.",
+              "next": "n3"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "Em hiểu anh 7! Vậy khoai bao nhiêu em?",
+          "options": [
+            {
+              "label": "12k anh, nhưng mà em bao: củ nào xơ em đổi củ khác, cam kết như anh 7 cam kết ghi bàn ở 6 kỳ World Cup.",
+              "next": "n2"
+            },
+            {
+              "label": "12k anh ơi, củ này đẹp như cú sút phút 39 của anh 7 vậy — chính xác, không cần hỏi thêm.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "10 bàn! Vô địch lịch sử Bồ Đào Nha! 145 bàn quốc tế! Hơn Messi 23 bàn! Anh thuộc nằm lòng!",
+          "options": [
+            {
+              "label": "Giỏi! Vậy anh mua 12k khoai này đi, ngon như anh 7 ghi bàn vậy — chắc cú.",
+              "next": "n2"
+            },
+            {
+              "label": "Vậy thì anh biết người ghi bàn ở 6 kỳ World Cup xứng đáng có fan mua khoai 12k chứ?",
+              "next": "n2"
+            }
+          ]
+        },
+        "n7": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Ủa em tự giảm giá vậy thì khoai không ngon đâu anh ơi. Thôi anh đi hỏi chỗ khác."
+        },
+        "n8": {
+          "speaker": "npc",
+          "text": "Ừ nha... 28/6 đá với Colombia. Hồi hộp lắm. Khoai bao nhiêu em?",
+          "options": [
+            {
+              "label": "12k anh, em chọn củ ngon cho anh coi bóng không bị đói nửa chừng.",
+              "next": "n2"
+            },
+            {
+              "label": "10k thôi anh, em thương fan anh 7.",
+              "next": "n7"
+            }
+          ]
+        },
+        "n9": {
+          "speaker": "npc",
+          "text": "Coi chứ! 5-0! Anh 7 ghi 2 bàn! Anh khóc từ phút 6 luôn!",
+          "options": [
+            {
+              "label": "Khóc hả anh? Vậy mua khoai về ăn cho tỉnh rồi coi tiếp trận với Colombia đi.",
+              "next": "n8"
+            }
+          ]
+        },
+        "n10": {
+          "speaker": "npc",
+          "text": "ĐỪNG NÓI VỀ ANH 7 KHI ANH CHƯA BÌNH TĨNH! Ông ấy ghi 2 bàn vô Uzbekistan, phút 6 với phút 39, 5-0 luôn!",
+          "options": [
+            {
+              "label": "Ừa, em coi, phút 6 anh 7 volley chân phải đẹp như tranh. 41 tuổi mà còn sung vậy á.",
+              "next": "n5"
+            },
+            {
+              "label": "Anh 7 ghi bao nhiêu bàn World Cup rồi anh biết không?",
+              "next": "n6"
+            },
+            {
+              "label": "Anh là fan anh 7 hả? Trận Bồ Đào Nha với Uzbekistan anh coi không?",
+              "next": "n9"
+            }
+          ]
+        },
+        "n11": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Em nói nghe vui nhưng anh không phải ATM. Lần sau giảm giá đi nha."
+        },
+        "n12": {
+          "speaker": "npc",
+          "text": "Ăn khoai mà đá giỏi như anh 7 thì cả nước Việt Nam mua hết rồi còn gì!",
+          "options": [
+            {
+              "label": "Đúng rồi anh nên em giữ lại bán từng củ cho xứng đáng thôi.",
+              "next": "n11"
+            },
+            {
+              "label": "Thì mới hiếm anh ơi, như anh 7 ghi bàn ở 6 kỳ World Cup vậy — độc nhất vô nhị.",
+              "next": "n11"
+            }
+          ]
+        },
+        "n13": {
+          "speaker": "npc",
+          "text": "Khoai lang bao nhiêu? Bảng ghi 10k.",
+          "options": [
+            {
+              "label": "10k đúng bảng anh.",
+              "next": "n1"
+            },
+            {
+              "label": "12k, em lựa củ chắc, không xơ, hấp lên thơm lắm. Mà anh ơi hôm qua anh 7 đá hay ghê hén?",
+              "next": "n10"
+            },
+            {
+              "label": "50k, khoai này ăn vào đá bóng giỏi như anh 7.",
+              "next": "n12"
+            }
+          ]
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Ủa sạp này bán gì vậy em?",
+          "options": [
+            {
+              "label": "Dạ có xoài, ổi, mận, khoai lang anh ơi.",
+              "next": "n13"
+            },
+            {
+              "label": "Hôm nay nóng quá, em không bán gì hết.",
+              "next": "n1"
+            },
+            {
+              "label": "Bộ không có mặt hay sao?",
+              "next": "n1"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

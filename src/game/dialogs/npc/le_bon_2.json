@@ -1,0 +1,119 @@
+{
+  "characterId": "le_bon_2",
+  "fruits": {
+    "man": {
+      "rootId": "root",
+      "nodes": {
+        "root": {
+          "speaker": "npc",
+          "text": "Ê ku, có mận không? Đá phủi xong khát nước quá trời luôn.",
+          "options": [
+            { "label": "Dạ có mận chua chua ngọt ngọt nè anh, đá xong ăn đã lắm!", "next": "ask_price" },
+            { "label": "Dạ đội anh vừa đá xong hả? Thắng không anh?", "next": "banter" },
+            { "label": "Dạ hết mận rồi anh ơi.", "next": "leaf_out_of_stock" }
+          ]
+        },
+        "banter": {
+          "speaker": "npc",
+          "text": "Thắng 3-1! Anh đá tiền đạo, ghi 2 bàn luôn đó em! Mận nhiêu 1 ký vậy?",
+          "options": [
+            { "label": "Dạ 20k một ký anh ơi, đá hay vậy phải ăn mừng chút chứ!", "next": "ask_amount" },
+            { "label": "Dạ 40k một ký ạ, mận VIP đó anh.", "next": "leaf_expensive" }
+          ]
+        },
+        "ask_price": {
+          "speaker": "npc",
+          "text": "Ừa được. Nhiêu 1 ký vậy em?",
+          "options": [
+            { "label": "Dạ 20k một ký anh ơi.", "next": "ask_amount" },
+            { "label": "Dạ 40k một ký ạ.", "next": "leaf_expensive" }
+          ]
+        },
+        "ask_amount": {
+          "speaker": "npc",
+          "text": "Cho anh 0.2 ký thôi, về chia cho cả đội.",
+          "options": [
+            { "label": "Dạ con cân liền cho anh nè, đội anh xứng đáng!", "next": "leaf_buy" },
+            { "label": "Dạ hết mận to rồi anh ơi, chỉ còn trái nhỏ.", "next": "leaf_out_of_stock" }
+          ]
+        },
+        "leaf_expensive": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thôi đắt vậy đội anh hụt xăng luôn, để lần sau."
+        },
+        "leaf_out_of_stock": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Hả hết rồi hả... thôi anh qua sạp khác, hẹn trận sau."
+        },
+        "leaf_buy": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Ngon! Cảm ơn em nha, để anh về khao cả đội. Rảnh ra sân coi tụi anh đá nha!",
+          "weightKg": 0.20
+        }
+      }
+    },
+    "khoai": {
+      "rootId": "root",
+      "nodes": {
+        "root": {
+          "speaker": "npc",
+          "text": "Ê, khoai lang nướng ăn sau trận đã lắm đó nha. Có bán không em?",
+          "options": [
+            { "label": "Dạ có nè anh, khoai mật ngọt lịm, nướng lên thơm phức luôn!", "next": "ask_price" },
+            { "label": "Dạ anh đá bóng xong đói bụng dữ ha?", "next": "banter" },
+            { "label": "Dạ khoai hết hàng rồi anh ơi.", "next": "leaf_out_of_stock" }
+          ]
+        },
+        "banter": {
+          "speaker": "npc",
+          "text": "Đói xỉu luôn, đá 2 hiệp không nghỉ. Khoai nhiêu 1 ký vậy em?",
+          "options": [
+            { "label": "Dạ 12k một ký anh ơi, con lựa củ to bở nè.", "next": "ask_amount" },
+            { "label": "Dạ 35k một ký ạ.", "next": "leaf_expensive" }
+          ]
+        },
+        "ask_price": {
+          "speaker": "npc",
+          "text": "Ok đó. Bán sao 1 ký em?",
+          "options": [
+            { "label": "Dạ 12k một ký anh ơi.", "next": "ask_amount" },
+            { "label": "Dạ 35k một ký ạ.", "next": "leaf_expensive" }
+          ]
+        },
+        "ask_amount": {
+          "speaker": "npc",
+          "text": "Cho anh nhiều nhiều chút, về nướng ăn với đồng đội.",
+          "options": [
+            { "label": "Dạ con cân cho anh nè, khoai to củ lắm ạ!", "next": "leaf_buy" },
+            { "label": "Dạ củ to hết rồi, chỉ còn củ nhỏ thôi anh.", "next": "leaf_out_of_stock" }
+          ]
+        },
+        "leaf_expensive": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thôi giá đó chắc anh nhịn đói về luôn, hẹn lần khác."
+        },
+        "leaf_out_of_stock": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Vậy hả, thôi để lần sau ghé lại vậy."
+        },
+        "leaf_buy": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Đỉnh của chóp! Cảm ơn em ha, khao cả đội khoai nướng luôn!",
+          "weightKg": 0.34
+        }
+      }
+    }
+  }
+}

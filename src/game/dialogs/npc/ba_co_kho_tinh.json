@@ -1,0 +1,493 @@
+{
+  "characterId": "ba_co_kho_tinh",
+  "fruits": {
+    "man": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Buon ban ma cung nhac cung ngac, khong biet chieu khach gi het tron. Thoi tao qua sap con Ba mập tao mua cho no vui ve."
+        },
+        "n2": {
+          "speaker": "npc",
+          "text": "Thoi thoi, thoi buoi nay lam an gi cung phai bot chut dinh chu ghi sao ban vay ai mua. 10k co lay.",
+          "options": [
+            {
+              "label": "Da khong duoc co oi, em ban dung gia roi khong bot duoc dau.",
+              "next": "n1"
+            },
+            {
+              "label": "Co thong cam, man nay em nhap hang tuyen nen khong co gia do dau co.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n3": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Do vay co phai ngoan khong. Lam an la phai biet nhong nheo chiu thiet mot chut xiu thi khach moi thuong. Tao di day, mai mot tao ghe mua tiep cho nha con!",
+          "weightKg": 0.08
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Đồ keo kiêt, lua trai nho ma cung khong cho. Thoi 13k tron di tao lay het cho nho do cho.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi được rồi, coi như con chìu cô nốt lần này, 13k con cân cho cô luôn nè.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 5] Da dung 14k co oi, con bot het noi roi, co thuong con thi co mua gium di.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Thấy may toi nghiep tao moi dung lai do. Ma tao khong co 500 dong le, bot xuong 13k di tao dua tờ 20k khoi thoi le mệt.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi con thối cô tờ 7k, chứ 13k con thâm vào tiền vốn sạp nặng quá cô ơi.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 5] Dạ thoi duoc roi, 13k con cam tờ 20k thối cô 7k, cô mở hàng nhớ chúc con bán đắt nha.",
+              "next": "n3"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] 14k van con mac. Thôi gio vay di, tao lay trai nho thoi, may can tao 12k duoc khong?",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ không được cô ơi, lựa trái nhỏ ra rồi phần còn lại con bán cho ai được nữa cô.",
+              "next": "n4"
+            },
+            {
+              "label": "[TẦNG 3] Cô ơi sáng sớm mở hàng mà cô trả giá ngắt ngéo quá tội nghiệp con, chốt 13k5 con bán lỗ lấy cái vía cô nè.",
+              "next": "n5"
+            }
+          ]
+        },
+        "n7": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Ep nuoc ha? Man nay nuoc noi gi, toan xơ khong chu o do ma ep. 12k5 duoc thi can, khong thi tao buoc di.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi cô đứng lại đi con bán luôn cho, 12k5 coi như con tặng cô làm quen, mai mốt ghé sạp con nữa nha.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 5] Da khong duoc co oi, gia do con lo von thiet ma, con khong ban duoc dau.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n8": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] Tao an gi het 2 ky troi, nha co minh tao voi ong gia tao ha. Lay 1 ky thoi ma tinh gia do di.",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ 1 ký con bớt kịch sàn là 14k thôi cô, cô mua về ép nước uống tốt cho sức khỏe lắm.",
+              "next": "n7"
+            }
+          ]
+        },
+        "n9": {
+          "speaker": "npc",
+          "text": "Bot co 2k ma keu lam quen ha? Man nay vo nhieu vet bam qua, thit chac khong gion dau. 12k di tao mo hang cho.",
+          "options": [
+            {
+              "label": "[TẦNG 1] Con nể cô lắm mới bớt thêm còn 14k, giá này con không lấy lời một đồng nào luôn đó cô.",
+              "next": "n6"
+            },
+            {
+              "label": "[TẦNG 1] Dạ thôi mận ngon cô ơi, cô mua combo 2 ký đi con tính cô 26k tổng cộng thôi, bớt hẳn 10k luôn á.",
+              "next": "n8"
+            }
+          ]
+        },
+        "n10": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Con nit thoi nay toan lua gạt, ban buon thi khong lo ban ma lo noi dóc noi nổ gạt nguoi gia. Tao khong bao gio quay lai cai sap bip bom nay nua!"
+        },
+        "n11": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Cai lo do vo giao duc! Ban hang ma mat day coi thuong nguoi lon tuoi, tao di keu ca cai xom nay tay chay cai sap cua may cho biet mat! Hu xui xeo!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Man gi ma trai nho xiu, chac chua let chua le chu ngot bau gi. Ban bao nhieu do co nuong?",
+          "options": [
+            {
+              "label": "Da mận 15k một ký đúng giá bảng nha cô.",
+              "next": "n2"
+            },
+            {
+              "label": "Mận này 18k cô ơi, nhưng nhìn cô quý phái quá, con bớt liền cho cô còn 16k coi như làm quen nè.",
+              "next": "n9"
+            },
+            {
+              "label": "Man nay man dac san rung sau, khong co thuoc, gia 50k mot ky nha co.",
+              "next": "n10"
+            },
+            {
+              "label": "Co khong mua thi thoi xich ra cho khac cho nguoi ta mua, dung co o day che bai phai dung phong long cua con.",
+              "next": "n11"
+            }
+          ]
+        }
+      }
+    },
+    "xoai": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Buon ban ma cung nhac cung ngac, khong biet chieu khach gi het tron. Thoi tao qua sap con Ba mập tao mua cho no vui ve."
+        },
+        "n2": {
+          "speaker": "npc",
+          "text": "Cua do la cua gi? Tiên thi muon lay du ma do thi chat luong kem. Bot xuong 15k di tao lay may trai ve thap huong.",
+          "options": [
+            {
+              "label": "Da khong duoc co, xoai nay ngọt lam, 20k la re lam roi.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n3": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Do vay co phai ngoan khong. Lam an la phai biet nhong nheo chiu thiet mot chut xiu thi khach moi thuong. Tao di day, mai mot tao ghe mua tiep cho nha con!",
+          "weightKg": 0.26
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] 20k ha... Thoi tao thoi het tien le roi, con tờ 50k, may co tien thoi khong ma ban?",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ con có tiền thối cô ơi, cô cứ đưa 50k con thối lại cô 30k chẵn nha cô.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 5] Dạ thối 30k thì con hết tờ 10k rồi, cô có tờ nào nhỏ hơn không cô?",
+              "next": "n1"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Trầy vo ha? Thap huong ma cung xai do tray vo nua ong ba quat chet tao sao con. Bot xuong 15k di tao lay.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi được rồi, trái trầy này con tính cô 15k luôn coi như con chịu lỗ xả hàng cho cô luôn đó.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 5] Da khong duoc co oi, 15k thi qua đang qua, thoi con de lai con an chu ban vay toi con qua.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] 22k van con dat gap doi cho khac. Thoi 18k khong ban thi thoi tao qua ben ba Map tao mua cho roi.",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ cô ơi bà Mập bán xoài non chứ đâu được xoài già chuẩn keo như con đâu cô, thôi con bớt cô còn 20k chẵn nha.",
+              "next": "n4"
+            },
+            {
+              "label": "[TẦNG 3] Hay là cô lấy trái này hơi trầy vỏ một xíu đi, con tính cô 18k đúng ý cô luôn, bên trong vẫn ngon ngọt nha.",
+              "next": "n5"
+            }
+          ]
+        },
+        "n7": {
+          "speaker": "npc",
+          "text": "Thoi bot ninh dam di nha co nương. Phuc hau ma ban xoai mac thi cung vay thoi. 18k ban khong?",
+          "options": [
+            {
+              "label": "[TẦNG 1] Dạ thôi, gặp người quen giống dì ruột, con bớt sát sàn còn 22k cho cô đó.",
+              "next": "n6"
+            }
+          ]
+        },
+        "n8": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Con nit thoi nay toan lua gạt, ban buon thi khong lo ban ma lo noi dóc noi nổ gạt nguoi gia. Tao khong bao gio quay lai cai sap bip bom nay nua!"
+        },
+        "n9": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Cai lo do vo giao duc! Ban hang ma mat day coi thuong nguoi lon tuoi, tao di keu ca cai xom nay tay chay cai sap cua may cho biet mat! Hu xui xeo!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Xoai nay chín cay hay xịt thuoc vay em? Nhin cai cuon no heo queo la tao nghi ngo roi do.",
+          "options": [
+            {
+              "label": "Dạ xoài 20k một ký cô ơi, tiền nào của đó cô ơi.",
+              "next": "n2"
+            },
+            {
+              "label": "Xoài keo gốc miền Tây 25k một ký, ngọt thanh cô ơi. Mà cô ơi, nhìn cô phúc hậu giống hệt dì ruột dưới quê của con vậy á.",
+              "next": "n7"
+            },
+            {
+              "label": "Xoai nay xoai cat Hoa Loc chin tu nhien tren cay, gia 150k mot ky nha co.",
+              "next": "n8"
+            },
+            {
+              "label": "Co oi xoai nay con ban cho khach sang thoi, co nhắm mua noi thi can chu dung cam len can qua can lai dập xoai cua con.",
+              "next": "n9"
+            }
+          ]
+        }
+      }
+    },
+    "khoai": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Buon ban ma cung nhac cung ngac, khong biet chieu khach gi het tron. Thoi tao qua sap con Ba mập tao mua cho no vui ve."
+        },
+        "n2": {
+          "speaker": "npc",
+          "text": "Tra treo ha con? Thoi tao khong an khoai can dat nha. Bot xuong 8k di tao ve mac cong rua ton nuoc lam.",
+          "options": [
+            {
+              "label": "Da thoi co oi, ban vay con cap dat ma an thiet do, dung 12k giup con di.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n3": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Do vay co phai ngoan khong. Lam an la phai biet nhong nheo chiu thiet mot chut xiu thi khach moi thuong. Tao di day, mai mot tao ghe mua tiep cho nha con!",
+          "weightKg": 0.16
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Lay 2 ky ve an cho can bung ha con? Thoi lay tao 1 ky thoi, tinh dung 11k5 di tao dua tien luon ne.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi được rồi, 11k5 chốt luôn cho cô. Coi như con lấy cái vía mua may bán đắt của cô nha. Cô lựa khoai đi cô.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 5] Dạ không được cô ơi, con đã bớt từ 15k xuống 13k là hết cỡ rồi, cô bớt tiếp con ôm nợ mất.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] To tien moi ha? Thoi tao gia roi khong quan trong tien moi cu, mien bot gia la tao khoai. 11k5 tao lay, khong thi thoi.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi chốt luôn 11k5 cô ơi, cô đứng trả giá nãy giờ sập sạp con mất, cô lấy mấy củ này đi.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 5] Dạ thôi con xin lỗi con không bán được giá đó rồi cô ơi, cô thông cảm giùm con nha.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] Nghe noi chu mo hang tao cung mủi long. Ma 11k di cho tron tien, chu tao khong thich cam tien le ra cho.",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ thôi cô ơi 11k thì tội con quá, hay là cô lấy 2 ký đi con tính cô giá 22k chẵn luôn, được không cô?",
+              "next": "n4"
+            },
+            {
+              "label": "[TẦNG 3] Dạ thôi 12k đi cô, con thối cô tờ 8k còn nguyên mới tinh lộc lá đầu ngày nè cô.",
+              "next": "n5"
+            }
+          ]
+        },
+        "n7": {
+          "speaker": "npc",
+          "text": "Chu toan gi, khong di som thi cho no ban het do ngon sao con. Ma khoai nay cu nho qua, be ra co bi xơ khong do? 10k di tao lay may cu ve hap an sang.",
+          "options": [
+            {
+              "label": "[TẦNG 1] Khoai này con bao không xơ cô ơi. Thôi bồ tè sáng sớm cô mở hàng cho con đi, con bớt cho cô còn 13k lấy lộc đầu ngày nè.",
+              "next": "n6"
+            }
+          ]
+        },
+        "n8": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Con nit thoi nay toan lua gạt, ban buon thi khong lo ban ma lo noi dóc noi nổ gạt nguoi gia. Tao khong bao gio quay lai cai sap bip bom nay nua!"
+        },
+        "n9": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Cai lo do vo giao duc! Ban hang ma mat day coi thuong nguoi lon tuoi, tao di keu ca cai xom nay tay chay cai sap cua may cho biet mat! Hu xui xeo!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Khoai lang gi ma dính day dat cat vay con? Rửa sach se nguoi ta moi mua chu ban kieu nay can luon ca dat ha?",
+          "options": [
+            {
+              "label": "Da khoai lang mật 12k một ký, khoai đào dưới đất lên phải dính đất chứ cô.",
+              "next": "n2"
+            },
+            {
+              "label": "Khoai lang mật Đà Lạt ngọt lịm cô ơi, giá 15k một ký. Mà cô đi chợ sớm ghê, đúng là người phụ nữ chu toàn cho gia đình có khác.",
+              "next": "n7"
+            },
+            {
+              "label": "Khoai này khoai sâm đất quý hiếm ăn vô trẻ mãi không già, giá 80k một củ nha cô.",
+              "next": "n8"
+            },
+            {
+              "label": "Cô già rồi ăn khoai này vô cho dễ tiêu hóa cô ơi, chứ người lớn tuổi hay bị bón lắm.",
+              "next": "n9"
+            }
+          ]
+        }
+      }
+    },
+    "oi": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Buon ban ma cung nhac cung ngac, khong biet chieu khach gi het tron. Thoi tao qua sap con Ba mập tao mua cho no vui ve."
+        },
+        "n2": {
+          "speaker": "npc",
+          "text": "Re ma do hong thi cung vut di chu lam gi. 5k tao lay het cho thâm kim nay ve cho heo ăn.",
+          "options": [
+            {
+              "label": "Dạ ổi người ăn chứ đâu phải cho heo ăn đâu cô, giá đó không bán được đâu.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n3": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Do vay co phai ngoan khong. Lam an la phai biet nhong nheo chiu thiet mot chut xiu thi khach moi thuong. Tao di day, mai mot tao ghe mua tiep cho nha con!",
+          "weightKg": 0.14
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Chu sap nao ke may, chu mien tao mua duoc gia rẻ la tao vui. Thoi gio tao lay them trai oi nho nay nua, can dung 10k di.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi được rồi, con cam to 10k của cô luôn khỏi thối tiền lẻ, cô lấy thêm trái nhỏ đó đi.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 5] Dạ không được cô ơi, trái nhỏ đó tuy nhỏ nhưng cân lên cũng mấy lạng rồi, con không cho không được đâu cô.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Trai nho thong thuong toan hat khong chu co thit tha gi dau con. Tinh trai to nay 10k luon di tao xách ve lien.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi con bấm bụng bán lỗ luôn cho cô đó, cô cầm tờ 10k đưa con rồi xách túi ổi to này về giùm con đi.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 5] Dạ con chịu hết nổi rồi cô ơi, giá đó con bán không được thà con cất sạp đi về ngủ sướng hơn cô ơi.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] Cung duong lay phuoc ha? Nghe mat long mat da ghe. Ma thoi 10k cho chan, chu tao mang dung to 10k day ne.",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ cô ơi 11k con đã cúng dường bớt phước rồi, cô bớt xuống 10k nữa là con phải bù tiền túi vô cho chủ sạp đó cô.",
+              "next": "n4"
+            },
+            {
+              "label": "[TẦNG 3] Dạ hay là cô lựa mấy trái nhỏ hơn chút xíu đi, con tính cô đúng 10k chẵn cho vừa tờ tiền của cô luôn nha.",
+              "next": "n5"
+            }
+          ]
+        },
+        "n7": {
+          "speaker": "npc",
+          "text": "Trắng tinh thiet khong? Tao ma ve bo ra thay dòi la tao mang ra bat den do nha. Gia 13k mac qua, 9k tao mua.",
+          "options": [
+            {
+              "label": "[TẦNG 1] Thôi nay ngày đầu tuần, con bớt cô còn 11k coi như con cúng dường lấy phước đầu ngày luôn đó cô.",
+              "next": "n6"
+            }
+          ]
+        },
+        "n8": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Con nit thoi nay toan lua gạt, ban buon thi khong lo ban ma lo noi dóc noi nổ gạt nguoi gia. Tao khong bao gio quay lai cai sap bip bom nay nua!"
+        },
+        "n9": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Cai lo do vo giao duc! Ban hang ma mat day coi thuong nguoi lon tuoi, tao di keu ca cai xom nay tay chay cai sap cua may cho biet mat! Hu xui xeo!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Oi gi ma vo thâm kim het tron vay em? Ban do cũ cho tao ha?",
+          "options": [
+            {
+              "label": "Dạ ổi 10k một ký đúng giá rồi cô ơi, rẻ bèo hà.",
+              "next": "n2"
+            },
+            {
+              "label": "Ổi nữ hoàng trái to giòn ngọt 13k một ký cô ơi. Trái thâm kim là do cái bọc ni-lông nó cạ vô á cô, chứ bên trong ruột trắng tinh ngon lắm.",
+              "next": "n7"
+            },
+            {
+              "label": "Oi nay oi nhap khau tu dao Hawaii, trai oi nay co vitamin gap 100 lan oi thuong, gia 200k mot trai.",
+              "next": "n8"
+            },
+            {
+              "label": "Co kho tinh qua thoi con khong ban cho co dau, ban cho co xong con nhức dau cả ngày xui xẻo lắm.",
+              "next": "n9"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "characterId": "boy_pho",
+  "fruits": {
+    "oi": {
+      "rootId": "root",
+      "nodes": {
+        "root": {
+          "speaker": "npc",
+          "text": "Ê nhỏ, quầy nhìn cũng xịn đó nha. Ổi tươi không em?",
+          "options": [
+            { "label": "Dạ ổi giòn rụm nè anh, cắn phát là mê liền á!", "next": "ask_price" },
+            { "label": "Ổi này chụp lên story là auto có tim đó anh!", "next": "banter" },
+            { "label": "Dạ ổi hết sạch rồi anh ơi.", "next": "leaf_out_of_stock" }
+          ]
+        },
+        "banter": {
+          "speaker": "npc",
+          "text": "Ha ha được đó, gu ghê! Vậy nhiêu 1 ký em?",
+          "options": [
+            { "label": "Dạ 15k một ký, giá sinh viên nè anh!", "next": "ask_amount" },
+            { "label": "Dạ 32k một ký ạ, hàng tuyển á.", "next": "leaf_expensive" }
+          ]
+        },
+        "ask_price": {
+          "speaker": "npc",
+          "text": "Ok đó. Nhiêu 1 ký vậy em?",
+          "options": [
+            { "label": "Dạ 15k một ký anh ơi, mua ủng hộ nha!", "next": "ask_amount" },
+            { "label": "Dạ 32k một ký ạ.", "next": "leaf_expensive" }
+          ]
+        },
+        "ask_amount": {
+          "speaker": "npc",
+          "text": "Cho anh 0.2 ký thôi, ăn thử coi có đúng gu không đã.",
+          "options": [
+            { "label": "Dạ con cân liền cho anh nè, đảm bảo không boom hàng!", "next": "leaf_buy" },
+            { "label": "Dạ bọc hết đợt này rồi anh ơi, đợt sau ghé lại nha.", "next": "leaf_out_of_stock" }
+          ]
+        },
+        "leaf_expensive": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thôi giá đó hơi flex quá, để lần khác anh quay lại xem gu mới."
+        },
+        "leaf_out_of_stock": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Ủa hết hàng hả, thôi để bữa khác anh ghé, đảm bảo lần sau chốt đơn liền."
+        },
+        "leaf_buy": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Ngon! Chốt đơn liền, nhìn là biết trái cây có gu rồi. Cảm ơn em nha!",
+          "weightKg": 0.20
+        }
+      }
+    },
+    "xoai": {
+      "rootId": "root",
+      "nodes": {
+        "root": {
+          "speaker": "npc",
+          "text": "Ê, quầy có xoài không em? Anh đang thèm xoài lắc muối ớt xỉu ngang.",
+          "options": [
+            { "label": "Dạ xoài cát chua giòn nè anh, làm xoài lắc đúng bài luôn!", "next": "ask_price" },
+            { "label": "Xoài này lắc lên là auto trend đó anh ơi.", "next": "banter" },
+            { "label": "Dạ xoài hết hàng rồi anh ơi.", "next": "leaf_out_of_stock" }
+          ]
+        },
+        "banter": {
+          "speaker": "npc",
+          "text": "Hay đó, đúng bài luôn! Nhiêu 1 ký vậy em?",
+          "options": [
+            { "label": "Dạ 25k một ký anh ơi, con chọn trái chắc tay nha.", "next": "ask_amount" },
+            { "label": "Dạ 50k một ký ạ, xoài limited đó anh.", "next": "leaf_expensive" }
+          ]
+        },
+        "ask_price": {
+          "speaker": "npc",
+          "text": "Ổn đó. Bán sao 1 ký em?",
+          "options": [
+            { "label": "Dạ 25k một ký thôi anh, xoài cát chuẩn vị nè.", "next": "ask_amount" },
+            { "label": "Dạ 50k một ký ạ.", "next": "leaf_expensive" }
+          ]
+        },
+        "ask_amount": {
+          "speaker": "npc",
+          "text": "Cho anh 0.3 ký thôi, lắc muối ớt là đủ đã miệng rồi.",
+          "options": [
+            { "label": "Dạ con cân cho anh nè, trái nào cũng giòn max luôn ạ!", "next": "leaf_buy" },
+            { "label": "Dạ trái to hết sạch rồi anh ơi, tại chưa nhập thêm.", "next": "leaf_out_of_stock" }
+          ]
+        },
+        "leaf_expensive": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Giá đó hơi over cho cái bụng sinh viên rồi, thôi lần khác anh ghé."
+        },
+        "leaf_out_of_stock": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Hết hàng thiệt hả, thôi để hôm khác quay lại xem đợt mới."
+        },
+        "leaf_buy": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Ok chốt! Đúng chuẩn xoài lắc luôn, cảm ơn em nha, xịn sò dữ!",
+          "weightKg": 0.30
+        }
+      }
+    }
+  }
+}

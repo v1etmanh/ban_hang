@@ -1,0 +1,253 @@
+{
+  "characterId": "le_bon_1",
+  "fruits": {
+    "man": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thôi, đứng đây một hồi làm tư duy sáng tạo của chị bị nghẽn mạch dòng chảy rồi. Không gian này quá thực tế, không hợp với một họa sĩ mộng mơ như chị. Chị đi tìm Muse ở sạp khác đây. Bye!"
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Thật là một trải nghiệm mua sắm mang đầy tính nghệ thuật vị nghệ thuật! Em rất có tiềm năng làm stylist đó cô bé. Chị đi về sáng tác đây, khi nào tranh đấu giá được ngàn đô chị quay lại bao trọn sạp của em nha! Ciao!",
+          "weightKg": 0.18
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Ôi trời ơi! Cái rổ tre này có những đường đan đan xen tạo nên một không gian lập thể tuyệt vời! Cô bé có tư duy sắp đặt tốt đấy. Cái rổ này em tính thêm vào hóa đơn cho chị luôn đi, tổng cộng bao nhiêu?",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ vậy em tính trọn gói cả mận cao cấp và rổ tre nghệ thuật là 180k chẵn nha họa sĩ thiên tài của em!",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ thôi em tặng chị cái rổ làm quen, tổng cộng 2 ký mận kịch độc của chị là 140k chẵn thôi ạ.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Đúng! Nghệ thuật là vô giá, kẻ phàm phu tục tử làm sao hiểu được giá trị này. Nhưng mà nhìn mấy trái mận góc kia có vẻ màu hơi tối, có ảnh hưởng đến sắc độ Palette của chị không?",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ đó là màu đỏ sẫm chiều sâu tâm trạng đó chị, lên tranh thể hiện sự cô đơn của nhân vật là đỉnh luôn á!",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ màu đó là do mận nó chín quá thôi chị ơi, chứ không có sầu muộn gì đâu ạ.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] 70k ha? Con số 7 là con số của sự huyền bí trong hội họa Phục Hưng đấy, chị rất thích. Nhưng nếu chị mua luôn 2 ký để xếp bố cục cho nó dày dặn thì em có \"art\" thêm gì cho chị không?",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ nếu chị lấy 2 ký, em sẽ tặng riêng chị một chiếc rổ tre mộc mạc mang đậm tính sắp đặt dân gian để chị làm layout vẽ tranh luôn, không tính tiền ạ!",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 3] Dạ em bán đúng giá 70k thôi ạ, chất nghệ thuật trong từng trái mận là vô giá rồi nên em không bớt được nữa đâu chị.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Hừ, biết nhận lỗi vậy là còn có thể cứu vãn. Vậy bây giờ em đền bù cho cái sự tổn thương tinh thần này của tôi bằng mức giá thế nào đây?",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ em bán cho chị giá đặc biệt dành riêng cho giới nghệ sĩ là 60k một ký, em lựa trái láng o cho chị vẽ luôn.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ thì con tính chị đúng giá bảng 15k coi như tạ lỗi với chị đó, chị mua giùm con đi.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n7": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Ôi kinh tởm thật sự! Một cái sạp trái cây nồng nặc mùi vật chất và sự xúc phạm đối với những người làm nghệ thuật chân chính! Tôi sẽ vẽ một bức tranh châm biếm cái sạp này để cho cả thế giới thấy sự thô lỗ của em! Hứ xui xẻo!"
+        },
+        "n8": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Đồ thô lỗ! Sạp trái cây này hoàn toàn không có một chút năng lượng tích cực nào cho nghệ thuật cả. Tôi sẽ viết bài review phê bình cái sạp này trên blog của tôi!",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi em xin lỗi mà, chị là họa sĩ lớn đại lượng chấp nhất em làm gì, chị lấy ký mận 80k mở hàng giúp em đi.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Chị cứ việc viết thoải mái, sạp em bán cho người ăn chứ không bán cho người ảo tưởng nha chị!",
+              "next": "n7"
+            }
+          ]
+        },
+        "n9": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] Cái gì?! Em dám bảo tôi làm màu? Em có biết tôi từng triển lãm tranh ở... trang cá nhân của tôi đạt hàng trăm lượt thả tim không? Thật là một bộ óc rỗng tuếch, không thể trò chuyện được!",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ con xin lỗi họa sĩ, tại con mắt trần tục của con chưa chạm tới đỉnh cao nghệ thuật của chị. Chị thứ lỗi cho con nha.",
+              "next": "n6"
+            },
+            {
+              "label": "[TẦNG 3] Thôi chị không mua thì đi giùm em cái, đứng đây tạo dáng chụp hình nãy giờ làm nghẹt hết cả lối đi của khách sạp em.",
+              "next": "n8"
+            }
+          ]
+        },
+        "n10": {
+          "speaker": "npc",
+          "text": "Ha ha, cô bé này có đôi mắt biết thưởng thức nghệ thuật đấy! Đúng vậy, những nét cong này mà đặt dưới ánh đèn bắt bóng thì tuyệt tác! Nhưng mà 50k có phản ánh đúng giá trị độc bản của nó chưa em? Chị muốn những trái hoàn hảo nhất cơ.",
+          "options": [
+            {
+              "label": "[TẦNG 1] Dạ đối với một người có gu đẳng cấp như chị, em sẽ lựa riêng cho chị những trái mận \"siêu thực\" nhất, giá 70k một ký nha chị.",
+              "next": "n5"
+            },
+            {
+              "label": "[TẦNG 1] Dạ mận này thường thôi chị ơi, em thấy chị làm màu quá, vẽ tranh thôi mà làm như nghiên cứu khoa học vũ trụ vậy.",
+              "next": "n9"
+            }
+          ]
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Ôi trời, nhìn những khối hình học và mảng màu sắc trên những quả mận này kìa! Chúng có một sự kết nối tâm linh kỳ lạ với tâm hồn nghệ thuật của tôi. Cô bé, mận này bao nhiêu một ký để tôi mang về làm vật mẫu sáng tác tranh tĩnh vật đương đại?",
+          "options": [
+            {
+              "label": "Dạ mận này 15k một ký đúng giá bảng nha chị, mua giùm em đi.",
+              "next": "n1"
+            },
+            {
+              "label": "Ôi, em nhìn phong thái của chị là biết ngay một đại họa sĩ thiên tài rồi! Cái cách chị nhìn trái mận nó nghệ thuật khác người thường lắm luôn á. Mận này là mận tuyển chọn phom dáng chuẩn, giác cắt hoàn hảo để lên tranh, giá 50k một ký nha họa sĩ!",
+              "next": "n10"
+            },
+            {
+              "label": "Mận này mận dạt thôi chị ơi, có vết sâu đục tùm lum kìa, mua về vẽ không có đẹp đâu.",
+              "next": "n1"
+            },
+            {
+              "label": "Trái cây sạp em chỉ để bán cho người ta ăn thôi, chị mua về vẽ xong bỏ phí phạm lắm, em không bán đâu.",
+              "next": "n7"
+            }
+          ]
+        }
+      }
+    },
+    "xoai": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thôi, đứng đây một hồi làm tư duy sáng tạo của chị bị nghẽn mạch dòng chảy rồi. Không gian này quá thực tế, không hợp với một họa sĩ mộng mơ như chị. Chị đi tìm Muse ở sạp khác đây. Bye!"
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Thật là một trải nghiệm mua sắm mang đầy tính nghệ thuật vị nghệ thuật! Em rất có tiềm năng làm stylist đó cô bé. Chị đi về sáng tác đây, khi nào tranh đấu giá được ngàn đô chị quay lại bao trọn sạp của em nha! Ciao!",
+          "weightKg": 0.22
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Tuyệt vời! Một Studio dã chiến ngay tại chợ, thật là một ý tưởng phá cách mang tính nổi loạn! Chị sẽ trả em hẳn 200k luôn cho nó tròn trịa cái vibe nghệ thuật này, chịu không?",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ chốt luôn 200k nha họa sĩ thiên tài! Chị cứ tự nhiên sáng tác, em đứng đây canh góc cho chị luôn nè.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ thôi em lấy đúng 150k thôi chị ơi, lấy nhiều quá em ngại lắm ạ.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Mất cảm xúc thật sự! Nghệ thuật là phải chớp lấy khoảnh khắc, bắt chị mang về nhà thì cái \"vibe\" nó bay mất tiêu rồi. Hay là em bớt xuống 100k đi chị tự đứng vẽ cũng được.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi được rồi, tính chị 100k chẵn coi như em tài trợ cho nền mỹ thuật nước nhà, chị đứng đây vẽ nhanh giùm em nha.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ không được chị ơi, đứng vẽ cản trở khách mua hàng của em lắm, đúng 120k mang về nhà vẽ nha chị.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] 120k! Thần chú của những con số! Nghe phát là thấy mùi quý phái liền. Nhưng mà chị mang cây cọ vẽ theo nè, em có chỗ nào cho chị ngồi phác thảo vài nét \"Live\" tại sạp để lấy cảm xúc không?",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ có chứ! Chị cứ ngồi cái ghế đệm VIP này của em, em bật đèn led chiếu thẳng vào thùng xoài cho chị lấy sáng đổ bóng luôn, tính chị thêm 30k phí bối cảnh là 150k nha!",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 3] Dạ sạp em nhỏ lắm không có chỗ ngồi vẽ đâu chị ơi, chị mua rồi mang về nhà vẽ giùm em cái đi.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "Ôi, em khen làm chị ngại quá... Nhưng mà em nhận xét đúng đấy, góc mặt này của chị là góc ăn tiền mà. Quả xoài này dáng chuẩn thật, nhưng 80k đã là mức giá thể hiện sự quý tộc nhất chưa em? Chị không thích xài đồ phân khúc thấp đâu.",
+          "options": [
+            {
+              "label": "[TẦNG 1] Dạ nếu chị muốn đẳng cấp VIP nhất, em có thùng xoài \"Limited Edition\" vừa cập bến, quả nào cũng bóng loáng, giá 120k một ký xứng tầm đại gia luôn chị!",
+              "next": "n5"
+            }
+          ]
+        },
+        "n7": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Đúng là cái đồ lừa gạt, dám đem mấy thứ hàng dỏm ra để lòe bịp một đôi mắt đầy chuyên môn như tôi. Nghệ thuật không có chỗ cho sự giả dối! Tôi đi đây và không bao giờ quay lại cái nơi bóp méo sự thật này!"
+        },
+        "n8": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Ôi kinh tởm thật sự! Một cái sạp trái cây nồng nặc mùi vật chất và sự xúc phạm đối với những người làm nghệ thuật chân chính! Tôi sẽ vẽ một bức tranh châm biếm cái sạp này để cho cả thế giới thấy sự thô lỗ của em! Hứ xui xẻo!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Khối hình Elip của những quả xoài này thật là quyến rũ! Sắc vàng này chính là tông màu chủ đạo của chủ nghĩa ấn tượng. Chị muốn mua vài quả về làm Muse (nàng thơ) cho bức tranh sắp tới. Giá cả thế nào em yêu?",
+          "options": [
+            {
+              "label": "Dạ xoài 20k một ký nha chị, tiền nào của đó.",
+              "next": "n1"
+            },
+            {
+              "label": "Ôi chu choa, góc nghiêng của chị khi nhìn trái xoài trông giống hệt như bức tranh nàng Mona Lisa luôn á! Đẹp chấn động luôn họa sĩ ơi! Xoài này là xoài keo hoàng gia, dáng uốn lượn mềm mại như đường cong cơ thể, giá 80k một ký nha chị!",
+              "next": "n6"
+            },
+            {
+              "label": "Xoài này xoài cát Hòa Lộc xịn xò 150k một ký nha chị, vẽ lên tranh là nhìn thấy mùi giàu sang liền.",
+              "next": "n7"
+            },
+            {
+              "label": "Chị nhìn thì đẹp mã mà nói chuyện nghe sáo rỗng quá, vô vẽ được nét nào ra hồn chưa mà đứng đây nổ banh sạp em vậy?",
+              "next": "n8"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

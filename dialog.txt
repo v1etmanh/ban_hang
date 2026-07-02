@@ -1,0 +1,1237 @@
+~ ban_mau_man
+
+Ban Mau: Cho nay co gi ban vay em?
+- Co xoai, oi, man, khoai lang day anh oi.
+	Ban Mau: Anh lay man. Bang ghi 10k ma, em ban sao?
+	- 10k dung bang, khoi mac ca cho met.
+		Ban Mau: Em that tha qua, nhung anh dang doi nghe thuat ban hang co.
+		=> ban_mau_fail_nhe
+	- 12k, em lua trai mong nhat, an mat nhu co quat may trong mieng.
+		Ban Mau: Hon bang 2k ha? Anh tra 11k, coi nhu tien lam quen duoc khong?
+		- 12k em giu gia, nhung em bao hanh: chua ngot thi em cuoi tru mot cai.
+			Ban Mau: Duoc, lay cho anh mot tui. Nhung cuoi nhe, dung cuoi cong nghiep.
+			=> ban_mau_success
+		- Man nay an vao nho het bai kiem tra nam lop 3.
+			Ban Mau: Anh chi can nho duong ve nha thoi em.
+			=> ban_mau_fail_noi_xao
+		- Khong mua thi thoi, man khong can nguoi yeu.
+			Ban Mau: Anh cung khong can bi man tu choi.
+			=> ban_mau_fail_ca_khia
+	- 50k, man nay co phong thai quy toc.
+		Ban Mau: Quy toc ma nam trong thung go ngoai cho ha?
+		- Da, quy toc nhung song gian di, giong anh vay.
+			Ban Mau: Noi nghe muot do, nhung gia nay anh xin lui.
+			=> ban_mau_fail_nhe
+		- Tai em nhin anh co ve giau.
+			Ban Mau: Em nhin sai nguoi roi.
+			=> ban_mau_fail_ca_khia
+- Hom nay nong qua, khong ban gi het.
+	Ban Mau: Vay anh mua khong khi nong ve nau canh vay.
+	=> ban_mau_fail_nhe
+- Bo khong co mat hay sao?
+	Ban Mau: Mat anh co, tien anh cung co, nhung tu nhien no khong muon ra nua.
+	=> ban_mau_fail_ca_khia
+
+
+~ ban_mau_xoai
+
+Ban Mau: Cho nay co gi ban vay em?
+- Co xoai, oi, man, khoai lang day anh oi.
+	Ban Mau: Anh thay xoai vang kia hap dan do. Bang ghi 150k, em ban sao?
+	- 150k dung bang.
+		Ban Mau: Bang da noi roi, vay em dang lam loa phat thanh ha?
+		=> ban_mau_fail_nhe
+	- 165k, em chon trai chin vua, cat ra vang nhu nang truoc cong cho.
+		Ban Mau: 165k nghe hoi cao. Anh tra 155k, xoai co biet ke chuyen khong?
+		- 165k em giu, khong biet ke chuyen, nhung biet lam anh im lang vi ngon.
+			Ban Mau: Cau nay duyen. Goi cho anh mot phan.
+			=> ban_mau_success
+		- Xoai nay dat vi no tung hoc truong quoc te.
+			Ban Mau: Vay cho no di xin hoc bong di em.
+			=> ban_mau_fail_noi_xao
+		- Anh khong mua la xoai buon do.
+			Ban Mau: Anh khong bi trai cay thao tung cam xuc dau.
+			=> ban_mau_fail_nhe
+	- 300k, xoai nay hang hiem, nhin la thay co tuong lai.
+		Ban Mau: Anh mua xoai chu khong dau tu startup.
+		=> ban_mau_fail_noi_xao
+- Hom nay nong qua, khong ban gi het.
+	Ban Mau: Vay em dung cho de tan nang ha?
+	=> ban_mau_fail_nhe
+- Bo khong co mat hay sao?
+	Ban Mau: Mat anh vua thay mot nguoi ban hang can ngu them.
+	=> ban_mau_fail_ca_khia
+
+
+~ ban_mau_khoai
+
+Ban Mau: Cho nay co gi ban vay em?
+- Co xoai, oi, man, khoai lang day anh oi.
+	Ban Mau: Khoai lang kia bao nhieu? Bang ghi 10k.
+	- 10k nhu bang.
+		Ban Mau: Em dang doc bang gia cho anh nghe ha?
+		=> ban_mau_fail_nhe
+	- 12k, em lua cu bui, nuong len thom nhu bep nha ba ngoai.
+		Ban Mau: Hon 2k, anh tra 11k cho tron tinh lang xom duoc khong?
+		- 12k em giu gia, em lua cu dep, khong suong, khong bi ham.
+			Ban Mau: Chot. Anh lay may cu ve an cho do nho tuoi tho.
+			=> ban_mau_success
+		- An vao thong minh hon 3 phan.
+			Ban Mau: Vay em an truoc di roi quay lai ban anh.
+			=> ban_mau_fail_noi_xao
+		- Hoi nhieu qua, khoai cung biet met.
+			Ban Mau: Vay cho khoai nghi, anh di hang khac.
+			=> ban_mau_fail_ca_khia
+	- 50k, khoai nay dong doi hoang gia.
+		Ban Mau: Hoang gia gi nam tren nia tre?
+		=> ban_mau_fail_noi_xao
+- Hom nay nong qua, khong ban gi het.
+	Ban Mau: Vay anh mua cai nong cua em ve phoi khoai duoc khong?
+	=> ban_mau_fail_nhe
+- Bo khong co mat hay sao?
+	Ban Mau: Co, nen anh thay ro thai do nay khong giam gia.
+	=> ban_mau_fail_ca_khia
+
+
+~ ban_mau_oi
+
+Ban Mau: Cho nay co gi ban vay em?
+- Co xoai, oi, man, khoai lang day anh oi.
+	Ban Mau: Oi kia bang ghi 5k, ban sao em?
+	- 5k thoi anh.
+		Ban Mau: Em hien qua, anh hoi de nghe em thuyet phuc ma.
+		=> ban_mau_fail_nhe
+	- 7k, em chon trai gion, them muoi ot la nghe doi dep hon.
+		Ban Mau: Hon 2k, anh tra 6k, con 1k de mua muoi ot duoc khong?
+		- 7k em giu gia, em bao dam gion. Can mot mieng la hang xom quay dau.
+			Ban Mau: Duoc, goi anh vai trai. Hang xom quay dau thi anh chia mot mieng.
+			=> ban_mau_success
+		- Oi nay tri duoc buon ngu.
+			Ban Mau: Anh dang buon ngu vi nghe em noi do.
+			=> ban_mau_fail_noi_xao
+		- Anh khong mua thi oi ton thuong.
+			Ban Mau: Anh se gui loi xin loi den trai oi.
+			=> ban_mau_fail_nhe
+	- 25k, oi nay co dang nguoi noi tieng.
+		Ban Mau: Anh chua tung xin chu ky trai oi.
+		=> ban_mau_fail_noi_xao
+- Hom nay nong qua, khong ban gi het.
+	Ban Mau: Vay anh di mua quat, khong mua oi nua.
+	=> ban_mau_fail_nhe
+- Bo khong co mat hay sao?
+	Ban Mau: Co mat nen anh moi thay em sap mat khach.
+	=> ban_mau_fail_ca_khia
+
+
+~ nu_mau_man
+
+Nu Mau: Em oi, sap hang nay ban nhung gi?
+- Da co xoai, oi, man, khoai lang chi oi.
+	Nu Mau: Chi hoi man. Bang ghi 10k, em ban gia nao?
+	- 10k a, dung nhu bang.
+		Nu Mau: Vay thi khong sai, nhung chi chua thay ly do mua o em.
+		=> nu_mau_fail_nhe
+	- 12k, em lua trai tuoi, mong, khong bi dap.
+		Nu Mau: Them 2k thi phai co ly do ro rang. Chi tra 11k truoc, em thuyet phuc them di.
+		- 12k em giu gia, em lua trai dep, can ky, neu bi dap em doi trai khac.
+			Nu Mau: Noi vay hop ly. Chi lay mot tui nho.
+			=> nu_mau_success
+		- Vi man nay dep nhu chi.
+			Nu Mau: Khen thi vui, nhung chi can hang tot hon loi ngot.
+			=> nu_mau_fail_nhe
+		- Khong mua thi chi thieu gu.
+			Nu Mau: Chi co gu, nen chi di.
+			=> nu_mau_fail_ca_khia
+	- 50k, man nay rat co linh hon.
+		Nu Mau: Chi mua trai cay, khong mua truyen kinh di.
+		=> nu_mau_fail_noi_xao
+- Hom nay nong qua, khong ban gi het.
+	Nu Mau: Nong thi uong nuoc, dung de mat khach.
+	=> nu_mau_fail_nhe
+- Bo khong co mat hay sao?
+	Nu Mau: Co. Va chi thay em nen hoc lai cach ban hang.
+	=> nu_mau_fail_ca_khia
+
+
+~ nu_mau_xoai
+
+Nu Mau: Em oi, sap hang nay ban nhung gi?
+- Da co xoai, oi, man, khoai lang chi oi.
+	Nu Mau: Xoai bang ghi 150k. Gia em ban?
+	- 150k dung bang.
+		Nu Mau: Chi doc duoc bang, chi can em noi vi sao nen mua.
+		=> nu_mau_fail_nhe
+	- 165k, trai chin vua, khong song, khong ung, em cat thu cho chi xem.
+		Nu Mau: Neu dung nhu vay thi cung dang nghe. Chi tra 155k, em thuyet phuc chi them di.
+		- 165k em giu gia, em lua trai theo mau vo va do mem, khong lay trai ep chin.
+			Nu Mau: Duoc, cach noi co nghe biet hang. Chi mua.
+			=> nu_mau_success
+		- Tai xoai nay nhin sang hon xoai binh thuong.
+			Nu Mau: Sang ma khong ngon thi chi khong tra tien.
+			=> nu_mau_fail_nhe
+		- Chi khong mua la thiet thoi cho chi.
+			Nu Mau: Chi tu quyet dinh thiet thoi cua minh.
+			=> nu_mau_fail_ca_khia
+	- 300k, xoai nay co so phan lon.
+		Nu Mau: So phan lon nhat cua no la o lai sap hang.
+		=> nu_mau_fail_noi_xao
+- Hom nay nong qua, khong ban gi het.
+	Nu Mau: Vay chi khong lam phien nguoi dang nong.
+	=> nu_mau_fail_nhe
+- Bo khong co mat hay sao?
+	Nu Mau: Co, nen chi thay bang gia va thay ca thai do.
+	=> nu_mau_fail_ca_khia
+
+
+~ nu_mau_khoai
+
+Nu Mau: Em oi, sap hang nay ban nhung gi?
+- Da co xoai, oi, man, khoai lang chi oi.
+	Nu Mau: Khoai lang bang ghi 10k. Em ban the nao?
+	- 10k nhu bang a.
+		Nu Mau: Gia dung, nhung em chua lam chi muon mua.
+		=> nu_mau_fail_nhe
+	- 12k, em lua cu chac, khong suong, dem ve hap la ngot.
+		Nu Mau: Nghe duoc, nhung chi tra 11k. Em co dam bao khong?
+		- 12k em giu gia, cu nao bi suong em doi cu khac cho chi.
+			Nu Mau: Noi chac chan vay thi chi mua.
+			=> nu_mau_success
+		- Khoai nay an vao vui len lien.
+			Nu Mau: Chi can khoai ngon, khong can khoai lam bac si tam ly.
+			=> nu_mau_fail_noi_xao
+		- Chi hoi nhieu hon ca thay giao.
+			Nu Mau: Va em vua rot bai kiem tra ban hang.
+			=> nu_mau_fail_ca_khia
+	- 50k, khoai nay quy hiem.
+		Nu Mau: Quy hiem thi em cat tu trung bay di.
+		=> nu_mau_fail_noi_xao
+- Hom nay nong qua, khong ban gi het.
+	Nu Mau: Vay chi di mua cho nguoi mat hon.
+	=> nu_mau_fail_nhe
+- Bo khong co mat hay sao?
+	Nu Mau: Co, va chi dang dung no de roi di.
+	=> nu_mau_fail_ca_khia
+
+
+~ nu_mau_oi
+
+Nu Mau: Em oi, sap hang nay ban nhung gi?
+- Da co xoai, oi, man, khoai lang chi oi.
+	Nu Mau: Oi bang ghi 5k. Em ban bao nhieu?
+	- 5k dung bang.
+		Nu Mau: Gia dung, nhung chi muon nghe em chon hang the nao.
+		=> nu_mau_fail_nhe
+	- 7k, em chon trai gion, da xanh dep, khong bi mem ruot.
+		Nu Mau: Them 2k thi chi tra 6k truoc. Neu gion that thi em noi tiep xem.
+		- 7k em giu gia, chi co the bam thu. Gion thi mua, khong gion em doi.
+			Nu Mau: Ro rang, de chi lay vai trai.
+			=> nu_mau_success
+		- Oi nay an vao het buon.
+			Nu Mau: Neu that thi em nen ban o benh vien.
+			=> nu_mau_fail_noi_xao
+		- Chi khong tin em la chi sai.
+			Nu Mau: Ban hang ma ep niem tin thi kho.
+			=> nu_mau_fail_ca_khia
+	- 25k, oi nay nhin rat co than thai.
+		Nu Mau: Than thai khong can ky, ruot mem la thua.
+		=> nu_mau_fail_noi_xao
+- Hom nay nong qua, khong ban gi het.
+	Nu Mau: Nong thi nghi, dung dung day lam chi mat thoi gian.
+	=> nu_mau_fail_nhe
+- Bo khong co mat hay sao?
+	Nu Mau: Co, va no vua thay mot man tu huy ban hang.
+	=> nu_mau_fail_ca_khia
+
+
+~ ban_mau_success
+
+Ban Mau: Chot don! Em ban hang co duyen do.
+Ban Mau: Nho lua trai ngon, dung lua trai co tam su nhe.
+
+=> END
+
+
+~ ban_mau_fail_nhe
+
+Ban Mau: Thoi de anh di vong vong xem them. Em tap ban hang them chut la on.
+
+=> END
+
+
+~ ban_mau_fail_noi_xao
+
+Ban Mau: Em noi nghe vui, nhung anh so trai cay nghe xong cung ngai.
+Ban Mau: Anh chua mua lan nay nha.
+
+=> END
+
+
+~ ban_mau_fail_ca_khia
+
+Ban Mau: Anh tinh mua, nhung cai vi cua em cay hon muoi ot.
+Ban Mau: Anh rut lui.
+
+=> END
+
+
+~ nu_mau_success
+
+Nu Mau: Duoc, em noi co ly va biet hang.
+Nu Mau: Goi cho chi mot tui, trai nao dep thi de len tren nha.
+
+=> END
+
+
+~ nu_mau_fail_nhe
+
+Nu Mau: Chi chua bi thuyet phuc. Lan sau em noi ro hon nhe.
+
+=> END
+
+
+~ nu_mau_fail_noi_xao
+
+Nu Mau: Em vui tinh, nhung ban hang noi qua da thi chi khong yen tam.
+
+=> END
+
+
+~ nu_mau_fail_ca_khia
+
+Nu Mau: Chi mua hang, khong mua su buc minh.
+Nu Mau: Hen em khi nao em bot sac.
+
+=> END
+~ fan_cr_7_khoai
+
+Fan CR7: Ủa sạp này bán gì vậy em?
+- Dạ có xoài, ổi, mận, khoai lang anh ơi.
+	Fan CR7: Khoai lang bao nhiêu? Bảng ghi 10k.
+	- 10k đúng bảng anh.
+		Fan CR7: Ừ... nhưng mà anh đang nghĩ tới anh 7 quá, mua không vô.
+		=> fan_cr_7_fail_nhe
+	- 12k, em lựa củ chắc, không xơ, hấp lên thơm lắm. Mà anh ơi hôm qua anh 7 đá hay ghê hén?
+		Fan CR7: ĐỪNG NÓI VỀ ANH 7 KHI ANH CHƯA BÌNH TĨNH! Ông ấy ghi 2 bàn vô Uzbekistan, phút 6 với phút 39, 5-0 luôn!
+		- Ừa, em coi, phút 6 anh 7 volley chân phải đẹp như tranh. 41 tuổi mà còn sung vậy á.
+			Fan CR7: Em hiểu anh 7! Vậy khoai bao nhiêu em?
+			- 12k anh, nhưng mà em bao: củ nào xơ em đổi củ khác, cam kết như anh 7 cam kết ghi bàn ở 6 kỳ World Cup.
+				Fan CR7: Trời ơi em so sánh hay vãi. Chốt! Lấy mấy củ đi.
+				=> fan_cr_7_success
+			- 12k anh ơi, củ này đẹp như cú sút phút 39 của anh 7 vậy — chính xác, không cần hỏi thêm.
+				Fan CR7: Ờ ờ... 11k được không? Anh đang để dành tiền mua áo Al Nassr.
+				- 12k em giữ giá, nhưng khoai này xứng đáng hơn cái áo fake anh đang mặc đó.
+					Fan CR7: ỦA SAO EM BIẾT ÁO ANH FAKE?! Thôi lấy đi 12k.
+					=> fan_cr_7_success
+				- Anh 7 cũng không bao giờ giảm giá bàn thắng của ổng đâu anh.
+					Fan CR7: Câu này chí lý... nhưng anh vẫn chỉ có 11k.
+					=> fan_cr_7_fail_mac_ca
+		- Anh 7 ghi bao nhiêu bàn World Cup rồi anh biết không?
+			Fan CR7: 10 bàn! Vô địch lịch sử Bồ Đào Nha! 145 bàn quốc tế! Hơn Messi 23 bàn! Anh thuộc nằm lòng!
+			- Giỏi! Vậy anh mua 12k khoai này đi, ngon như anh 7 ghi bàn vậy — chắc cú.
+				Fan CR7: Được, lấy đi. Nhưng nhớ lựa củ đẹp giống style anh 7 nha — sang trọng, đẳng cấp.
+				=> fan_cr_7_success
+			- Vậy thì anh biết người ghi bàn ở 6 kỳ World Cup xứng đáng có fan mua khoai 12k chứ?
+				Fan CR7: Logic gì vậy em?! Nhưng mà... đúng ợ. Thôi lấy.
+				=> fan_cr_7_success
+		- Anh là fan anh 7 hả? Trận Bồ Đào Nha với Uzbekistan anh coi không?
+			Fan CR7: Coi chứ! 5-0! Anh 7 ghi 2 bàn! Anh khóc từ phút 6 luôn!
+			- Khóc hả anh? Vậy mua khoai về ăn cho tỉnh rồi coi tiếp trận với Colombia đi.
+				Fan CR7: Ừ nha... 28/6 đá với Colombia. Hồi hộp lắm. Khoai bao nhiêu em?
+				- 12k anh, em chọn củ ngon cho anh coi bóng không bị đói nửa chừng.
+					Fan CR7: Chốt! Cảm ơn em có tâm.
+					=> fan_cr_7_success
+				- 10k thôi anh, em thương fan anh 7.
+					Fan CR7: 10k thôi hả, để anh mua thêm mấy củ xem cho đã.
+					=> fan_cr_7_fail_ban_re
+	- 50k, khoai này ăn vào đá bóng giỏi như anh 7.
+		Fan CR7: Ăn khoai mà đá giỏi như anh 7 thì cả nước Việt Nam mua hết rồi còn gì!
+		- Đúng rồi anh nên em giữ lại bán từng củ cho xứng đáng thôi.
+			Fan CR7: Em hài ghê... nhưng 50k thật sự không mua nổi.
+			=> fan_cr_7_fail_noi_qua
+		- Thì mới hiếm anh ơi, như anh 7 ghi bàn ở 6 kỳ World Cup vậy — độc nhất vô nhị.
+			Fan CR7: So sánh nghe được đó nhưng túi anh không nghe được.
+			=> fan_cr_7_fail_noi_qua
+- Hôm nay nóng quá, em không bán gì hết.
+	Fan CR7: Nóng thì uống nước, anh 7 tập dưới nắng Dubai còn không than mà em than.
+	=> fan_cr_7_fail_nhe
+- Bộ không có mặt hay sao?
+	Fan CR7: Có, và mặt anh đang nhìn vô điện thoại coi highlight anh 7 nên không thấy em sớm hơn.
+	=> fan_cr_7_fail_nhe
+
+
+~ fan_cr_7_success
+
+Fan CR7: Mua được rồi! Em bán hàng có duyên, lại còn biết anh 7. Anh thích!
+Fan CR7: Nhớ coi trận Colombia nha, anh 7 sẽ lại ghi bàn — anh cá luôn.
+
+=> END
+
+
+~ fan_cr_7_fail_nhe
+
+Fan CR7: Thôi anh đi chỗ khác, đang bận nghĩ xem anh 7 có ghi bàn trận Colombia không.
+
+=> END
+
+
+~ fan_cr_7_fail_mac_ca
+
+Fan CR7: Anh 7 nói rồi — không bao giờ bỏ cuộc, nhưng túi anh thì có giới hạn. Anh đi đây.
+
+=> END
+
+
+~ fan_cr_7_fail_noi_qua
+
+Fan CR7: Em nói nghe vui nhưng anh không phải ATM. Lần sau giảm giá đi nha.
+
+=> END
+
+
+~ fan_cr_7_fail_ban_re
+
+Fan CR7: Ủa em tự giảm giá vậy thì khoai không ngon đâu anh ơi. Thôi anh đi hỏi chỗ khác.
+
+=> END
+~ fan_m_10_man
+
+Fan Messi: Sap xiec gi ma ban do giong may cho binh dan vay em? Anh day chi an do dang cap nhu anh 10 thoi.
+- Da bang ghi man 15k do anh, anh mua ung ho em di.
+	Fan Messi: Thoi em oi, anh 10 nha anh vua ghi ban dang cap ma anh di an may trai man nho xiu nay sao xung tam.
+	- Gia nay re nhat cho roi anh, khong mua uong lam.
+		Fan Messi: Re thi de cho nguoi khac mua, anh day thich do hieu chu khong thich do re. Anh di nha.
+		=> fan_m_10_fail_nhe
+	- Em ban dung gia chu co thach dau ma anh che binh dan.
+		Fan Messi: Thoi thoi, cach noi chuyen cua em nghe chan qua, giong nhu loi da cua may doi tuyen thap cap vay. Anh di day.
+		=> fan_m_10_fail_nhe
+- Man nay 18k, hang tuyet hao. Ma anh oi, hom qua anh 10 di bong qua 4 nguoi kien tao dinh cao thiet chu!
+	Fan Messi: Troi oi em cung thay ha?! Anh da bao roi, tren doi nay lam gi co ai san sinh ra cai keo trai ma di bong ma thuat nhu anh 10! Thien tai! Thien tai doc nhat!
+	- Da dung roi, man nay em cung lua tung trai tron tria, ngot lim nhu cu sut cua anh 10 vay do. 18k la qua re cho sieu pham.
+		Fan Messi: Nghe em vi von thong minh do. Anh 10 luon dem lai cam xuc kịch tinh, nhung ma thit man nay co chac khong do?
+		- Em bao: trai nao mem xieu em den gap doi, uy tin nhu bo suu tap Qua Bong Vang cua anh 10.
+			Fan Messi: Hay! Qua dac sac! Cai uy tin nay anh duyet nhe. Lay anh 2 ky luon di, khoi thoi tien thua!
+			=> fan_m_10_success
+		- Thi man thong thuong thoi chu lam sao hoan hao 100% nhu thien tai duoc anh.
+			Fan Messi: Tu nhien dang vui cai em noi cau nghe thuc te phu phang vay em? Mat hung ghe. Bot xuong 16k di anh mua.
+			- Da khong duoc anh oi, dung 18k em moi ban.
+				Fan Messi: Keo kiet giong may ong ban huan luyen kieu cu vay. Thoi anh khong mua nua.
+				=> fan_m_10_fail_nhe
+			- Thoi duoc roi, coi nhu em ne mat fan anh 10 chan chinh, lay anh 16k do.
+				Fan Messi: Vay chu! Phai linh hoat nhu anh 10 chay cho chu. Chot!
+				=> fan_m_10_success
+	- Anh 10 kien tao dinh vay ma co nguoi suot ngay chi biet cho bong trong vong cam dem dorg thoi anh nhe.
+		Fan Messi: Ha ha ha! Em noi dung y anh luon! May dua kia chi biet chay cho thoi chu lam sao biet lam bong nhu anh 10. Khoai em roi do! Ma gia 18k nay co bot chut dinh lay loc world cup khong em?
+		- Khong bot duoc anh oi, nguoi dang cap nhu anh le nao lai di mac ca vai ngan le?
+			Fan Messi: O... em noi dong nay nghe chu kien thiet chu. Dung! Chut tien le nay bõ ben gi voi fan anh 10. Lay luon khong can thoi!
+			=> fan_m_10_success
+		- Nêu anh chiu lay them 1 ky nua, em tang anh them 2 trai man to nhat sap, coi nhu qua tang cho fan GOAT.
+			Fan Messi: Troi dat, uu dai nay qua xung tam vi vua! Em rat biet cach lam an do nhe. Lay anh 2 ky luon!
+			=> fan_m_10_success
+- Man nay man hoang gia Qatar, gia 100k mot trai anh oi.
+	Fan Messi: Em nghi anh la con nit ha? Anh 10 co qua bong vang chu anh dau co ngu ma de em lua gia do!
+	- Em noi thiet ma, man nay duoc tuoi bang nuoc khoang sieu tinh khiet o khach san anh 10 o do.
+		Fan Messi: Thoi bot xao di co nương! Sang nam anh qua tan noi anh kiem chung chu o do ma em no.
+		=> fan_m_10_fail_noi_xao
+	- Chot gia 80k vi em thay anh dep trai giong doi truong Argentina.
+		Fan Messi: Khen anh giong anh 10 thi anh khoai that, nhung gia nay van la lua dao. Anh khong dan bay dau!
+		=> fan_m_10_fail_noi_xao
+- Ui troi, nhin anh la biet fan phong trao chu biet gi anh 10 da dam ra sao ma bay dat tinh tuong.
+	Fan Messi: Cai gi?! Anh coi anh 10 tu thoi con mang ao so 19 nhe! Thoi dep di, khong ban buon gi nua!
+	=> fan_m_10_fail_ca_khia
+
+
+~ fan_m_10_xoai
+
+Fan Messi: Xoai nay co chua nhu cai cach doi thu bi anh 10 xo xien tren san khong em?
+- Xoai ngot lam anh, co 20k mot ky thoi, mua di anh.
+	Fan Messi: Xoai ngot thi binh thuong qua, anh dang thich cam giac manh kieu ghi ban phut bu gio co. Thoi anh di nha.
+	=> fan_m_10_fail_nhe
+- Xoai keo 25k anh oi, bao ngon. Ma nhin anh khi chat ngoi ngoi, dung la chi co fan anh 10 moi co cai tam the vo dich nay.
+	Fan Messi: Chu con gi nua em! Anh day di co vu ma ai cung tram tro, dung chat King Leo luon. Xoai nay em bao ngon thit chat luong khong?
+	- Da em bao, xoai nay dac ruot, thit vang uom nhu cup vang World Cup anh 10 cam tren tay vay do.
+		Fan Messi: Chuoi so sanh nay hay qua ta! Chinh xac, phai giong cup vang! Ma giong cup vang roi co can phai an kem voi gi cho dung vi thien tai khong em?
+		- Anh mang ve cham muoi ot cay xè, giong nhu cach anh 10 dot chay luoi do doi phuong vay anh.
+			Fan Messi: Ui mèn ơi nghe thoi ma nuoc mieng no chay ra roi! Lay anh thong tha 3 ky di, ve thiet ke buoi tiec coi da ban luon.
+			=> fan_m_10_success
+		- Khong anh, an song vay thoi la du dinh roi, thien tai thi dau can phu kien ruom ra.
+			Fan Messi: Chuan xac! Cai gi nguyen ban moi la đỉnh cao nhat. Lay anh 2 ky nhe.
+			=> fan_m_10_success
+	- Gia 25k la em bot lam roi, chu nguoi dang cap nhu anh tiec gi vai dong bac le cho trai xoai ngon nhat cho.
+		Fan Messi: Dung! Anh day dau co thieu tien, chu yeu phai la do xat ra mieng. Ma em phai lua trai nao ngot, chu chua mot chut la anh tu ai do nha.
+		- Anh yen tam, xoai nay em san lung ky cang giong nhu Barca tuyen trach anh 10 hoi 13 tuoi vay.
+			Fan Messi: Khiep that, lay ca lich su cau lac bo ra dam bao luon ha? Qua uy tin, lay anh 3 ky khoi suy nghi!
+			=> fan_m_10_success
+		- Em lua dai thoi chu trai nao trong vo cung giong nhau ma anh.
+			Fan Messi: Ủa lam an ma hen xui vay ha em? Thoi anh can su hoan hao tuyet doi co, kieu nay anh khong dam mua dau.
+			=> fan_m_10_fail_nhe
+- Xoai nay an vo la duoc thong minh, thien tai bam sinh giong anh 10 lien do, 200k mot trai nha.
+	Fan Messi: Noi xao vua thoi em, thien tai la do troi phu chu an xoai ma thanh thien tai duoc ha? Anh di cho khac.
+	=> fan_m_10_fail_noi_xao
+- Gap fan anh 10 la em tinh gia gap doi, tai fan anh 10 giau lam.
+	Fan Messi: Em dinh dao mo anh ha? Anh giau that chu anh khong co ngu cho em chem dep nha!
+	=> fan_m_10_fail_ca_khia
+
+
+~ fan_m_10_khoai
+
+Fan Messi: Khoai lang mien tay ha em? Nhin cu to giong may dua do con ben doi doi thu cua anh 10 qua vay.
+- Khoai lang mat 12k anh oi, ngon ngot lam.
+	Fan Messi: Thoi anh khong thich may cu khoai map map ma thon tho kieu nay dau. Anh di day.
+	=> fan_m_10_fail_nhe
+- Khoai mat nuong len thom phuc 15k anh oi. Ma em thay cu khoai nay giong loi da anh 10, nhin nho gon ma ngot ngao, tinh te.
+	Fan Messi: Ha ha! Em tinh mat ghe, anh 10 tuy nho con nhung di bong la khong ai can noi. Ma khoai nay ngot lam dung khong?
+	- Da ngot lim luon anh, giong nhu cam giac anh 10 nang cup vang sau bao nam cho doi vay do, ngot ngao khong gi bang.
+		Fan Messi: Troi dat oi, nhac toi cup vang la anh muon khoc luon ne. Em noi chuyen cham dung tim den cua anh roi. Ma lay nhieu co duoc giam gia kieu VIP khong?
+		- Em giam luon cho anh con 13k neu anh lay het cho khoai con lai tren sap nay, duoc khong anh trai?
+			Fan Messi: Choi luon! Anh day thich thau tom het moi danh hieu ma, gom het cho anh di em gai!
+			=> fan_m_10_success
+		- Dạ gia nay em sat san roi anh, nhung em se tang anh cai bao xop loai tot nhat de xach ve cho sang.
+			Fan Messi: Ha ha, thoi cung duoc, cai net buon ban ngoan ngoan nay anh thich. Lay anh 2 ky nhe.
+			=> fan_m_10_success
+	- Anh 10 nho con ma can luon cai cup vang, chu dau nhu ai kia cao to ma chi biet khoc loc di ve nuoc som hén anh.
+		Fan Messi: Chuoi cau nay sat thuong cao thiet! Em noi qua dung, chi co anh 10 la GOAT chan chinh. Anh thich cai su xat muoi vao doi thu nay cua em roi do.
+		- Da bơi vay anh mua khoai ung ho em di, an khoai nuong thuc dem coi anh 10 ghi ban chung ket la het bai.
+			Fan Messi: Qua hop ly luon! Thức dem ma co cu khoai mat nay an thi con gi bang. Chot luon 3 ky khoai nha em!
+			=> fan_m_10_success
+		- Doi thu cua anh 10 gio chac dang di ban nuoc nuoc ngoai roi chu da gi noi nua anh.
+			Fan Messi: Ba dinh ba dinh! Thoi em dung noi nua anh cuoi be bung mat. Day, cam tien khoai luon khoi thoi nha!
+			=> fan_m_10_success
+- Khoai nay nhap khau tu que huong Rosario cua anh 10 luon do anh, gia 300k mot cu nha.
+	Fan Messi: Rosario lam gi co dat trong khoai lang kieu nay em oi! Bot nổ giong anh lai di nha. Anh di cho khac.
+	=> fan_m_10_fail_noi_xao
+- Nhìn anh lùn lùn y chang anh 10 vậy, ăn khoai này vô cho nó hợp phong thủy anh ơi.
+	Fan Messi: Ủa em noi chuyen duyen dáng ghe ha? Chê anh lùn hả? Khỏi bán buôn gì hết, anh đi!
+	=> fan_m_10_fail_ca_khia
+
+
+~ fan_m_10_oi
+
+Fan Messi: Oi nay co giong oi que nha khong em? Hay oi dạt vay?
+- Oi 10k dung gia tren bang nha anh, mua giup em di.
+	Fan Messi: Oi nhin binh thuong qua, anh dang ban coi lich thi dau World Cup cua anh 10 roi, khong mua dau.
+	=> fan_m_10_fail_nhe
+- Oi nuoc 13k trai to, gion ngot chat luong lam. Mà anh oi, cai ao anh dang mac co so 10 dep qua, nhin phat biet ngay dang cap King Leo.
+	Fan Messi: Tat nhien roi em! Ao nay anh dat mua dac biet tu nuoc ngoai ve do, hang chinh hang de co vu tran chung ket do nhe!
+	- Da hen gi nhin cai vai ao la biet sang trong roi, rat hop voi net thien tai cua anh 10 va phong thai cua anh luon. Oi 13k thoi anh trai.
+		Fan Messi: Em khen lam anh ngai qua... nhung ma anh thich! Mà em co chac oi nay gion khong? Anh ghet an oi mem lam.
+		- Gion rôm rốp luon anh, giong nhu tieng gay cua may cai cot doc khi anh 10 sut trung bong vay do.
+			Fan Messi: Oi troi, vi von nghe sướng tai thiet chu! Lay anh lien 2 ky di em, noi chuyen hop gu qua!
+			=> fan_m_10_success
+		- Oi nay hoi mem mem chu khong gion lam dau anh oi.
+			Fan Messi: Thoi mem la anh khong an duoc roi, giong nhu phong do sa sut vay. Anh qua sap khac kiem oi gion nha.
+			=> fan_m_10_fail_nhe
+	- Ao dep ma nguoi mac con dep trai nua, anh 10 ma thay anh chac cung phai ton sùng vi co fan chat luong qua.
+		Fan Messi: Ha ha, chu con gi nua! Anh la fan ruot tu thoi xua den gio ma. Anh di toi dau la sang ruc toi do em oi!
+		- Da dung roi, thien tai luon keo theo thien tai ma. Lay anh oi 13k thoi nhe, de em can luon cho le.
+			Fan Messi: Day, can di em. Tien day khoi thoi nhe, anh thich cai su thong thai cua em roi do.
+			=> fan_m_10_success
+		- Anh tu tin qua da, nhung ma thoi mua oi di chu dung no nua anh oi.
+			Fan Messi: Ủa em keu anh no ha? Anh noi that chu no hoi nao! Thoi mat hung, khong mua nua!
+			=> fan_m_10_fail_ca_khia
+- Oi nay dac biet co chu ky cua anh 10 in chim tren vo do em ban 500k mot trai.
+	Fan Messi: Anh 10 ranh qua di ky len trai oi cho em ban ha? Noi xao ma khong biet ngong, thoi anh di cho khac.
+	=> fan_m_10_fail_noi_xao
+- Fan anh 10 ma di mua oi 13k cung dung gia nua ha anh, tuong phai mua het ca sap moi dung tam chu.
+	Fan Messi: Em dinh khich tuong anh ha? Anh tu cao that chu khong co si dien kieu ngu ngoc dau nha. Anh di day!
+	=> fan_m_10_fail_ca_khia
+
+
+~ fan_m_10_success
+
+Fan Messi: Em ban hang kieu nay la xung dang co muoi nguoi nguoi mua nhe! Anh 10 ma thay chac cung khen em do. Anh di day, de ve xem highlight anh 10 tiep!
+=> END
+
+~ fan_m_10_fail_nhe
+
+Fan Messi: Thoi anh di cho khac day, sap do nhin chan qua khong hop voi dang cap thien tai cua anh 10 chut nao.
+=> END
+
+~ fan_m_10_fail_noi_xao
+
+Fan Messi: Em "no" con kinh hon anh nua do em gai oi. Bot bot noi xao lai di roi anh quay lai mua sau nha. Ba bai!
+=> END
+
+~ fan_m_10_fail_ca_khia
+
+Fan Messi: Nói chuyện cái kiểu đụng chạm tự ái người ta quá hà! Fan anh 10 là không bao giờ thèm chấp ne mha. Anh đi luôn không bao giờ quay lại!
+=> END
+~ baco_khotinh_man
+
+Baco Khotinh: Man gi ma trai nho xiu, chac chua let chua le chu ngot bau gi. Ban bao nhieu do co nuong?
+- Da mận 15k một ký đúng giá bảng nha cô.
+	Baco Khotinh: Thoi thoi, thoi buoi nay lam an gi cung phai bot chut dinh chu ghi sao ban vay ai mua. 10k co lay.
+	- Da khong duoc co oi, em ban dung gia roi khong bot duoc dau.
+		Baco Khotinh: Dung gia cai gi, cho ben kia ban co 12k ki kìa. Dung la con nit khong biet buon ban. Thoi tao di.
+		=> baco_khotinh_fail_nhe
+	- Co thong cam, man nay em nhap hang tuyen nen khong co gia do dau co.
+		Baco Khotinh: Tuyen cai con mat tao, nhin bam dập duong vay ma tuyen. Di sap khac cho lanh.
+		=> baco_khotinh_fail_nhe
+- Mận này 18k cô ơi, nhưng nhìn cô quý phái quá, con bớt liền cho cô còn 16k coi như làm quen nè.
+	Baco Khotinh: Bot co 2k ma keu lam quen ha? Man nay vo nhieu vet bam qua, thit chac khong gion dau. 12k di tao mo hang cho.
+	- [TẦNG 1] Con nể cô lắm mới bớt thêm còn 14k, giá này con không lấy lời một đồng nào luôn đó cô.
+		Baco Khotinh: [TẦNG 2] 14k van con mac. Thôi gio vay di, tao lay trai nho thoi, may can tao 12k duoc khong?
+		- [TẦNG 3] Dạ không được cô ơi, lựa trái nhỏ ra rồi phần còn lại con bán cho ai được nữa cô.
+			Baco Khotinh: [TẦNG 4] Đồ keo kiêt, lua trai nho ma cung khong cho. Thoi 13k tron di tao lay het cho nho do cho.
+			- [TẦNG 5] Dạ thôi được rồi, coi như con chìu cô nốt lần này, 13k con cân cho cô luôn nè.
+				Baco Khotinh: Ha ha, vay tu dau cho roi di bay đặt ky keo. Lua cho tao trai nao lien lặn do nha.
+				=> baco_khotinh_success
+			- [TẦNG 5] Da dung 14k co oi, con bot het noi roi, co thuong con thi co mua gium di.
+				Baco Khotinh: Thoi mệt qua, mua ky man ma giong nhu di xin vay, tao di sap khac cho le.
+				=> baco_khotinh_fail_nhe
+		- [TẦNG 3] Cô ơi sáng sớm mở hàng mà cô trả giá ngắt ngéo quá tội nghiệp con, chốt 13k5 con bán lỗ lấy cái vía cô nè.
+			Baco Khotinh: [TẦNG 4] Thấy may toi nghiep tao moi dung lai do. Ma tao khong co 500 dong le, bot xuong 13k di tao dua tờ 20k khoi thoi le mệt.
+			- [TẦNG 5] Dạ thôi con thối cô tờ 7k, chứ 13k con thâm vào tiền vốn sạp nặng quá cô ơi.
+				Baco Khotinh: Thôi khoi thoi le chi cho met xác, lay tao them trai man nua cho du 14k roi tao dua 20k luon.
+				Baco Khotinh: Cai con be nay thiet tinh, thoi can le di tao con di mua thit nua.
+				=> baco_khotinh_success
+			- [TẦNG 5] Dạ thoi duoc roi, 13k con cam tờ 20k thối cô 7k, cô mở hàng nhớ chúc con bán đắt nha.
+				Baco Khotinh: Roi roi, tao mo hang la mat tay lam, yen tam di con.
+				=> baco_khotinh_success
+	- [TẦNG 1] Dạ thôi mận ngon cô ơi, cô mua combo 2 ký đi con tính cô 26k tổng cộng thôi, bớt hẳn 10k luôn á.
+		Baco Khotinh: [TẦNG 2] Tao an gi het 2 ky troi, nha co minh tao voi ong gia tao ha. Lay 1 ky thoi ma tinh gia do di.
+		- [TẦNG 3] Dạ 1 ký con bớt kịch sàn là 14k thôi cô, cô mua về ép nước uống tốt cho sức khỏe lắm.
+			Baco Khotinh: [TẦNG 4] Ep nuoc ha? Man nay nuoc noi gi, toan xơ khong chu o do ma ep. 12k5 duoc thi can, khong thi tao buoc di.
+			- [TẦNG 5] Dạ thôi cô đứng lại đi con bán luôn cho, 12k5 coi như con tặng cô làm quen, mai mốt ghé sạp con nữa nha.
+				Baco Khotinh: Cu vay di co phai de thuong khong, lam an la phai biet chieu khach gia nhu tao nhe con.
+				=> baco_khotinh_success
+			- [TẦNG 5] Da khong duoc co oi, gia do con lo von thiet ma, con khong ban duoc dau.
+				Baco Khotinh: Uh thi khong ban thi thoi, tao dau co nan ni. Tao di cho khac.
+				=> baco_khotinh_fail_nhe
+- Man nay man dac san rung sau, khong co thuoc, gia 50k mot ky nha co.
+	Baco Khotinh: Man rung gi ma nhin y chang man cho dau moi vay con? Con nit ma bay dat noi xao gạt nguoi lon ha? Tao di ma xem bay ban cho ai.
+	=> baco_khotinh_fail_noi_xao
+- Co khong mua thi thoi xich ra cho khac cho nguoi ta mua, dung co o day che bai phai dung phong long cua con.
+	Baco Khotinh: Cai do mat day! Mat mui sang sua ma mo mieng ra la duoi khach ha? Tao di rêu rao cho ca cai cho nay tay chay sap cua may luon!
+	=> baco_khotinh_fail_ca_khia
+
+
+~ baco_khotinh_xoai
+
+Baco Khotinh: Xoai nay chín cay hay xịt thuoc vay em? Nhin cai cuon no heo queo la tao nghi ngo roi do.
+- Dạ xoài 20k một ký cô ơi, tiền nào của đó cô ơi.
+	Baco Khotinh: Cua do la cua gi? Tiên thi muon lay du ma do thi chat luong kem. Bot xuong 15k di tao lay may trai ve thap huong.
+	- Da khong duoc co, xoai nay ngọt lam, 20k la re lam roi.
+		Baco Khotinh: Khong bot thi tao di sap khac, thieu gi cho ban xoai ngon hon.
+		=> baco_khotinh_fail_nhe
+- Xoài keo gốc miền Tây 25k một ký, ngọt thanh cô ơi. Mà cô ơi, nhìn cô phúc hậu giống hệt dì ruột dưới quê của con vậy á.
+	Baco Khotinh: Thoi bot ninh dam di nha co nương. Phuc hau ma ban xoai mac thi cung vay thoi. 18k ban khong?
+	- [TẦNG 1] Dạ thôi, gặp người quen giống dì ruột, con bớt sát sàn còn 22k cho cô đó.
+		Baco Khotinh: [TẦNG 2] 22k van con dat gap doi cho khac. Thoi 18k khong ban thi thoi tao qua ben ba Map tao mua cho roi.
+		- [TẦNG 3] Dạ cô ơi bà Mập bán xoài non chứ đâu được xoài già chuẩn keo như con đâu cô, thôi con bớt cô còn 20k chẵn nha.
+			Baco Khotinh: [TẦNG 4] 20k ha... Thoi tao thoi het tien le roi, con tờ 50k, may co tien thoi khong ma ban?
+			- [TẦNG 5] Dạ con có tiền thối cô ơi, cô cứ đưa 50k con thối lại cô 30k chẵn nha cô.
+				Baco Khotinh: Roi, vay cam tien di roi lua tao trai nao ngot ngot nghe khong, chua la tao mang ra bat den do.
+				=> baco_khotinh_success
+			- [TẦNG 5] Dạ thối 30k thì con hết tờ 10k rồi, cô có tờ nào nhỏ hơn không cô?
+				Baco Khotinh: Buon ban ma khong chuan bi tien thoi, lam an kieu nay thoi tao khong mua nua, phien phuc qua.
+				=> baco_khotinh_fail_nhe
+		- [TẦNG 3] Hay là cô lấy trái này hơi trầy vỏ một xíu đi, con tính cô 18k đúng ý cô luôn, bên trong vẫn ngon ngọt nha.
+			Baco Khotinh: [TẦNG 4] Trầy vo ha? Thap huong ma cung xai do tray vo nua ong ba quat chet tao sao con. Bot xuong 15k di tao lay.
+			- [TẦNG 5] Dạ thôi được rồi, trái trầy này con tính cô 15k luôn coi như con chịu lỗ xả hàng cho cô luôn đó.
+				Baco Khotinh: Uh, xet cho cung chuoi xoai nay thit con chac, thoi tao lay trai nay, khoi can muoi mieng gi het nhe.
+				=> baco_khotinh_success
+			- [TẦNG 5] Da khong duoc co oi, 15k thi qua đang qua, thoi con de lai con an chu ban vay toi con qua.
+				Baco Khotinh: Đat do lam kiêu, thoi tao di cho rảnh nợ.
+				=> baco_khotinh_fail_nhe
+- Xoai nay xoai cat Hoa Loc chin tu nhien tren cay, gia 150k mot ky nha co.
+	Baco Khotinh: Hoa Loc cai dau may, vo xoai sần sùi vay ma dam bao Hoa Loc. Bot xạo di con ơi, tao di sap khac cho lanh.
+	=> baco_khotinh_fail_noi_xao
+- Co oi xoai nay con ban cho khach sang thoi, co nhắm mua noi thi can chu dung cam len can qua can lai dập xoai cua con.
+	Baco Khotinh: Choa oi! Nhin mat tao ma keu khong co tien mua ha? Co mieng ma khong biet duong noi chuyen, tao khong thèm mua do cua may!
+	=> baco_khotinh_fail_ca_khia
+
+
+~ baco_khotinh_khoai
+
+Baco Khotinh: Khoai lang gi ma dính day dat cat vay con? Rửa sach se nguoi ta moi mua chu ban kieu nay can luon ca dat ha?
+- Da khoai lang mật 12k một ký, khoai đào dưới đất lên phải dính đất chứ cô.
+	Baco Khotinh: Tra treo ha con? Thoi tao khong an khoai can dat nha. Bot xuong 8k di tao ve mac cong rua ton nuoc lam.
+	- Da thoi co oi, ban vay con cap dat ma an thiet do, dung 12k giup con di.
+		Baco Khotinh: Cap dat thi ke may chu lien quan gi tao. Khong ban bot thi tao di sap khac.
+		=> baco_khotinh_fail_nhe
+- Khoai lang mật Đà Lạt ngọt lịm cô ơi, giá 15k một ký. Mà cô đi chợ sớm ghê, đúng là người phụ nữ chu toàn cho gia đình có khác.
+	Baco Khotinh: Chu toan gi, khong di som thi cho no ban het do ngon sao con. Ma khoai nay cu nho qua, be ra co bi xơ khong do? 10k di tao lay may cu ve hap an sang.
+	- [TẦNG 1] Khoai này con bao không xơ cô ơi. Thôi bồ tè sáng sớm cô mở hàng cho con đi, con bớt cho cô còn 13k lấy lộc đầu ngày nè. 
+		Baco Khotinh: [TẦNG 2] Nghe noi chu mo hang tao cung mủi long. Ma 11k di cho tron tien, chu tao khong thich cam tien le ra cho.
+		- [TẦNG 3] Dạ thôi cô ơi 11k thì tội con quá, hay là cô lấy 2 ký đi con tính cô giá 22k chẵn luôn, được không cô?
+			Baco Khotinh: [TẦNG 4] Lay 2 ky ve an cho can bung ha con? Thoi lay tao 1 ky thoi, tinh dung 11k5 di tao dua tien luon ne.
+			- [TẦNG 5] Dạ thôi được rồi, 11k5 chốt luôn cho cô. Coi như con lấy cái vía mua may bán đắt của cô nha. Cô lựa khoai đi cô.
+				Baco Khotinh: Thấy chưa, bớt chút đỉnh vậy có phải vui vẻ cả hai bên không. Đê tao lua may cu suon suon ve de got vo.
+				=> baco_khotinh_success
+			- [TẦNG 5] Dạ không được cô ơi, con đã bớt từ 15k xuống 13k là hết cỡ rồi, cô bớt tiếp con ôm nợ mất.
+				Baco Khotinh: Buon ban ma keu ca qua, thoi tao di sap khac, thieu gi cho ban khoai mat.
+				=> baco_khotinh_fail_nhe
+		- [TẦNG 3] Dạ thôi 12k đi cô, con thối cô tờ 8k còn nguyên mới tinh lộc lá đầu ngày nè cô.
+			Baco Khotinh: [TẦNG 4] To tien moi ha? Thoi tao gia roi khong quan trong tien moi cu, mien bot gia la tao khoai. 11k5 tao lay, khong thi thoi.
+			- [TẦNG 5] Dạ thôi chốt luôn 11k5 cô ơi, cô đứng trả giá nãy giờ sập sạp con mất, cô lấy mấy củ này đi.
+				Baco Khotinh: Ha ha, lam an phai dut khoat vay chu. Day, cam tien di, tao lay 4 cu nay nha.
+				=> baco_khotinh_success
+			- [TẦNG 5] Dạ thôi con xin lỗi con không bán được giá đó rồi cô ơi, cô thông cảm giùm con nha.
+				Baco Khotinh: Uh thoi tao di, ky keo phat met.
+				=> baco_khotinh_fail_nhe
+- Khoai này khoai sâm đất quý hiếm ăn vô trẻ mãi không già, giá 80k một củ nha cô.
+	Baco Khotinh: Tre cai noi may á, xạo sự vua thoi. Khoai lang ma lam nhu thuoc tien, di gạt con nit di nha con. Tao di day.
+	=> baco_khotinh_fail_noi_xao
+- Cô già rồi ăn khoai này vô cho dễ tiêu hóa cô ơi, chứ người lớn tuổi hay bị bón lắm.
+	Baco Khotinh: Cai con quy nay! May tru tao bi bon ha? Do vo duyen thoi xau, tao khong bao gio buoc chan vao cai sap nay nua!
+	=> baco_khotinh_fail_ca_khia
+
+
+~ baco_khotinh_oi
+
+Baco Khotinh: Oi gi ma vo thâm kim het tron vay em? Ban do cũ cho tao ha?
+- Dạ ổi 10k một ký đúng giá rồi cô ơi, rẻ bèo hà.
+	Baco Khotinh: Re ma do hong thi cung vut di chu lam gi. 5k tao lay het cho thâm kim nay ve cho heo ăn.
+	- Dạ ổi người ăn chứ đâu phải cho heo ăn đâu cô, giá đó không bán được đâu.
+		Baco Khotinh: Nho nay noi chuyen khong biet nể nang nguoi lon gi het. Thoi tao khong mua cho may vua long.
+		=> baco_khotinh_fail_nhe
+- Ổi nữ hoàng trái to giòn ngọt 13k một ký cô ơi. Trái thâm kim là do cái bọc ni-lông nó cạ vô á cô, chứ bên trong ruột trắng tinh ngon lắm.
+	Baco Khotinh: Trắng tinh thiet khong? Tao ma ve bo ra thay dòi la tao mang ra bat den do nha. Gia 13k mac qua, 9k tao mua.
+	- [TẦNG 1] Thôi nay ngày đầu tuần, con bớt cô còn 11k coi như con cúng dường lấy phước đầu ngày luôn đó cô.
+		Baco Khotinh: [TẦNG 2] Cung duong lay phuoc ha? Nghe mat long mat da ghe. Ma thoi 10k cho chan, chu tao mang dung to 10k day ne.
+		- [TẦNG 3] Dạ cô ơi 11k con đã cúng dường bớt phước rồi, cô bớt xuống 10k nữa là con phải bù tiền túi vô cho chủ sạp đó cô.
+			Baco Khotinh: [TẦNG 4] Chu sap nao ke may, chu mien tao mua duoc gia rẻ la tao vui. Thoi gio tao lay them trai oi nho nay nua, can dung 10k di.
+			- [TẦNG 5] Dạ thôi được rồi, con cam to 10k của cô luôn khỏi thối tiền lẻ, cô lấy thêm trái nhỏ đó đi.
+				Baco Khotinh: Roi roi, tao mo hang la mat tay lam, yen tam sap may chieu nay dong nghẹt khach luon.
+				=> baco_khotinh_success
+			- [TẦNG 5] Dạ không được cô ơi, trái nhỏ đó tuy nhỏ nhưng cân lên cũng mấy lạng rồi, con không cho không được đâu cô.
+				Baco Khotinh: Do tinh toan, xí! Tao di cho khac, thieu gi cho ban oi ngon hon.
+				=> baco_khotinh_fail_nhe
+		- [TẦNG 3] Dạ hay là cô lựa mấy trái nhỏ hơn chút xíu đi, con tính cô đúng 10k chẵn cho vừa tờ tiền của cô luôn nha.
+			Baco Khotinh: [TẦNG 4] Trai nho thong thuong toan hat khong chu co thit tha gi dau con. Tinh trai to nay 10k luon di tao xách ve lien.
+			- [TẦNG 5] Dạ thôi con bấm bụng bán lỗ luôn cho cô đó, cô cầm tờ 10k đưa con rồi xách túi ổi to này về giùm con đi.
+				Baco Khotinh: Thấy chua, ban vay co phai nhanh gon le khong, de tao ve thap huong ong dia phu ho cho sap may ban dat hang nhe.
+				=> baco_khotinh_success
+			- [TẦNG 5] Dạ con chịu hết nổi rồi cô ơi, giá đó con bán không được thà con cất sạp đi về ngủ sướng hơn cô ơi.
+				Baco Khotinh: Cai con nay lam an thieu kien nhan qua, thoi tao di sap khac cho khoe.
+				=> baco_khotinh_fail_nhe
+- Oi nay oi nhap khau tu dao Hawaii, trai oi nay co vitamin gap 100 lan oi thuong, gia 200k mot trai.
+	Baco Khotinh: Hawaii cai xu nao, tao di cho may chuc nam chua nghe oi Hawaii bao gio. May dinh bip bợm ba gia nay ha? Dep di!
+	=> baco_khotinh_fail_noi_xao
+- Co kho tinh qua thoi con khong ban cho co dau, ban cho co xong con nhức dau cả ngày xui xẻo lắm.
+	Baco Khotinh: Cai con quy mat day! Tao la khach hang ma may dam noi tao lam xui xao ha? Ba con co bac oi ra ma xem cai sap nay no chửi khach ne!
+	=> baco_khotinh_fail_ca_khia
+
+
+~ baco_khotinh_success
+
+Baco Khotinh: Do vay co phai ngoan khong. Lam an la phai biet nhong nheo chiu thiet mot chut xiu thi khach moi thuong. Tao di day, mai mot tao ghe mua tiep cho nha con!
+=> END
+
+~ baco_khotinh_fail_nhe
+
+Baco Khotinh: Buon ban ma cung nhac cung ngac, khong biet chieu khach gi het tron. Thoi tao qua sap con Ba mập tao mua cho no vui ve.
+=> END
+
+~ baco_khotinh_fail_noi_xao
+
+Baco Khotinh: Con nit thoi nay toan lua gạt, ban buon thi khong lo ban ma lo noi dóc noi nổ gạt nguoi gia. Tao khong bao gio quay lai cai sap bip bom nay nua!
+=> END
+
+~ baco_khotinh_fail_ca_khia
+
+Baco Khotinh: Cai lo do vo giao duc! Ban hang ma mat day coi thuong nguoi lon tuoi, tao di keu ca cai xom nay tay chay cai sap cua may cho biet mat! Hu xui xeo!
+=> END
+
+
+~ grab_man
+
+grab: Giao cai don tu quan 1 qua day muon hụt hơi, da vay con bi may ong xe om truyen thong cho don duoi chay thuc mang. Ben em ban man gia sao, nhin dong man thay khat nuoc qua.
+- Da mận 15k một ký đúng giá bảng nha anh, mua giùm em đi.
+	grab: Thoi em oi, troi nang muon chay da dau ma em noi chuyen giong nhu tra bai vay. Thoi anh chay don tiep day.
+	=> grab_fail_nhe
+- Troi oi, anh uong mieng nuoc mat cua sap em di da. Chay xe gio nay nang kinh khung thiet, co nao may chu xe om ben kia con hay kiem chuyen nua. Man nay 18k, nhung em ban anh 16k thoi, em lua trai nhieu nuoc cho anh an lay suc nha.
+	grab: Troi oi, duoc mieng nuoc cua em ngon thiet chu. Ben xuan xe buyt ke ben kia, ho cu cam cay duoi anh hoai, chay xe ma cu run. Ma man nay 16k co bot nua khong em, chu nay don khach re e, tien xang con chua du.
+	- [TẦNG 1] Thôi thấy anh tội nghiệp quá, con bớt cho anh còn 14k luôn nè, coi như em chia sẻ cuốc xe ế với anh.
+		grab: [TẦNG 2] 14k ha em... Ma don nay anh thu nhap co 20k, mua ky man het 14k thi vo ly qua. Em co ban le nua ky khong?
+		- [TẦNG 3] Dạ nửa ký em cũng bán luôn, tính anh 7k chẵn, em cắt sẵn ra cho anh vừa chạy xe vừa ăn luôn nha.
+			grab: [TẦNG 4] Cat san luon ha? Em chu dao thiet chu. Ma thoi, cat san so de lau no heo, de nguyen trai di tao tu can. Tinh anh 6k duoc khong em?
+			- [TẦNG 5] Dạ thôi được rồi, 6k em để nguyên trái cho anh luôn, anh chạy xe cẩn thận nha anh trai.
+				grab: Cam on em nhieu nhe, de anh an lay suc roi ra chien tiep voi may cuoc xe phia truoc.
+				=> grab_success
+			- [TẦNG 5] Dạ đúng 7k anh ơi, nửa ký em không bớt thêm được nữa đâu, tội nghiệp em.
+				grab: Uh thoi 7k cung duoc, chu de em ban lo cung ky. Cam tien ne em.
+				=> grab_success
+		- [TẦNG 3] Dạ không anh ơi, sạp em không bán nửa ký, bán lẻ cỡ đó nát hết mận của em sao anh.
+			grab: [TẦNG 4] Khong ban le ha... Vay thoi de anh coi co ai mua chung khong, chu tien dau ma mua het 1 ký.
+			- [TẦNG 5] Hay anh lấy đại 1 ký đi, em tặng anh thêm mấy trái ổi ăn kèm nữa, tính ra hời lắm luôn á.
+				grab: Nghe tang oi thay cung duoc do, thoi ke bam bung mua ky ve cho vo con an chung luon. Lay di em!
+				=> grab_success
+			- [TẦNG 5] Dạ vậy thôi khi nào anh có người mua chung thì quay lại ủng hộ em nha.
+				grab: Uh thoi anh di chay don tiep day, gio giac la vang bac.
+				=> grab_fail_nhe
+	- [TẦNG 1] Anh vất vả quá, hay anh lấy combo 2 ký đi, em tính tròn 25k thôi, bớt hẳn 11k cho anh luôn đó.
+		grab: [TẦNG 2] Lay chi nhieu vay em, anh chay xe mang theo cong kenh lam, may ong xe om truyen thong thit anh sao.
+		- [TẦNG 3] Dạ em bỏ vào túi gọn gàng cho anh treo ở móc xe, không cồng kềnh đâu anh lo.
+			grab: [TẦNG 4] Thoi, 25k anh thoi het tien le roi, gio con dung to 20k trong bóp ha, em lay 20k luon duoc khong?
+			- [TẦNG 5] Dạ thôi được rồi, nhìn anh mồ hôi nhễ nhại em thương quá, 20k chốt luôn 2 ký mận cho anh nè!
+				grab: Troi oi em tot bung thiet chu, dung la gap duoc nguoi tot giua troi nang chang chang. Lay anh di em.
+				=> grab_success
+			- [TẦNG 5] Dạ không được anh ơi, 20k cho 2 ký mận tuyển này thì em lỗ sặc máu luôn á anh.
+				grab: Uh thoi vay thoi, anh kiem cho nao ban nuoc mia uong cho le chu ky keo met qua.
+				=> grab_fail_nhe
+- Mận này mận siêu cấp vũ trụ trị bách bệnh mệt mỏi, giá 100k một ký nha anh grab.
+	grab: Em nghi anh chay xe om chu anh lam chu tich ha em? Bot no gium anh cai, dang met ma gap em no nua nhuc dau qua. Anh di day.
+	=> grab_fail_noi_xao
+- Chạy grab mà cũng bày đặt lựa chọn mận ngon mận dở, có tiền mua không mà đứng đó than thở hoài hà.
+	grab: Cai con nay noi chuyen mat day vay?! Nguoi ta chay xe kiem tien chan chinh chu co di an quet cua em dau ma em khinh nguoi vay? Bien di, khong mua ban gi het!
+	=> grab_fail_ca_khia
+
+
+~ grab_xoai
+
+grab: Xoai nay nhin vang uom thèm qua, troi nang nay ma co mieng xoai ngậm chac tinh nguoi lien. Gia sao vay gá?
+- Dạ xoài 20k một ký nha anh, tiền nào của đó.
+	grab: Gia nay bang cho lon roi em, anh chay xe kiem tung dong le sao an noi. Thoi anh di mua ly tra da cho lẹ.
+	=> grab_fail_nhe
+- Xoài keo ngon lắm anh ơi, giá gốc 25k nhưng em thấy anh chạy xe cực khổ quá, em tính anh 22k thôi hà.
+	grab: Bot co 3k ha em, troi nay chay ngoai duong kiet suc thiet chu, may ong ben kia con doi dap xe anh nua. Giúp anh con 18k duoc khong em?
+	- [TẦNG 1] Dạ thôi tội nghiệp anh, con bớt sát ván luôn còn 20k chẵn đó, giá này em không lấy lời một đồng nào luôn.
+		grab: [TẦNG 2] 20k ha... Ma trai xoài nay to qua, anh mang theo an doc duong khong tien. Em co got vo gium anh luon khong?
+		- [TẦNG 3] Dạ em gọt vỏ, xẻ miếng bỏ hộp, cho anh cây tăm luôn, tính anh thêm 2k tiền hộp là 22k nha anh.
+			grab: [TẦNG 4] Tiền hop nua ha em? Anh chay xe lam gi co thoi gian cam hop an, thoi de nguyen trai di, got vo thoi khoi bo hop duoc khong?
+			- [TẦNG 5] Dạ thôi được rồi, em gọt vỏ bỏ túi ni-lông cho anh luôn, lấy đúng anh 20k không thu thêm đồng nào nè.
+				grab: Đuoc vay thi tot qua, em lam le gium anh chu app no dang no tinh nổ don tiep theo roi ne.
+				=> grab_success
+			- [TẦNG 5] Dạ không được anh ơi, gọt vỏ mất công em lắm, đúng 22k em mới làm được nha anh.
+				grab: Thoi phien phuc qua, got trai xoai thoi cung tinh tien nay tien kia, anh di cho le.
+				=> grab_fail_nhe
+		- [TẦNG 3] Dạ sạp em bận lắm không gọt vỏ giùm được anh ơi, anh mang về nhà tự gọt đi nha.
+			grab: [TẦNG 4] Ve nha thi xoai no ung het roi em. Thoi gio vay di, bot anh con 18k anh tu mang ve got, chu gia kia mac qua.
+			- [TẦNG 5] Dạ thôi chốt luôn 18k cho anh đi nhanh nè, thấy anh đứng nắng tội nghiệp quá hà.
+				grab: Cam on em nhe, chu chay xe gio nay muon xiu up xiu down roi. Cầm tien ne em.
+				=> grab_success
+			- [TẦNG 5] Dạ không được anh ơi, 18k em lỗ vốn thâm vô tiền sạp của mẹ em mắng chết.
+				grab: Uh thoi lam an kho khan, anh khong ep em. Anh di day.
+				=> grab_fail_nhe
+- Xoai này an vô la tinh tao chay xe 24/24 khong can ngu luon, gia 150k mot ky nha anh trai.
+	grab: Em thoi kieu do co ngay bi nguoi ta quat vao mat do nha em. Chay xe 24/24 chac anh dot quy som, bot xao di.
+	=> grab_fail_noi_xao
+- May anh grab gio nay hay bom hang lam, em khong ban cho may anh dau, mac cong mang tieng xui xẻo.
+	grab: Bo tay voi cai sap nay luon! Nguoi ta di lam chu co phai di pha em dau ma em noi cau nghe thối vay? Chuc sap em e den chieu nha!
+	=> grab_fail_ca_khia
+
+
+~ grab_khoai
+
+grab: Khoai lang nay cu to ghe, nuong len chac thom lam. Cu nay bao nhieu mot ky vay em gai?
+- Da khoai lang mật 12k một ký, mua di anh.
+	grab: Dang nang nực an khoai vao chac nghen chet, thoi anh kiem trai cay nao nhieu nuoc an cho mat.
+	=> grab_fail_nhe
+- Khoai lang mật ngọt lịm 15k một ký anh ơi. Mà anh ngồi đây nghỉ mát xíu đi, em mở quạt máy cho anh mát nè, nhìn anh ướt hết áo tội nghiệp quá.
+	grab: Troi oi co quat mat qua, cam on em nhe. Nay bi may ong xe om ben tram xe buyt chuoi boi phat met, chay qua day moi yen than. Ma khoai nay 15k co bot cho tài xế công nghệ khong em?
+	- [TẦNG 1] Dạ thôi em nể tình đồng nghiệp (em cũng hay đặt grab), bớt anh còn 13k lấy lộc nè.
+		grab: [TẦNG 2] 13k van con hoi cao so vao tui tien anh hien tai. Gio trong tui anh con dung tờ 10k le day ne, em thu luon duoc khong?
+		- [TẦNG 3] Dạ thôi 10k thì em lỗ nặng quá, hay anh lấy củ nhỏ hơn một xíu em tính anh 10k chẵn luôn nha?
+			grab: [TẦNG 4] Cu nho so be ra toan xơ chu khong co mat em oi. Lay cu to nay di, anh dua them em cai mã giam gia grab don sau duoc khong?
+			- [TẦNG 5] Dạ thôi được rồi, em lấy tờ 10k với cái mã giảm giá của anh luôn, chốt củ to này cho anh nè.
+				grab: Ha ha, doi vai lay thit vay ma vui nhe. De anh add ma cho em luon. Cam on em gai tot bung!
+				=> grab_success
+			- [TẦNG 5] Dạ em ít đi grab lắm nên lấy mã giảm giá cũng không làm gì, đúng 12k em bán nha anh.
+				grab: Uh vay thoi, anh de to 10k nay di do xang chu mua khoai khong du. Anh di nha.
+				=> grab_fail_nhe
+		- [TẦNG 3] Dạ thôi anh đưa tờ 10k đây đi, em cân đúng 10k khoai cho anh, thiếu một chút xíu em tặng luôn không tính tiền.
+			grab: [TẦNG 4] Can dung 10k ha? Em thong minh thiet chu. Ma can len roi co du cho anh an do doi chuoi cuoc tiep theo khong do?
+			- [TẦNG 5] Dạ dư sức anh ơi, củ này chắc thịt lắm, anh ăn vô là bao no tới tối luôn á, đưa 10k đây em cân cho.
+				grab: Roi, can di em. Thấy em buon ban lanh loi nhỏ nhẹ vay anh rat thich. Chot luon!
+				=> grab_success
+			- [TẦNG 5] Dạ ăn cái này vô no bụng liền hà, nhưng mà không biết anh có thích củ hơi vẹo này không thôi.
+				grab: Thoi cu veo got vo met lam, anh dang vội ma em con dua do khó xài. Thôi anh đi đây.
+				=> grab_fail_nhe
+- Khoai nay khoai hoang gia Anh Quoc nuong bang than cui tram huong, gia 200k mot cu nha anh.
+	grab: Em no vua thoi em, khoai lang ma hoang gia gi o day. Dang met ma gap em dien kieu nay chac anh kiet suc som. Anh di day.
+	=> grab_fail_noi_xao
+- Nhìn anh đen đúa lếch thếch quá, xích ra xa sạp em một chút đi chứ khách sang người ta nhìn vào không dám mua.
+	grab: Cai do mat day nay! May mo mieng ra la phan biet doi xu ha? grab thi khong phai con nguoi ha? Tao di keu anh em tai xe chay qua tay chay cai sap mat day cua may!
+	=> grab_fail_ca_khia
+
+
+~ grab_oi
+
+grab: Oi nay trai to gion khong em? Troi nay ma nhai mieng oi châm muoi ot la het sảy do nha. Gia sao em?
+- Da oi 10k mot ky dung gia tren bang nha anh, mua di.
+	grab: Oi nhin vo sần sùi qua, chac toan hat khong chu thit thá gi. Thoi anh chay don tiep day.
+	=> grab_fail_nhe
+- Ổi nữ hoàng bao giòn ngọt 13k một ký anh ơi. Mà anh ơi, ngồi xuống cái ghế này nghỉ chân uống nước đi anh, nhìn anh chạy ngoài nắng chang chang tội nghiệp quá hà.
+	grab: Troi oi chu dao qua, cho anh xin mieng nuoc nhe. Nay gap dung cuoc xe khach bat nạt, roi con bi may ong xe om truyen thong chan dau xe o cho Lon nua, suyt chút la danh nhau roi. Ma oi nay tinh anh 10k chẵn duoc khong em gai?
+	- [TẦNG 1] Dạ thôi em nể tình anh vất vả, bớt cho anh còn 11k coi như em lấy vía đồng nghiệp nha anh.
+		grab: [TẦNG 2] 11k ha em... Ma anh con dung tờ 50k thoi, em co tien thối lai cho anh khong vay?
+		- [TẦNG 3] Dạ có chứ, anh cứ đưa 50k đây em thối lại anh 40k chẵn, em bớt thêm 1k nữa cho chẵn tiền thối luôn nè.
+			grab: [TẦNG 4] Troi dat oi, em de thuong qua vay gá! Bot tiep cho chan tien thoi luon ha. Mà oi nay co muoi kem theo khong em?
+			- [TẦNG 5] Dạ có luôn, em tặng anh bịch muối ớt siêu cay em tự làm, anh mang về chấm ăn bao dính luôn nha anh trai.
+				grab: Quá tuyệt voi luon! Lay anh lien đi em, noi chuyen nhỏ nhẹ de thuong vay mai mot anh ghe ung ho tiep.
+				=> grab_success
+			- [TẦNG 5] Dạ muối em hết rồi, anh mang về nhà tự đâm muối ớt giùm em nha, em bớt tiền rồi mà.
+				grab: Thoi khong co muoi an nhat nheo lam, got trai oi ngoai duong ma khong co muoi sao an. Anh khong mua nua dau.
+				=> grab_fail_nhe
+		- [TẦNG 3] Dạ thối 39k lẻ thì em hết tờ 2k với 1k rồi, anh có tiền lẻ đưa em cho tiện không anh?
+			grab: [TẦNG 4] Anh chay xe toan khach chuyen khoan chu lam gi co tien le em. Thoi gio vay di, em lay dung 10k di roi khoi thoi le cho met.
+			- [TẦNG 5] Dạ thôi được rồi, 10k chốt luôn cho anh, đưa tờ 50k đây em thối lại anh tờ 40k chẵn nha.
+				grab: Uh vay le le gium anh chu khach dang giuc don tieo theo roi ne. Cam on em gái!
+				=> grab_success
+			- [TẦNG 5] Dạ không được anh ơi, em bán đúng giá 11k chứ không bớt xuống 10k được nữa đâu anh.
+				grab: Thoi lam an ky keo qua, khong co tien thoi ma con bat khach chiu thiet. Thoi anh di cho roi.
+				=> grab_fail_nhe
+- Oi nay oi lay tu vuon thuong uyen cua nha vua, an vo la dôi mat sang ngoi nhu thien ly nhan luon, gia 300k mot trai nha anh grab.
+	grab: Em bot dien gium anh cai em oi, nang muon dien nguoi roi con gap em dien nang hon. Thoi anh di cho lanh, khung hoang thiet chu.
+	=> grab_fail_noi_xao
+- Oi nay em de ban cho khach di o-to thoi chu anh grab tien dau ma mua, di cho khac gium em cai.
+	grab: Cai con nay noi chuyen dung chạm tu ai thiet chu! grab thi khong phai la nguoi ha? Mieng mo ra la thay ghet, chuc sap em e am tới chieu nhe!
+	=> grab_fail_ca_khia
+
+
+~ grab_success
+
+grab: Em ban hang nhon nheo, biet dieu vay la xung dang dat 5 sao nhe! Anh mang oi ve an lay suc chay don day. Mai mot co chay qua day anh lai ghe ung ho em tiep nha! Ba bai!
+=> END
+
+~ grab_fail_nhe
+
+grab: Thoi anh chay xe don khach tiep day, dung day ky keo mat thoi gian qua, app no nổ don liên tuc roi ne. Chao em nha!
+=> END
+
+~ grab_fail_noi_xao
+
+grab: Em "no" con kinh hon may ong xe om truyen thong nua do em oi. Buon ban khong lo ban ma lo noi doc noi cuoi. Thoi anh di chay xe cho lẹ.
+=> END
+
+~ grab_fail_ca_khia
+
+grab: Nói chuyện cái kiểu đụng chạm tự ái, khinh rẻ người lao động quá hà! Anh em grab tinh than doàn ket lam nhe, tao di keu ca hội tay chay cai sap mat day cua may cho biet mat! Hu met moi gap dien!
+=> END
+
+
+~ phuho_man
+
+phuho: May bua nay tivi thoi su cu ra rả chuyen bau cu, roi tinh hinh dia chinh tri quoc te cang thang qua mạy. Ma co nương, sao tu nhien con lai ve cai xu nay ban trai cay vay?
+- Da con ve day song vi day la que huong cua chong con do bac.
+	phuho: À, ra la lam dau xu nay ha! O day vui lam con oi, tinh hinh an ninh trat tu rat on dinh, lanh dao o day lam viec co tam lam. Cu o day lau lau cho vui con nha.
+	- [TẦNG 1] Dạ con cũng thấy nhịp sống ở đây bình yên, con định định cư lâu dài luôn á bác.
+		phuho: [TẦNG 2] Quyet dinh sang suot do con. Thoi buoi nay kinh te bien dong, chon duoc cho an cu lac nghiep la tot. Ma nay, neu con muon tim hieu sau ve van hoa vung nay thi co mot ba gia hay toi day mua trai cay, ba do la nghe nhan dan bau dac biet lam do nhe.
+		- [TẦNG 3] Ủa vậy hả bác? Bà cụ đó hay mặc áo màu gì và thường ghé sạp giờ nào vậy bác?
+			phuho: [TẦNG 4] Ba hay mac ao ba ba màu xam, di cho tam xế chieu. Ba do tung di bieu dien nuoc ngoai, mang chuong di danh xu nguoi lam vinh quang dat nuoc do. Con ban cho ba thi tinh re re xiu, coi nhu ung ho nen nghe thuat nuoc nha.
+			- [TẦNG 5] Dạ chắc chắn rồi bác, nghệ nhân báu vật quốc gia mà ghé là con bớt giá liền, còn tặng thêm trái cây nữa.
+				phuho: Khá khen cho con biet kinh lao dac tho, biet quy trong nhan tai. Thoi can cho bac 1 ky man di, de bac mang ra cong truong chia cho may anh em an lay suc xách vữa.
+				=> phuho_success
+			- [TẦNG 5] Dạ nghệ nhân thì nghệ nhân chứ con cũng phải kiếm sống, bớt nhiều quá con lấy gì ăn bác ơi.
+				phuho: Dau can con phai lo von, bớt lam quen vai dong le thoi ma con tinh toan qua. Thôi bac di lam tiep day, tre gio xách xi-mang cua thau roi.
+				=> phuho_fail_nhe
+		- [TẦNG 3] Đàn bầu giờ người ta ít nghe rồi bác ơi, thời nay thanh niên toàn nghe nhạc điện tử remix không hà.
+			phuho: [TẦNG 4] Con noi vay la thieu kien thuc nen tang roi. Dan bau la linh hon cua am nhac dan toc, la quoc bao do nhe. Thoi buoi hoi nhap ma khong giu goc la mat nuoc nhu choi. Con co muon nghe ba do dan thu khong?
+			- [TẦNG 5] Dạ con lỡ lời, tại con chưa được nghe bao giờ. Bác cho con xin địa chỉ hoặc cách liên lạc với bà cụ nha.
+				phuho: Thấy con biết lắng nghe vậy bác rất vui. Ba do hay ra nha van hoa vao cuoi tuan do. Thôi can cho bac ky man di, bac mang di an de tinh tao lam viec tiep.
+				=> phuho_success
+			- [TẦNG 5] Dạ thôi con bận buôn bán tối mặt, thời gian đâu mà đi nghe đàn bầu đàn nhị hả bác.
+				phuho: Thoi thanh nien thoi nay toan thực dung, khong co tinh than dan toc gi het. Bac khong mua nua, di lam day.
+				=> phuho_fail_nhe
+	- [TẦNG 1] Chồng con ép về chứ con thấy ở đây hẻo lánh quá, không có sầm uất như trên thành phố bác ơi.
+		phuho: [TẦNG 2] Con nhin phien dien qua. Thanh pho lam gi co duoc cai su thanh binh, khong khi trong lanh nhu o day. Chinh sach gian dan cua nha nuoc minh la dang khuyen khich ve vung ven do con. Lam an o day thue re, de song hon chu.
+		- [TẦNG 3] Dạ tại con mới về nên chưa quen mối lái, thấy buôn bán hơi chậm nên con đâm ra lo lắng.
+			phuho: [TẦNG 4] Tu tu roi quen con oi. O day nguoi ta thich am nhac tinh cam lam. Co ba gia nghe nhan dan bau hay ra cho minh mua trai cay ne, con lam quen voi ba di, ba gioi thieu moi cho la ban dat hang ngay.
+			- [TẦNG 5] Dạ vậy hả bác? Cách đó hay quá, khi nào bà cụ ghé bác nhớ chỉ cho con nhận mặt liền nha bác.
+				phuho: Duoc roi, de lát ba co di ngang bac hu cho. Thoi can cho bac ky man lay loc dau ngay di con nương.
+				=> phuho_success
+			- [TẦNG 5] Dạ thôi bà già mua được mấy đồng trái cây đâu mà giới thiệu, con tự tìm mối cho chắc ăn.
+				phuho: Con thoi kieu ngao mạn vay thi kho ma song long dan lam con oi. Thoi bac di xách ho day, met cho long qua.
+				=> phuho_fail_nhe
+		- [TẦNG 3] Thôi bác lo phụ hồ đi chứ bàn chuyện chính sách vĩ mô nghe xa vời quá bác ơi, lo cơm áo gạo tiền trước đã.
+			phuho: [TẦNG 4] Con noi cau nay nghe buon thiet chu. Nguoi lao dong thi cung phai co kien thuc chinh tri chu con. Khong co tam nhin chien luoc thi suot doi chi di lam thue thoi.
+			- [TẦNG 5] Dạ con xin lỗi bác, con nói chuyện nông nổi quá. Bác mua mở hàng giùm con một ký đi rồi bác cháu mình nói chuyện tiếp nha.
+				phuho: Uh thoi con nit nong noi bac khong chap. Lua cho bac trai nao ngot ngot tý di, mang ra can cho may anh em tho nề an chung.
+				=> phuho_success
+			- [TẦNG 5] Dạ con nói thật mà, bác lo làm đi không thợ cả người ta trừ lương bây giờ ở đó mà chiến lược.
+				phuho: Cai con be nay mo mieng ra la coi thuong nguoi khac ha? Phu ho thi khong duoc ban luan thoi su sao? Khong ban buon gi het, di cho khac!
+				=> phuho_fail_ca_khia
+- Con ve day tron nợ chu que chong gi dau bac, tren thanh pho thau tom dat dai roi siet no ghe qua.
+	phuho: Troi dat oi, cai tro bong bong bat dong san, thau tom tu ban den do lam kho biet bao nguoi lao dong. Thoi tron ve day la an toan roi con, o day chinh quyen lam nghiem lam, yen tam ma buon ban.
+	=> phuho_fail_noi_xao
+- Bac biet gi ve chinh tri ma noi, lo phu ho xách ho di chu lat hu hong cong trinh nguoi ta bat den do nha.
+	phuho: Choa oi! Phu ho thi khong duoc quyen quan tam den van menh quoc gia ha? Cai lo khinh nguoi, coi thuong giai cap cong nhan lao dong! Tao chay qua keu ca doi tho ho tay chay sap cua may luon!
+	=> phuho_fail_ca_khia
+
+
+~ phuho_xoai
+
+phuho: Xoai nay vang uom giong may trai xoai cat duoc kieu bao mang ve bieu hoi xua ghe. Gia ca sao day con nương?
+- Dạ xoài 20k một ký nha bác, đúng giá rồi không bớt được đâu ạ.
+	phuho: Buon ban ma cung nhac, thieu tinh than hop tac chia se giua cac giai cap qua. Thoi bac di lam day.
+	=> phuho_fail_nhe
+- Dạ xoài keo ngọt lịm 25k một ký, nhưng con tính bác 22k thôi coi như kính lão đắc thọ nè. Bác ơi, sao tự nhiên con lại tới cái xứ này bán trái cây vậy bác nhỉ?
+	phuho: Ha ha, con hoi hay do. Xu nay la dat lanh chim dau, que chong con chu dau xa. O day vui lam, duoc o lau lau cho vui con nha. Chinh tri on dinh, con nguoi lai am ap nghia tinh. Ma con co thich tim hieu van hoa vung nay khong?
+	- [TẦNG 1] Dạ con rất muốn tìm hiểu để dễ hòa nhập với bà con lối xóm ở đây á bác.
+		phuho: [TẦNG 2] Tot lam. Neu vay thi phai biet den mot ba gia nghe nhan dan bau hay toi cho nay mua trai cay nha. Ba do la cay da cay de cua nen am nhac dan toc minh do.
+		- [TẦNG 3] Dạ bà cụ nghệ nhân đó có hay thích ăn xoài không bác? Để hôm nào bà ghé con lựa trái ngon nhất tặng bà cụ.
+			phuho: [TẦNG 4] Ba thich an xoài mem mem lam vi rang yeu roi. Con ma co tam nhu vay la tot, song phai co duc co truoc co sau, chu khong nhu cai lu tu ban chi biet co tien. Con tinh bac trai xoai nay 20k chẵn luon di, bac mo hang cho.
+			- [TẦNG 5] Dạ chốt luôn 20k cho bác trai luôn nè, bác cầm về ăn rồi nhớ nhắc bà cụ nghệ nhân ghé sạp con nha bác.
+				phuho: Roi roi, de bac ve bac noi voi ba. Sap trai cay cua con be nay rat co tam va tam nhin chien luoc. Lay bac trai nay di.
+				=> phuho_success
+			- [TẦNG 5] Dạ xoài này con nhập mắc lắm, 22k là con đã bớt rồi, không xuống 20k được nữa bác ơi.
+				phuho: Thoi ky keo 2 dong le lam mat di cai tinh nghia thon que, bac khong thich lam an kieu kiet xin nay. Bac di day.
+				=> phuho_fail_nhe
+		- [TẦNG 3] Thời buổi này ai thèm nghe đàn bầu nữa bác, con thấy mở loa kéo hát karaoke Bolero còn vui hơn.
+			phuho: [TẦNG 4] Con dung co danh dong am nhac thi truong re tien voi nghe thuat han lam nuoc nha nha. Nghe nhan dan bau la quoc bao do. Noi chuyen thieu dorg xon qua.
+			- [TẦNG 5] Dạ con nông cạn chưa hiểu sự đời, bác giải thích nghe thấm thía quá. Bác lấy ký xoài đi con bớt giá làm quen nha.
+				phuho: Thôi biet loi vay la ngoan. Thoi lay bac 1 ky di, bac mang ra cho tâng bốc tinh than anh em tren gian giao coi.
+				=> phuho_success
+			- [TẦNG 5] Dạ thôi mỗi người một sở thích, con thấy cái nào vui thì con nghe thôi chứ chính trị chính em mệt quá.
+				phuho: Thoi thoi tro chuyen voi cai lo thieu y thuc he giong con phat mệt, bac di lam tiep cho lẹ.
+				=> phuho_fail_nhe
+- Xoai nay dac san duoc trong tu vung dat lanh dao cap cao an khong do nha bac, gia 150k mot ky.
+	phuho: Con gạt ba gia thi duoc chu gạt sao noi lao dong trí oc nhu bac. Xoài cho dau moi ma lam mau lam me, bot xao gium cai nha con.
+	=> phuho_fail_noi_xao
+- Bac suot ngay lo chuyen bao dong thoi su mệt qua, de thoi gian do xách them may xô hồ kiem them tien mua xoài di bác.
+	phuho: Cai do mat day nay! May dam khinh miet nguoi lao dung chan tay ha? Khong co bon tao xay dung co co so ha tang thi may co sap ma ngoi ban ha? Bien gium tao cai!
+	=> phuho_fail_ca_khia
+
+
+~ phuho_success
+
+phuho: Lam an la phai biet doi nhan xu the, co tam nhin vi mo va vi tha nhu vay thi moi ben vung duoc con nương oi. Bac mang trai cay di lam day, mai mot bac lai ghe ban chuyen quoc te tiep nha!
+=> END
+
+~ phuho_fail_nhe
+
+phuho: Thoi thoi, buon ban thieu lap truong kien dinh, ky keo tung đồng lam mat quan diem qua. Bac di xách ho tiep cho xong cai mong nha day.
+=> END
+
+~ phuho_fail_noi_xao
+
+phuho: Thanh nien thoi nay toan bi thoi hung phan tu ban lam thoi hu tat xau, lo noi xao gạt nguoi chat phac. Chuyen chinh tri ma no dam loi ra lam tro dua, tao khong bao gio mua do o day nua!
+=> END
+
+~ phuho_fail_ca_khia
+
+phuho: Cai do vo giao duc! Mo mieng ra la xuc pham giai cap cong nhan, xuc pham nguoi lao dong xay dung dat nuoc. Tao di keu ca hội tho ho sập cai sap mat day cua may luon cho biet tay! Hu phat het muon lam viec!
+=> END
+
+
+~ lebon_man
+
+lebon: Ôi trời, nhìn những khối hình học và mảng màu sắc trên những quả mận này kìa! Chúng có một sự kết nối tâm linh kỳ lạ với tâm hồn nghệ thuật của tôi. Cô bé, mận này bao nhiêu một ký để tôi mang về làm vật mẫu sáng tác tranh tĩnh vật đương đại?
+- Dạ mận này 15k một ký đúng giá bảng nha chị, mua giùm em đi.
+	lebon: 15k? Ôi thật là tầm thường, một cái giá quá thực dụng làm tổn thương đi tính nghệ thuật của những khối hình này. Tôi đi tìm sạp khác có chiều sâu hơn.
+	=> lebon_fail_nhe
+- Ôi, em nhìn phong thái của chị là biết ngay một đại họa sĩ thiên tài rồi! Cái cách chị nhìn trái mận nó nghệ thuật khác người thường lắm luôn á. Mận này là mận tuyển chọn phom dáng chuẩn, giác cắt hoàn hảo để lên tranh, giá 50k một ký nha họa sĩ!
+	lebon: Ha ha, cô bé này có đôi mắt biết thưởng thức nghệ thuật đấy! Đúng vậy, những nét cong này mà đặt dưới ánh đèn bắt bóng thì tuyệt tác! Nhưng mà 50k có phản ánh đúng giá trị độc bản của nó chưa em? Chị muốn những trái hoàn hảo nhất cơ.
+	- [TẦNG 1] Dạ đối với một người có gu đẳng cấp như chị, em sẽ lựa riêng cho chị những trái mận "siêu thực" nhất, giá 70k một ký nha chị.
+		lebon: [TẦNG 2] 70k ha? Con số 7 là con số của sự huyền bí trong hội họa Phục Hưng đấy, chị rất thích. Nhưng nếu chị mua luôn 2 ký để xếp bố cục cho nó dày dặn thì em có "art" thêm gì cho chị không?
+		- [TẦNG 3] Dạ nếu chị lấy 2 ký, em sẽ tặng riêng chị một chiếc rổ tre mộc mạc mang đậm tính sắp đặt dân gian để chị làm layout vẽ tranh luôn, không tính tiền ạ!
+			lebon: [TẦNG 4] Ôi trời ơi! Cái rổ tre này có những đường đan đan xen tạo nên một không gian lập thể tuyệt vời! Cô bé có tư duy sắp đặt tốt đấy. Cái rổ này em tính thêm vào hóa đơn cho chị luôn đi, tổng cộng bao nhiêu?
+			- [TẦNG 5] Dạ vậy em tính trọn gói cả mận cao cấp và rổ tre nghệ thuật là 180k chẵn nha họa sĩ thiên tài của em!
+				lebon: Xuất sắc! 180k cho một nguồn cảm hứng bất tận thì quá rẻ. Chị chốt đơn này, để chị quẹt thẻ hoặc chuyển khoản cho sang nhé.
+				=> lebon_success
+			- [TẦNG 5] Dạ thôi em tặng chị cái rổ làm quen, tổng cộng 2 ký mận kịch độc của chị là 140k chẵn thôi ạ.
+				lebon: Ôi không, nghệ thuật là không thể ban phát miễn phí! Em làm vậy là hạ thấp giá trị cái rổ rồi. Chị không thích kiểu bố thí này đâu, không mua nữa!
+				=> lebon_fail_nhe
+		- [TẦNG 3] Dạ em bán đúng giá 70k thôi ạ, chất nghệ thuật trong từng trái mận là vô giá rồi nên em không bớt được nữa đâu chị.
+			lebon: [TẦNG 4] Đúng! Nghệ thuật là vô giá, kẻ phàm phu tục tử làm sao hiểu được giá trị này. Nhưng mà nhìn mấy trái mận góc kia có vẻ màu hơi tối, có ảnh hưởng đến sắc độ Palette của chị không?
+			- [TẦNG 5] Dạ đó là màu đỏ sẫm chiều sâu tâm trạng đó chị, lên tranh thể hiện sự cô đơn của nhân vật là đỉnh luôn á!
+				lebon: Wow! Tư duy phân tích màu sắc của em làm chị nổi da gà luôn đấy! Lấy chị 2 ký màu sẫm đó đi, 140k không thành vấn đề!
+				=> lebon_success
+			- [TẦNG 5] Dạ màu đó là do mận nó chín quá thôi chị ơi, chứ không có sầu muộn gì đâu ạ.
+				lebon: Ôi, hóa ra cũng chỉ là đồ chín quá thôi à? Làm chị tuột hết cả cảm hứng sáng tác mông lung. Thôi chị đi chỗ khác.
+				=> lebon_fail_nhe
+	- [TẦNG 1] Dạ mận này thường thôi chị ơi, em thấy chị làm màu quá, vẽ tranh thôi mà làm như nghiên cứu khoa học vũ trụ vậy.
+		lebon: [TẦNG 2] Cái gì?! Em dám bảo tôi làm màu? Em có biết tôi từng triển lãm tranh ở... trang cá nhân của tôi đạt hàng trăm lượt thả tim không? Thật là một bộ óc rỗng tuếch, không thể trò chuyện được!
+		- [TẦNG 3] Dạ con xin lỗi họa sĩ, tại con mắt trần tục của con chưa chạm tới đỉnh cao nghệ thuật của chị. Chị thứ lỗi cho con nha.
+			lebon: [TẦNG 4] Hừ, biết nhận lỗi vậy là còn có thể cứu vãn. Vậy bây giờ em đền bù cho cái sự tổn thương tinh thần này của tôi bằng mức giá thế nào đây?
+			- [TẦNG 5] Dạ em bán cho chị giá đặc biệt dành riêng cho giới nghệ sĩ là 60k một ký, em lựa trái láng o cho chị vẽ luôn.
+				lebon: Được rồi, cái giá 60k này nghe có vẻ có chút vị thế hơn rồi đấy. Lấy cho chị một ký xem nào.
+				=> lebon_success
+			- [TẦNG 5] Dạ thì con tính chị đúng giá bảng 15k coi như tạ lỗi với chị đó, chị mua giùm con đi.
+				lebon: 15k? Lại là con số rẻ rúng đó. Em đang sỉ nhục tài năng của tôi bằng một mức giá chợ búa đấy à? Tôi không thèm chấp!
+				=> lebon_fail_nhe
+		- [TẦNG 3] Thôi chị không mua thì đi giùm em cái, đứng đây tạo dáng chụp hình nãy giờ làm nghẹt hết cả lối đi của khách sạp em.
+			lebon: [TẦNG 4] Đồ thô lỗ! Sạp trái cây này hoàn toàn không có một chút năng lượng tích cực nào cho nghệ thuật cả. Tôi sẽ viết bài review phê bình cái sạp này trên blog của tôi!
+			- [TẦNG 5] Dạ thôi em xin lỗi mà, chị là họa sĩ lớn đại lượng chấp nhất em làm gì, chị lấy ký mận 80k mở hàng giúp em đi.
+				lebon: Hừ, giá 80k nghe còn có tầm ảnh hưởng đấy. Thôi được rồi, vì nghệ thuật chị sẽ bỏ qua cho sự vô tri này. Cân đi em!
+				=> lebon_success
+			- [TẦNG 5] Chị cứ việc viết thoải mái, sạp em bán cho người ăn chứ không bán cho người ảo tưởng nha chị!
+				lebon: Ôi trời ơi, xúc phạm nặng nề! Bảo vệ đâu, ban quản lý chợ đâu ra mà xem cái sạp này nó đàn áp nghệ sĩ này!
+				=> lebon_fail_ca_khia
+- Mận này mận dạt thôi chị ơi, có vết sâu đục tùm lum kìa, mua về vẽ không có đẹp đâu.
+	lebon: Sâu đục á? Đó gọi là vẻ đẹp của sự hủy diệt, là trường phái tả thực gai góc đó em! Nhưng mà em nói chuyện mất hứng quá, không có tinh thần lãng mạn gì hết. Chị đi đây.
+	=> lebon_fail_nhe
+- Trái cây sạp em chỉ để bán cho người ta ăn thôi, chị mua về vẽ xong bỏ phí phạm lắm, em không bán đâu.
+	lebon: Cái gì? Vẽ tranh mà bảo là phí phạm? Em có biết một bức tranh của chị có thể định giá hàng ngàn đô-la âm phủ không?! Đồ thiếu kiến thức, tẩy chay cái sạp này!
+	=> lebon_fail_ca_khia
+
+
+~ lebon_xoai
+
+lebon: Khối hình Elip của những quả xoài này thật là quyến rũ! Sắc vàng này chính là tông màu chủ đạo của chủ nghĩa ấn tượng. Chị muốn mua vài quả về làm Muse (nàng thơ) cho bức tranh sắp tới. Giá cả thế nào em yêu?
+- Dạ xoài 20k một ký nha chị, tiền nào của đó.
+	lebon: 20k? Một mức giá quá thô kệch và sặc mùi vật chất tầm thường. Nó làm mờ đi ánh hào quang của tác phẩm tương lai của chị. Chị đi đây.
+	=> lebon_fail_nhe
+- Ôi chu choa, góc nghiêng của chị khi nhìn trái xoài trông giống hệt như bức tranh nàng Mona Lisa luôn á! Đẹp chấn động luôn họa sĩ ơi! Xoài này là xoài keo hoàng gia, dáng uốn lượn mềm mại như đường cong cơ thể, giá 80k một ký nha chị!
+	lebon: Ôi, em khen làm chị ngại quá... Nhưng mà em nhận xét đúng đấy, góc mặt này của chị là góc ăn tiền mà. Quả xoài này dáng chuẩn thật, nhưng 80k đã là mức giá thể hiện sự quý tộc nhất chưa em? Chị không thích xài đồ phân khúc thấp đâu.
+	- [TẦNG 1] Dạ nếu chị muốn đẳng cấp VIP nhất, em có thùng xoài "Limited Edition" vừa cập bến, quả nào cũng bóng loáng, giá 120k một ký xứng tầm đại gia luôn chị!
+		lebon: [TẦNG 2] 120k! Thần chú của những con số! Nghe phát là thấy mùi quý phái liền. Nhưng mà chị mang cây cọ vẽ theo nè, em có chỗ nào cho chị ngồi phác thảo vài nét "Live" tại sạp để lấy cảm xúc không?
+		- [TẦNG 3] Dạ có chứ! Chị cứ ngồi cái ghế đệm VIP này của em, em bật đèn led chiếu thẳng vào thùng xoài cho chị lấy sáng đổ bóng luôn, tính chị thêm 30k phí bối cảnh là 150k nha!
+			lebon: [TẦNG 4] Tuyệt vời! Một Studio dã chiến ngay tại chợ, thật là một ý tưởng phá cách mang tính nổi loạn! Chị sẽ trả em hẳn 200k luôn cho nó tròn trịa cái vibe nghệ thuật này, chịu không?
+			- [TẦNG 5] Dạ chốt luôn 200k nha họa sĩ thiên tài! Chị cứ tự nhiên sáng tác, em đứng đây canh góc cho chị luôn nè.
+				lebon: Tuyệt diệu! Đúng là một tâm hồn đồng điệu giữa chợ đời huyên náo. Chị xách thùng xoài này về phòng tranh đây, cầm tiền nè em!
+				=> lebon_success
+			- [TẦNG 5] Dạ thôi em lấy đúng 150k thôi chị ơi, lấy nhiều quá em ngại lắm ạ.
+				lebon: Ôi, em làm chị mất đi cái sự tự do phóng khoáng của một nghệ sĩ rồi. Tiền bạc với chị là phù du, em từ chối sự hào phóng của chị là từ chối nghệ thuật rồi. Chị đi đây!
+				=> lebon_fail_nhe
+		- [TẦNG 3] Dạ sạp em nhỏ lắm không có chỗ ngồi vẽ đâu chị ơi, chị mua rồi mang về nhà vẽ giùm em cái đi.
+			lebon: [TẦNG 4] Mất cảm xúc thật sự! Nghệ thuật là phải chớp lấy khoảnh khắc, bắt chị mang về nhà thì cái "vibe" nó bay mất tiêu rồi. Hay là em bớt xuống 100k đi chị tự đứng vẽ cũng được.
+			- [TẦNG 5] Dạ thôi được rồi, tính chị 100k chẵn coi như em tài trợ cho nền mỹ thuật nước nhà, chị đứng đây vẽ nhanh giùm em nha.
+				lebon: Uh, đứng vẽ thế này cũng có nét đường phố giống bên Paris đấy chứ. Được rồi, lấy chị 1 ký xoài này nhé.
+				=> lebon_success
+			- [TẦNG 5] Dạ không được chị ơi, đứng vẽ cản trở khách mua hàng của em lắm, đúng 120k mang về nhà vẽ nha chị.
+				lebon: Thôi mệt quá, sạp gì mà không có tư duy hỗ trợ nghệ sĩ gì hết. Chị qua sạp khác cho lành.
+				=> lebon_fail_nhe
+- Xoài này xoài cát Hòa Lộc xịn xò 150k một ký nha chị, vẽ lên tranh là nhìn thấy mùi giàu sang liền.
+	lebon: Hòa Lộc cái gì, nhìn cái vỏ thô ráp thế này mà dám bảo Hòa Lộc. Em định lòe một người có bằng cấp mỹ thuật như chị đấy à? Thôi bớt xạo đi con ơi, chị đi sạp khác!
+	=> lebon_fail_noi_xao
+- Chị nhìn thì đẹp mã mà nói chuyện nghe sáo rỗng quá, vô vẽ được nét nào ra hồn chưa mà đứng đây nổ banh sạp em vậy?
+	lebon: Cái đồ vô văn hóa! Dám bảo tôi nổ hả? Tôi là nghệ sĩ tự do, tôi có quyền tự hào về cái tôi của mình! Cái sạp này thô lỗ quá, tôi sẽ rêu rao cho cả hội nghệ sĩ của tôi tẩy chay em!
+	=> lebon_fail_ca_khia
+
+
+~ lebon_success
+
+lebon: Thật là một trải nghiệm mua sắm mang đầy tính nghệ thuật vị nghệ thuật! Em rất có tiềm năng làm stylist đó cô bé. Chị đi về sáng tác đây, khi nào tranh đấu giá được ngàn đô chị quay lại bao trọn sạp của em nha! Ciao!
+=> END
+
+~ lebon_fail_nhe
+
+lebon: Thôi, đứng đây một hồi làm tư duy sáng tạo của chị bị nghẽn mạch dòng chảy rồi. Không gian này quá thực tế, không hợp với một họa sĩ mộng mơ như chị. Chị đi tìm Muse ở sạp khác đây. Bye!
+=> END
+
+~ lebon_fail_noi_xao
+
+lebon: Đúng là cái đồ lừa gạt, dám đem mấy thứ hàng dỏm ra để lòe bịp một đôi mắt đầy chuyên môn như tôi. Nghệ thuật không có chỗ cho sự giả dối! Tôi đi đây và không bao giờ quay lại cái nơi bóp méo sự thật này!
+=> END
+
+~ lebon_fail_ca_khia
+
+lebon: Ôi kinh tởm thật sự! Một cái sạp trái cây nồng nặc mùi vật chất và sự xúc phạm đối với những người làm nghệ thuật chân chính! Tôi sẽ vẽ một bức tranh châm biếm cái sạp này để cho cả thế giới thấy sự thô lỗ của em! Hứ xui xẻo!
+=> END
+
+
+~ batu_khoai
+
+batu_cho: Co nương ơi, khoai lang mat nay nhin ngon qua, cu to ma chac tay ghe. Gia sao vay con, de ba mua vai cu ve luoc an buoi chieu cho am bung.
+- Da khoai 12k mot ky nha ba, mua gium con di.
+	batu_cho: Uh, gia nay cung vua phai thoi de ba lua vai cu nha. Ma sao tu nhien con lai ve cai xu nay ban trai cay vay con?
+	=> batu_fail_nhe
+- Dạ khoai lang mật ngọt lịm 15k một ký bà ơi. Mà bà ơi, con nghe bác phụ hồ bên kia bảo bà là nghệ nhân đàn bầu đỉnh lắm đúng không ạ? Thực ra con đang làm nhà báo viết về hành trình khám phá văn hóa Việt Nam, con muốn biết thêm về tiếng đàn bầu của một nghệ nhân như bà lắm ạ!
+	batu_cho: Troi dat oi... Con lam nha bao ha? Gia dinh ba mat het roi, chong con cung khong con ai, gio chi con cay dan bau lam tri ky thoi. Con nhac den lam ba xuc dong qua. Tieng dan bau la tieng long cua nguoi Viet minh do con, can ban cho ba cu khoai nay di, ba vua an vua ke chuyen cho nghe.
+	- [TẦNG 1] Dạ con xin lỗi vì đã gợi lại chuyện buồn của bà, con tính bà 10k thôi, coi như con kính trọng tài năng của bà ạ.
+		batu_cho: [TẦNG 2] Con ngoan qua, biet thuong ba gia neo don nay. Ma con viet bao ve van hoa thi co can chup hinh cay dan bau cua ba khong? Ba de o nha ngay gan cho nay thoi.
+		- [TẦNG 3] Dạ có chứ ạ, nếu được bà cho con qua chụp hình cây đàn và diện kiến ngón đàn của bà nha.
+			batu_cho: [TẦNG 4] Duoc chu con, lát cho vắng khach ba dat con ve. Ma thoi, ba lay 2 ky khoai luon di, de lat luoc len moi con an chung luon roi minh quay phim chup hinh cho no tu nhien.
+			- [TẦNG 5] Dạ hay quá bà ơi! Vậy con cân cho bà 2 ký khoai ngon nhất sạp luôn, con lấy bà 20k chẵn thôi ạ.
+				batu_cho: Cam on con nhieu nhe. Dung la co duyen gap duoc nguoi lam bao co tam, yeu van hoa dan toc. De ba gui tien nha.
+				=> batu_success
+			- [TẦNG 5] Dạ 2 ký là 30k, nhưng con bớt bà còn 25k nha, con gửi bà mang về luộc ạ.
+				batu_cho: Uh 25k cung duoc con, de ba gui tien. Giup ba bo vao cai tui gon gon nhe.
+				=> batu_success
+		- [TẦNG 3] Dạ con chỉ viết bài phân tích sâu thôi chứ không cần hình ảnh đâu bà, con muốn nghe bà kể về nguồn gốc tiếng đàn hơn.
+			batu_cho: [TẦNG 4] Dan bau la "nhat luc khoi thanh", chi mot day ma ngan vang moi cung bac cam xuc cua con nguoi. Con tinh con sau sac lam do. Hay la ba mua them may cu khoai nho nay ve lam qua cho may dua tre con hang xom, tinh them tien cho ba di.
+			- [TẦNG 5] Dạ mấy củ nhỏ này con tặng thêm cho bà luôn chứ không tính tiền đâu, bà cứ mang về cho mấy đứa nhỏ nha.
+				batu_cho: Ôi con tot bung qua, lam ba nho den dua con ngay xua cua ba... Cam on con nhieu lam. Chot don cho ba di con.
+				=> batu_success
+			- [TẦNG 5] Dạ mấy củ nhỏ này con tính thêm bà 5k thôi ạ, tổng cộng của bà là 15k nha bà.
+				batu_cho: Uh vay tinh ba 15k, de ba gui tien le cho tiện nha.
+				=> batu_success
+	- [TẦNG 1] Ôi câu chuyện của bà cảm động quá, con muốn viết riêng một bài báo về cuộc đời của bà luôn được không ạ?
+		batu_cho: [TẦNG 2] Thoi, doi ba co gi dau ma viet, cuoc song troi dat an phan qua ngay thoi con oi. Ma con thich tim hieu am nhac dan toc thi ba rat hoan nghênh. Cu khoai nay em mat, de ba mua ve nuong len an cho thom.
+		- [TẦNG 3] Dạ khoai này nướng lên mật chảy ra thơm phức luôn bà ơi, để con lựa củ nhiều mật nhất cho bà nhé.
+			batu_cho: [TẦNG 4] Lua gium ba di. Ma con di viet bao khap noi nhu vay co thay nho nhà khong? Xu nay la que chong con dung khong, o day yen binh lam, cu o day lau lau cho vui con nha.
+			- [TẦNG 5] Dạ con về đây thấy bình yên lắm bà ạ, con cân cho bà 1 ký khoai mật tính bà 12k thôi nha bà.
+				batu_cho: Uh 12k re qua, ba gui con to 20k khoi thoi le cung duoc, coi nhu ba ung ho bai bao cua con.
+				=> batu_success
+			- [TẦNG 5] Dạ con cũng nhớ nhà, nhưng vì đam mê văn hóa nên con đi thôi ạ. Khoai của bà đúng giá 15k đây ạ.
+				batu_cho: Giu vung dam me la tot do con. Gui tien con ne, ba xách khoai ve day.
+				=> batu_success
+		- [TẦNG 3] Dạ bà ơi, đàn bầu một dây khó đánh lắm đúng không bà, làm sao để nó phát ra nhiều nốt hay vậy bà?
+			batu_cho: [TẦNG 4] Do la nho ky thuat nhan bóp va khua am do con, doi nguoi cung nhu day dan, phai trải qua dau thuong thi tieng dan moi sau xac. Con hoi cau nay chung to co kieu kien thuc am nhac lam. Tinh tien khoai gium ba di con.
+			- [TẦNG 5] Dạ nghe bà giảng con thông suốt nhiều điều quá, con tính bà 12k ký khoai này thôi, con cảm ơn bà ạ.
+				batu_cho: Con be de thuong qua. Gom khoai gium ba nha, lát qua nha ba cho nghe dan.
+				=> batu_success
+			- [TẦNG 5] Dạ của bà hết 15k chẵn ạ, con gửi bà khoai nha.
+				batu_cho: Roi, ba gui du tien ne con. Buon ban dat hang nhe.
+				=> batu_success
+- Ba gia roi an khoai vao nghen do ba oi, mua trai cay nhieu nuoc an cho khoe di ba.
+	batu_cho: Uh con noi cung co ly, gia roi rang yeu an khoai cung de nghen thiet. De ba coi co trai gi mem mem nhieu nuoc ba mua ung ho con nhe.
+	=> batu_fail_nhe
+- Sap con khong ban cho nguoi gia neo don dau ba oi, mac cong khong co tien tra lam kho con.
+	batu_cho: Ba ngheo thiet chu dau co quyt tien cua con dau ma con noi nghia toi nghiep ba vay... Thoi ba di cho khac vay.
+	=> batu_fail_ca_khia
+
+
+~ batu_oi
+
+batu_cho: Oi nu hoang nhin da qua, trai to gion ma thom phuc nua. Gia sao vay con gan, ba mua mot ky ve cham muoi ot an cho thanh giong de lát ve tap dan.
+- Da oi 13k mot ky nha ba, mua gium con di ba.
+	batu_cho: Giay cung re, de ba lua vai trai nha con. Ma con tu dau toi day ban trai cay vay?
+	=> batu_fail_nhe
+- Dạ ổi nữ hoàng giòn ngọt 15k một ký bà ơi. Mà bà ơi, có phải bà là nghệ nhân đàn bầu lừng danh mà bác phụ hồ hay kể không ạ? Thực ra con là nhà báo đang viết bài nghiên cứu về hành trình văn hóa Việt Nam, con muốn được nghe bà chia sẻ về tiếng đàn bầu linh hồn dân tộc lắm ạ!
+	batu_cho: Troi oi... Con lam nha bao co ah? Lau lam roi moi co nguoi tre muon nghe ba ke ve dan bau do. Chong con mat som, dua con duy nhat cung di xa roi, ba chi con tieng dan lam ban thoi. Nghe con hoi ba xuc dong qua. Con lua cho ba ky oi di, ba gui tien roi ba chau minh tro chuyen.
+	- [TẦNG 1] Dạ con hiểu hoàn cảnh của bà rồi, con thương bà quá. Ký ổi này con lấy bà 10k thôi, coi như con kính lão đắc thọ ạ.
+		batu_cho: [TẦNG 2] Con tot bung qua, dung la nguoi lam van hoa co cai tam sang. Ma con viet bao ve dan bau thi co muon ba dan thu cho nghe mot bai khong? Nha ba o ngay sau cho nay thoi.
+		- [TẦNG 3] Dạ có chứ ạ! Được nghe nghệ nhân gảy đàn bầu thì bài viết của con sẽ sinh động và giá trị lắm luôn á bà.
+			batu_cho: [TẦNG 4] Duoc, lat ba dan cho nghe bai "Long Me". Ma thoi, ba lay luon 2 ky oi di, de lat mang ve cho con an chung luon, gọt oi ra roi vua an vua nghe dan moi thấm.
+			- [TẦNG 5] Dạ tuyệt vời quá bà ơi! Con cân đúng 2 ký ổi tuyển siêu ngon cho bà, tính tròn bà 20k thôi ạ!
+				batu_cho: Cam on con nhieu nhe con gan. Gap duoc con ba vui lam, tui gia nay chi can co nguoi thau hieu vay la hanh phuc roi. Gui tien con ne.
+				=> batu_success
+			- [TẦNG 5] Dạ 2 ký là 30k, con bớt bà còn 25k nha, con bỏ túi sẵn cho bà rồi đây ạ.
+				batu_cho: Uh 25k ba gui du ne con. Cam oi gon gang gium ba nhe.
+				=> batu_success
+		- [TẦNG 3] Dạ con chỉ cần ghi chép lại lời kể của bà là đủ tư liệu rồi ạ, con sợ làm phiền thời gian nghỉ ngơi của bà.
+			batu_cho: [TẦNG 4] Khong phien gi dau con, ba o mot minh thui thui cung buon lam. Con hoi am hieu ve am nhac mien Tay khong, dan bau mien nao cung co net hay rieng do. Con tinh tien oi gium ba di nao.
+			- [TẦNG 5] Dạ nghe bà nói con mở mang tầm mắt quá, con lấy bà 12k ký ổi này thôi, con gửi bà ạ.
+				batu_cho: Con gai ngoan qua, buon ban nhe nhang vay khach ai cung thuong. Gui tien con nha.
+				=> batu_success
+			- [TẦNG 5] Dạ của bà hết 15k chẵn ạ, con gửi bà bịch ổi nha bà.
+				batu_cho: Roi ba gui du tien le ne con, cam on con nhieu nhe.
+				=> batu_success
+	- [TẦNG 1] Dạ câu chuyện cuộc đời bà ly kỳ quá, con muốn chụp vài bức ảnh của bà để làm ảnh bìa cho phóng sự này được không bà?
+		batu_cho: [TẦNG 2] Ba gia ca nhen nheo roi len bia ao lam con oi, ba chi muon chia se kien thuc am nhac cho con chau doi sau thoi. Oi nay ngon, de ba mua ve lam qua cho may dua nhỏ ben xóm ngheo.
+		- [TẦNG 3] Dạ bà chu đáo quá, để con lựa những trái ổi nhẵn nhụi, ngọt lịm cho mấy bé ăn thích mê luôn nha bà.
+			batu_cho: [TẦNG 4] Con khéo léo qua. Ma xu nay la que chong con dung khong, o day moi nguoi song tinh nghia lam, cu o day lau lau cho vui con nha.
+			- [TẦNG 5] Dạ vâng ạ, con thấy ở đây ai cũng dễ mến như bà vậy á. Con tính bà 12k ký ổi này thôi ạ.
+				batu_cho: Gui con to 20k khoi thoi le nhe, coi nhu ba li xi cho co nha bao tuong lai.
+				=> batu_success
+			- [TẦNG 5] Dạ vâng con cảm ơn bà, ổi của bà hết 15k đúng giá đây ạ.
+				batu_cho: Roi ba gui tien con nha, xách oi nang tay ghe, oi ngon lam con.
+				=> batu_success
+		- [TẦNG 3] Dạ bà ơi, tiếng đàn bầu có phải là nhạc cụ duy nhất chỉ có ở Việt Nam mình không bà?
+			batu_cho: [TẦNG 4] Dung roi con, doc huyen cam la niem tu hao quoc gia do. Tieng long cua nguoi Viet minh nam trong do het. Con hoi cau nay chung to rat co tam huyet voi nghe. Tinh tien gium ba di con.
+			- [TẦNG 5] Dạ con kính trọng những nghệ nhân như bà lắm, con lấy bà 12k thôi, con gửi bà ổi ạ.
+				batu_cho: Cam on con gai nhe, lát nho ghe nha ba nghe dan do nhe con.
+				=> batu_success
+			- [TẦNG 5] Dạ của bà hết 15k chẵn ạ, con gửi bà bịch ổi nha.
+				batu_cho: Roi ba gui tien day, buon ban dat hang nhe con nương.
+				=> batu_success
+- Oi nay gion lam, rang ba yeu an vao co ngay me rang do ba oi, con khong ban dau.
+	batu_cho: Uh ba quen mat, rang yeu ma nhai oi gion qua cung kho. De ba kiem trai gi mem mem ba mua sau vay, cam on con da nhac nhe.
+	=> batu_fail_nhe
+- Ba di ra cho khac gium con cai, nhin ba am dam qua lam sap con bi mat via khong ban duoc cho ai gio.
+	batu_cho: Ba co lam gi dau ma con nang loi voi ba vay... Thoi ba di, toi nghiep than gia nay qua.
+	=> batu_fail_ca_khia
+
+
+~ batu_success
+
+batu_cho: Con be buon ban vua kheo leo, vua co tam long huong ve coi nguon am nhac dan toc nhu vay la quy bau lam. De ba mang trai cay ve got san, lát cho van khach con nho ghe nha ba choi, ba dan cho nghe nhe! Chao con nha!
+=> END
+
+~ batu_fail_nhe
+
+batu_cho: Uh thoi ba mang trai cay ve nha day, con ban buon tiep di nha. Khi nao ranh rỗi cu ghe qua nha ba choi, ba ke chuyen dan bau cho nghe. Chao con nương!
+=> END
+
+~ batu_fail_noi_xao
+
+batu_cho: Con con tre ma noi chuyen nghe thieu that tha qua, buon ban lam mau lam me thoi chu khong co cai tam nghie tuc. Ba khong thich kieu noi xao nay dau, ba di day.
+=> END
+
+~ batu_fail_ca_khia
+
+batu_cho: Sao con lai mo mieng ra xuc pham mot ba gia neo don khong con chong con nhu ba vay... Doi nguoi co nhan qua do con oi, song ac duc qua khong co ket cuc tot dau. Ba di day, toi nghiep than gia nay qua!
+=> END

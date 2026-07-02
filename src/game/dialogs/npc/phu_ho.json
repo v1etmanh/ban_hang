@@ -1,0 +1,255 @@
+{
+  "characterId": "phu_ho",
+  "fruits": {
+    "man": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Lam an la phai biet doi nhan xu the, co tam nhin vi mo va vi tha nhu vay thi moi ben vung duoc con nương oi. Bac mang trai cay di lam day, mai mot bac lai ghe ban chuyen quoc te tiep nha!",
+          "weightKg": 0.18
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thoi thoi, buon ban thieu lap truong kien dinh, ky keo tung đồng lam mat quan diem qua. Bac di xách ho tiep cho xong cai mong nha day."
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Ba hay mac ao ba ba màu xam, di cho tam xế chieu. Ba do tung di bieu dien nuoc ngoai, mang chuong di danh xu nguoi lam vinh quang dat nuoc do. Con ban cho ba thi tinh re re xiu, coi nhu ung ho nen nghe thuat nuoc nha.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ chắc chắn rồi bác, nghệ nhân báu vật quốc gia mà ghé là con bớt giá liền, còn tặng thêm trái cây nữa.",
+              "next": "n1"
+            },
+            {
+              "label": "[TẦNG 5] Dạ nghệ nhân thì nghệ nhân chứ con cũng phải kiếm sống, bớt nhiều quá con lấy gì ăn bác ơi.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Con noi vay la thieu kien thuc nen tang roi. Dan bau la linh hon cua am nhac dan toc, la quoc bao do nhe. Thoi buoi hoi nhap ma khong giu goc la mat nuoc nhu choi. Con co muon nghe ba do dan thu khong?",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ con lỡ lời, tại con chưa được nghe bao giờ. Bác cho con xin địa chỉ hoặc cách liên lạc với bà cụ nha.",
+              "next": "n1"
+            },
+            {
+              "label": "[TẦNG 5] Dạ thôi con bận buôn bán tối mặt, thời gian đâu mà đi nghe đàn bầu đàn nhị hả bác.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] Quyet dinh sang suot do con. Thoi buoi nay kinh te bien dong, chon duoc cho an cu lac nghiep la tot. Ma nay, neu con muon tim hieu sau ve van hoa vung nay thi co mot ba gia hay toi day mua trai cay, ba do la nghe nhan dan bau dac biet lam do nhe.",
+          "options": [
+            {
+              "label": "[TẦNG 3] Ủa vậy hả bác? Bà cụ đó hay mặc áo màu gì và thường ghé sạp giờ nào vậy bác?",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 3] Đàn bầu giờ người ta ít nghe rồi bác ơi, thời nay thanh niên toàn nghe nhạc điện tử remix không hà.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Tu tu roi quen con oi. O day nguoi ta thich am nhac tinh cam lam. Co ba gia nghe nhan dan bau hay ra cho minh mua trai cay ne, con lam quen voi ba di, ba gioi thieu moi cho la ban dat hang ngay.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ vậy hả bác? Cách đó hay quá, khi nào bà cụ ghé bác nhớ chỉ cho con nhận mặt liền nha bác.",
+              "next": "n1"
+            },
+            {
+              "label": "[TẦNG 5] Dạ thôi bà già mua được mấy đồng trái cây đâu mà giới thiệu, con tự tìm mối cho chắc ăn.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n7": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Cai do vo giao duc! Mo mieng ra la xuc pham giai cap cong nhan, xuc pham nguoi lao dong xay dung dat nuoc. Tao di keu ca hội tho ho sập cai sap mat day cua may luon cho biet tay! Hu phat het muon lam viec!"
+        },
+        "n8": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Con noi cau nay nghe buon thiet chu. Nguoi lao dong thi cung phai co kien thuc chinh tri chu con. Khong co tam nhin chien luoc thi suot doi chi di lam thue thoi.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ con xin lỗi bác, con nói chuyện nông nổi quá. Bác mua mở hàng giùm con một ký đi rồi bác cháu mình nói chuyện tiếp nha.",
+              "next": "n1"
+            },
+            {
+              "label": "[TẦNG 5] Dạ con nói thật mà, bác lo làm đi không thợ cả người ta trừ lương bây giờ ở đó mà chiến lược.",
+              "next": "n7"
+            }
+          ]
+        },
+        "n9": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] Con nhin phien dien qua. Thanh pho lam gi co duoc cai su thanh binh, khong khi trong lanh nhu o day. Chinh sach gian dan cua nha nuoc minh la dang khuyen khich ve vung ven do con. Lam an o day thue re, de song hon chu.",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ tại con mới về nên chưa quen mối lái, thấy buôn bán hơi chậm nên con đâm ra lo lắng.",
+              "next": "n6"
+            },
+            {
+              "label": "[TẦNG 3] Thôi bác lo phụ hồ đi chứ bàn chuyện chính sách vĩ mô nghe xa vời quá bác ơi, lo cơm áo gạo tiền trước đã.",
+              "next": "n8"
+            }
+          ]
+        },
+        "n10": {
+          "speaker": "npc",
+          "text": "À, ra la lam dau xu nay ha! O day vui lam con oi, tinh hinh an ninh trat tu rat on dinh, lanh dao o day lam viec co tam lam. Cu o day lau lau cho vui con nha.",
+          "options": [
+            {
+              "label": "[TẦNG 1] Dạ con cũng thấy nhịp sống ở đây bình yên, con định định cư lâu dài luôn á bác.",
+              "next": "n5"
+            },
+            {
+              "label": "[TẦNG 1] Chồng con ép về chứ con thấy ở đây hẻo lánh quá, không có sầm uất như trên thành phố bác ơi.",
+              "next": "n9"
+            }
+          ]
+        },
+        "n11": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thanh nien thoi nay toan bi thoi hung phan tu ban lam thoi hu tat xau, lo noi xao gạt nguoi chat phac. Chuyen chinh tri ma no dam loi ra lam tro dua, tao khong bao gio mua do o day nua!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "May bua nay tivi thoi su cu ra rả chuyen bau cu, roi tinh hinh dia chinh tri quoc te cang thang qua mạy. Ma co nương, sao tu nhien con lai ve cai xu nay ban trai cay vay?",
+          "options": [
+            {
+              "label": "Da con ve day song vi day la que huong cua chong con do bac.",
+              "next": "n10"
+            },
+            {
+              "label": "Con ve day tron nợ chu que chong gi dau bac, tren thanh pho thau tom dat dai roi siet no ghe qua.",
+              "next": "n11"
+            },
+            {
+              "label": "Bac biet gi ve chinh tri ma noi, lo phu ho xách ho di chu lat hu hong cong trinh nguoi ta bat den do nha.",
+              "next": "n7"
+            }
+          ]
+        }
+      }
+    },
+    "xoai": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thoi thoi, buon ban thieu lap truong kien dinh, ky keo tung đồng lam mat quan diem qua. Bac di xách ho tiep cho xong cai mong nha day."
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Lam an la phai biet doi nhan xu the, co tam nhin vi mo va vi tha nhu vay thi moi ben vung duoc con nương oi. Bac mang trai cay di lam day, mai mot bac lai ghe ban chuyen quoc te tiep nha!",
+          "weightKg": 0.46
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Ba thich an xoài mem mem lam vi rang yeu roi. Con ma co tam nhu vay la tot, song phai co duc co truoc co sau, chu khong nhu cai lu tu ban chi biet co tien. Con tinh bac trai xoai nay 20k chẵn luon di, bac mo hang cho.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ chốt luôn 20k cho bác trai luôn nè, bác cầm về ăn rồi nhớ nhắc bà cụ nghệ nhân ghé sạp con nha bác.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ xoài này con nhập mắc lắm, 22k là con đã bớt rồi, không xuống 20k được nữa bác ơi.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Con dung co danh dong am nhac thi truong re tien voi nghe thuat han lam nuoc nha nha. Nghe nhan dan bau la quoc bao do. Noi chuyen thieu dorg xon qua.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ con nông cạn chưa hiểu sự đời, bác giải thích nghe thấm thía quá. Bác lấy ký xoài đi con bớt giá làm quen nha.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ thôi mỗi người một sở thích, con thấy cái nào vui thì con nghe thôi chứ chính trị chính em mệt quá.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] Tot lam. Neu vay thi phai biet den mot ba gia nghe nhan dan bau hay toi cho nay mua trai cay nha. Ba do la cay da cay de cua nen am nhac dan toc minh do.",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ bà cụ nghệ nhân đó có hay thích ăn xoài không bác? Để hôm nào bà ghé con lựa trái ngon nhất tặng bà cụ.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 3] Thời buổi này ai thèm nghe đàn bầu nữa bác, con thấy mở loa kéo hát karaoke Bolero còn vui hơn.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "Ha ha, con hoi hay do. Xu nay la dat lanh chim dau, que chong con chu dau xa. O day vui lam, duoc o lau lau cho vui con nha. Chinh tri on dinh, con nguoi lai am ap nghia tinh. Ma con co thich tim hieu van hoa vung nay khong?",
+          "options": [
+            {
+              "label": "[TẦNG 1] Dạ con rất muốn tìm hiểu để dễ hòa nhập với bà con lối xóm ở đây á bác.",
+              "next": "n5"
+            }
+          ]
+        },
+        "n7": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thanh nien thoi nay toan bi thoi hung phan tu ban lam thoi hu tat xau, lo noi xao gạt nguoi chat phac. Chuyen chinh tri ma no dam loi ra lam tro dua, tao khong bao gio mua do o day nua!"
+        },
+        "n8": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Cai do vo giao duc! Mo mieng ra la xuc pham giai cap cong nhan, xuc pham nguoi lao dong xay dung dat nuoc. Tao di keu ca hội tho ho sập cai sap mat day cua may luon cho biet tay! Hu phat het muon lam viec!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Xoai nay vang uom giong may trai xoai cat duoc kieu bao mang ve bieu hoi xua ghe. Gia ca sao day con nương?",
+          "options": [
+            {
+              "label": "Dạ xoài 20k một ký nha bác, đúng giá rồi không bớt được đâu ạ.",
+              "next": "n1"
+            },
+            {
+              "label": "Dạ xoài keo ngọt lịm 25k một ký, nhưng con tính bác 22k thôi coi như kính lão đắc thọ nè. Bác ơi, sao tự nhiên con lại tới cái xứ này bán trái cây vậy bác nhỉ?",
+              "next": "n6"
+            },
+            {
+              "label": "Xoai nay dac san duoc trong tu vung dat lanh dao cap cao an khong do nha bac, gia 150k mot ky.",
+              "next": "n7"
+            },
+            {
+              "label": "Bac suot ngay lo chuyen bao dong thoi su mệt qua, de thoi gian do xách them may xô hồ kiem them tien mua xoài di bác.",
+              "next": "n8"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

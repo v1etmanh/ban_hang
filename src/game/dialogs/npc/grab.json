@@ -1,0 +1,449 @@
+{
+  "characterId": "grab",
+  "fruits": {
+    "man": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thoi anh chay xe don khach tiep day, dung day ky keo mat thoi gian qua, app no nổ don liên tuc roi ne. Chao em nha!"
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Em ban hang nhon nheo, biet dieu vay la xung dang dat 5 sao nhe! Anh mang oi ve an lay suc chay don day. Mai mot co chay qua day anh lai ghe ung ho em tiep nha! Ba bai!",
+          "weightKg": 0.12
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Cat san luon ha? Em chu dao thiet chu. Ma thoi, cat san so de lau no heo, de nguyen trai di tao tu can. Tinh anh 6k duoc khong em?",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi được rồi, 6k em để nguyên trái cho anh luôn, anh chạy xe cẩn thận nha anh trai.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ đúng 7k anh ơi, nửa ký em không bớt thêm được nữa đâu, tội nghiệp em.",
+              "next": "n2"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Khong ban le ha... Vay thoi de anh coi co ai mua chung khong, chu tien dau ma mua het 1 ký.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Hay anh lấy đại 1 ký đi, em tặng anh thêm mấy trái ổi ăn kèm nữa, tính ra hời lắm luôn á.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ vậy thôi khi nào anh có người mua chung thì quay lại ủng hộ em nha.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] 14k ha em... Ma don nay anh thu nhap co 20k, mua ky man het 14k thi vo ly qua. Em co ban le nua ky khong?",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ nửa ký em cũng bán luôn, tính anh 7k chẵn, em cắt sẵn ra cho anh vừa chạy xe vừa ăn luôn nha.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 3] Dạ không anh ơi, sạp em không bán nửa ký, bán lẻ cỡ đó nát hết mận của em sao anh.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Thoi, 25k anh thoi het tien le roi, gio con dung to 20k trong bóp ha, em lay 20k luon duoc khong?",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi được rồi, nhìn anh mồ hôi nhễ nhại em thương quá, 20k chốt luôn 2 ký mận cho anh nè!",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ không được anh ơi, 20k cho 2 ký mận tuyển này thì em lỗ sặc máu luôn á anh.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n7": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] Lay chi nhieu vay em, anh chay xe mang theo cong kenh lam, may ong xe om truyen thong thit anh sao.",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ em bỏ vào túi gọn gàng cho anh treo ở móc xe, không cồng kềnh đâu anh lo.",
+              "next": "n6"
+            }
+          ]
+        },
+        "n8": {
+          "speaker": "npc",
+          "text": "Troi oi, duoc mieng nuoc cua em ngon thiet chu. Ben xuan xe buyt ke ben kia, ho cu cam cay duoi anh hoai, chay xe ma cu run. Ma man nay 16k co bot nua khong em, chu nay don khach re e, tien xang con chua du.",
+          "options": [
+            {
+              "label": "[TẦNG 1] Thôi thấy anh tội nghiệp quá, con bớt cho anh còn 14k luôn nè, coi như em chia sẻ cuốc xe ế với anh.",
+              "next": "n5"
+            },
+            {
+              "label": "[TẦNG 1] Anh vất vả quá, hay anh lấy combo 2 ký đi, em tính tròn 25k thôi, bớt hẳn 11k cho anh luôn đó.",
+              "next": "n7"
+            }
+          ]
+        },
+        "n9": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Em \"no\" con kinh hon may ong xe om truyen thong nua do em oi. Buon ban khong lo ban ma lo noi doc noi cuoi. Thoi anh di chay xe cho lẹ."
+        },
+        "n10": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Nói chuyện cái kiểu đụng chạm tự ái, khinh rẻ người lao động quá hà! Anh em grab tinh than doàn ket lam nhe, tao di keu ca hội tay chay cai sap mat day cua may cho biet mat! Hu met moi gap dien!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Giao cai don tu quan 1 qua day muon hụt hơi, da vay con bi may ong xe om truyen thong cho don duoi chay thuc mang. Ben em ban man gia sao, nhin dong man thay khat nuoc qua.",
+          "options": [
+            {
+              "label": "Da mận 15k một ký đúng giá bảng nha anh, mua giùm em đi.",
+              "next": "n1"
+            },
+            {
+              "label": "Troi oi, anh uong mieng nuoc mat cua sap em di da. Chay xe gio nay nang kinh khung thiet, co nao may chu xe om ben kia con hay kiem chuyen nua. Man nay 18k, nhung em ban anh 16k thoi, em lua trai nhieu nuoc cho anh an lay suc nha.",
+              "next": "n8"
+            },
+            {
+              "label": "Mận này mận siêu cấp vũ trụ trị bách bệnh mệt mỏi, giá 100k một ký nha anh grab.",
+              "next": "n9"
+            },
+            {
+              "label": "Chạy grab mà cũng bày đặt lựa chọn mận ngon mận dở, có tiền mua không mà đứng đó than thở hoài hà.",
+              "next": "n10"
+            }
+          ]
+        }
+      }
+    },
+    "xoai": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thoi anh chay xe don khach tiep day, dung day ky keo mat thoi gian qua, app no nổ don liên tuc roi ne. Chao em nha!"
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Em ban hang nhon nheo, biet dieu vay la xung dang dat 5 sao nhe! Anh mang oi ve an lay suc chay don day. Mai mot co chay qua day anh lai ghe ung ho em tiep nha! Ba bai!",
+          "weightKg": 0.22
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Tiền hop nua ha em? Anh chay xe lam gi co thoi gian cam hop an, thoi de nguyen trai di, got vo thoi khoi bo hop duoc khong?",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi được rồi, em gọt vỏ bỏ túi ni-lông cho anh luôn, lấy đúng anh 20k không thu thêm đồng nào nè.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ không được anh ơi, gọt vỏ mất công em lắm, đúng 22k em mới làm được nha anh.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Ve nha thi xoai no ung het roi em. Thoi gio vay di, bot anh con 18k anh tu mang ve got, chu gia kia mac qua.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi chốt luôn 18k cho anh đi nhanh nè, thấy anh đứng nắng tội nghiệp quá hà.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ không được anh ơi, 18k em lỗ vốn thâm vô tiền sạp của mẹ em mắng chết.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] 20k ha... Ma trai xoài nay to qua, anh mang theo an doc duong khong tien. Em co got vo gium anh luon khong?",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ em gọt vỏ, xẻ miếng bỏ hộp, cho anh cây tăm luôn, tính anh thêm 2k tiền hộp là 22k nha anh.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 3] Dạ sạp em bận lắm không gọt vỏ giùm được anh ơi, anh mang về nhà tự gọt đi nha.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "Bot co 3k ha em, troi nay chay ngoai duong kiet suc thiet chu, may ong ben kia con doi dap xe anh nua. Giúp anh con 18k duoc khong em?",
+          "options": [
+            {
+              "label": "[TẦNG 1] Dạ thôi tội nghiệp anh, con bớt sát ván luôn còn 20k chẵn đó, giá này em không lấy lời một đồng nào luôn.",
+              "next": "n5"
+            }
+          ]
+        },
+        "n7": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Em \"no\" con kinh hon may ong xe om truyen thong nua do em oi. Buon ban khong lo ban ma lo noi doc noi cuoi. Thoi anh di chay xe cho lẹ."
+        },
+        "n8": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Nói chuyện cái kiểu đụng chạm tự ái, khinh rẻ người lao động quá hà! Anh em grab tinh than doàn ket lam nhe, tao di keu ca hội tay chay cai sap mat day cua may cho biet mat! Hu met moi gap dien!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Xoai nay nhin vang uom thèm qua, troi nang nay ma co mieng xoai ngậm chac tinh nguoi lien. Gia sao vay gá?",
+          "options": [
+            {
+              "label": "Dạ xoài 20k một ký nha anh, tiền nào của đó.",
+              "next": "n1"
+            },
+            {
+              "label": "Xoài keo ngon lắm anh ơi, giá gốc 25k nhưng em thấy anh chạy xe cực khổ quá, em tính anh 22k thôi hà.",
+              "next": "n6"
+            },
+            {
+              "label": "Xoai này an vô la tinh tao chay xe 24/24 khong can ngu luon, gia 150k mot ky nha anh trai.",
+              "next": "n7"
+            },
+            {
+              "label": "May anh grab gio nay hay bom hang lam, em khong ban cho may anh dau, mac cong mang tieng xui xẻo.",
+              "next": "n8"
+            }
+          ]
+        }
+      }
+    },
+    "khoai": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thoi anh chay xe don khach tiep day, dung day ky keo mat thoi gian qua, app no nổ don liên tuc roi ne. Chao em nha!"
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Em ban hang nhon nheo, biet dieu vay la xung dang dat 5 sao nhe! Anh mang oi ve an lay suc chay don day. Mai mot co chay qua day anh lai ghe ung ho em tiep nha! Ba bai!",
+          "weightKg": 0.34
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Cu nho so be ra toan xơ chu khong co mat em oi. Lay cu to nay di, anh dua them em cai mã giam gia grab don sau duoc khong?",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi được rồi, em lấy tờ 10k với cái mã giảm giá của anh luôn, chốt củ to này cho anh nè.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ em ít đi grab lắm nên lấy mã giảm giá cũng không làm gì, đúng 12k em bán nha anh.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Can dung 10k ha? Em thong minh thiet chu. Ma can len roi co du cho anh an do doi chuoi cuoc tiep theo khong do?",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ dư sức anh ơi, củ này chắc thịt lắm, anh ăn vô là bao no tới tối luôn á, đưa 10k đây em cân cho.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ ăn cái này vô no bụng liền hà, nhưng mà không biết anh có thích củ hơi vẹo này không thôi.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] 13k van con hoi cao so vao tui tien anh hien tai. Gio trong tui anh con dung tờ 10k le day ne, em thu luon duoc khong?",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ thôi 10k thì em lỗ nặng quá, hay anh lấy củ nhỏ hơn một xíu em tính anh 10k chẵn luôn nha?",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 3] Dạ thôi anh đưa tờ 10k đây đi, em cân đúng 10k khoai cho anh, thiếu một chút xíu em tặng luôn không tính tiền.",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "Troi oi co quat mat qua, cam on em nhe. Nay bi may ong xe om ben tram xe buyt chuoi boi phat met, chay qua day moi yen than. Ma khoai nay 15k co bot cho tài xế công nghệ khong em?",
+          "options": [
+            {
+              "label": "[TẦNG 1] Dạ thôi em nể tình đồng nghiệp (em cũng hay đặt grab), bớt anh còn 13k lấy lộc nè.",
+              "next": "n5"
+            }
+          ]
+        },
+        "n7": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Em \"no\" con kinh hon may ong xe om truyen thong nua do em oi. Buon ban khong lo ban ma lo noi doc noi cuoi. Thoi anh di chay xe cho lẹ."
+        },
+        "n8": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Nói chuyện cái kiểu đụng chạm tự ái, khinh rẻ người lao động quá hà! Anh em grab tinh than doàn ket lam nhe, tao di keu ca hội tay chay cai sap mat day cua may cho biet mat! Hu met moi gap dien!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Khoai lang nay cu to ghe, nuong len chac thom lam. Cu nay bao nhieu mot ky vay em gai?",
+          "options": [
+            {
+              "label": "Da khoai lang mật 12k một ký, mua di anh.",
+              "next": "n1"
+            },
+            {
+              "label": "Khoai lang mật ngọt lịm 15k một ký anh ơi. Mà anh ngồi đây nghỉ mát xíu đi, em mở quạt máy cho anh mát nè, nhìn anh ướt hết áo tội nghiệp quá.",
+              "next": "n6"
+            },
+            {
+              "label": "Khoai nay khoai hoang gia Anh Quoc nuong bang than cui tram huong, gia 200k mot cu nha anh.",
+              "next": "n7"
+            },
+            {
+              "label": "Nhìn anh đen đúa lếch thếch quá, xích ra xa sạp em một chút đi chứ khách sang người ta nhìn vào không dám mua.",
+              "next": "n8"
+            }
+          ]
+        }
+      }
+    },
+    "oi": {
+      "rootId": "root",
+      "nodes": {
+        "n1": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Thoi anh chay xe don khach tiep day, dung day ky keo mat thoi gian qua, app no nổ don liên tuc roi ne. Chao em nha!"
+        },
+        "n2": {
+          "leaf": true,
+          "outcome": "buy",
+          "speaker": "npc",
+          "text": "Em ban hang nhon nheo, biet dieu vay la xung dang dat 5 sao nhe! Anh mang oi ve an lay suc chay don day. Mai mot co chay qua day anh lai ghe ung ho em tiep nha! Ba bai!",
+          "weightKg": 0.32
+        },
+        "n3": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Troi dat oi, em de thuong qua vay gá! Bot tiep cho chan tien thoi luon ha. Mà oi nay co muoi kem theo khong em?",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ có luôn, em tặng anh bịch muối ớt siêu cay em tự làm, anh mang về chấm ăn bao dính luôn nha anh trai.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ muối em hết rồi, anh mang về nhà tự đâm muối ớt giùm em nha, em bớt tiền rồi mà.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n4": {
+          "speaker": "npc",
+          "text": "[TẦNG 4] Anh chay xe toan khach chuyen khoan chu lam gi co tien le em. Thoi gio vay di, em lay dung 10k di roi khoi thoi le cho met.",
+          "options": [
+            {
+              "label": "[TẦNG 5] Dạ thôi được rồi, 10k chốt luôn cho anh, đưa tờ 50k đây em thối lại anh tờ 40k chẵn nha.",
+              "next": "n2"
+            },
+            {
+              "label": "[TẦNG 5] Dạ không được anh ơi, em bán đúng giá 11k chứ không bớt xuống 10k được nữa đâu anh.",
+              "next": "n1"
+            }
+          ]
+        },
+        "n5": {
+          "speaker": "npc",
+          "text": "[TẦNG 2] 11k ha em... Ma anh con dung tờ 50k thoi, em co tien thối lai cho anh khong vay?",
+          "options": [
+            {
+              "label": "[TẦNG 3] Dạ có chứ, anh cứ đưa 50k đây em thối lại anh 40k chẵn, em bớt thêm 1k nữa cho chẵn tiền thối luôn nè.",
+              "next": "n3"
+            },
+            {
+              "label": "[TẦNG 3] Dạ thối 39k lẻ thì em hết tờ 2k với 1k rồi, anh có tiền lẻ đưa em cho tiện không anh?",
+              "next": "n4"
+            }
+          ]
+        },
+        "n6": {
+          "speaker": "npc",
+          "text": "Troi oi chu dao qua, cho anh xin mieng nuoc nhe. Nay gap dung cuoc xe khach bat nạt, roi con bi may ong xe om truyen thong chan dau xe o cho Lon nua, suyt chút la danh nhau roi. Ma oi nay tinh anh 10k chẵn duoc khong em gai?",
+          "options": [
+            {
+              "label": "[TẦNG 1] Dạ thôi em nể tình anh vất vả, bớt cho anh còn 11k coi như em lấy vía đồng nghiệp nha anh.",
+              "next": "n5"
+            }
+          ]
+        },
+        "n7": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Em \"no\" con kinh hon may ong xe om truyen thong nua do em oi. Buon ban khong lo ban ma lo noi doc noi cuoi. Thoi anh di chay xe cho lẹ."
+        },
+        "n8": {
+          "leaf": true,
+          "outcome": "no_buy",
+          "speaker": "npc",
+          "text": "Nói chuyện cái kiểu đụng chạm tự ái, khinh rẻ người lao động quá hà! Anh em grab tinh than doàn ket lam nhe, tao di keu ca hội tay chay cai sap mat day cua may cho biet mat! Hu met moi gap dien!"
+        },
+        "root": {
+          "speaker": "npc",
+          "text": "Oi nay trai to gion khong em? Troi nay ma nhai mieng oi châm muoi ot la het sảy do nha. Gia sao em?",
+          "options": [
+            {
+              "label": "Da oi 10k mot ky dung gia tren bang nha anh, mua di.",
+              "next": "n1"
+            },
+            {
+              "label": "Ổi nữ hoàng bao giòn ngọt 13k một ký anh ơi. Mà anh ơi, ngồi xuống cái ghế này nghỉ chân uống nước đi anh, nhìn anh chạy ngoài nắng chang chang tội nghiệp quá hà.",
+              "next": "n6"
+            },
+            {
+              "label": "Oi nay oi lay tu vuon thuong uyen cua nha vua, an vo la dôi mat sang ngoi nhu thien ly nhan luon, gia 300k mot trai nha anh grab.",
+              "next": "n7"
+            },
+            {
+              "label": "Oi nay em de ban cho khach di o-to thoi chu anh grab tien dau ma mua, di cho khac gium em cai.",
+              "next": "n8"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

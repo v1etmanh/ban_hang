@@ -1,0 +1,54 @@
+{
+  "fruit": "xoai",
+  "rootId": "root",
+  "nodes": {
+    "root": {
+      "speaker": "npc",
+      "text": "Sap co xoai cat khong con?",
+      "options": [
+        { "label": "Da con, xoai chin cay ngot lam a!", "next": "ask_price" },
+        { "label": "Con xoai xanh de an chua thoi a.", "next": "ask_sour" }
+      ]
+    },
+    "ask_price": {
+      "speaker": "npc",
+      "text": "Ban bao nhieu 1 ky?",
+      "options": [
+        { "label": "Da 40 ngan 1 ky, ngot re gion a!", "next": "ask_amount" },
+        { "label": "Da 70 ngan 1 ky a.", "next": "leaf_decline_price" }
+      ]
+    },
+    "ask_sour": {
+      "speaker": "npc",
+      "text": "Xoai xanh cham muoi ot cung duoc, cho toi it nhe.",
+      "options": [
+        { "label": "Da con can lien cho co/chu!", "next": "leaf_buy_small" },
+        { "label": "Da het xoai xanh roi a.", "next": "leaf_decline_stock" }
+      ]
+    },
+    "ask_amount": {
+      "speaker": "npc",
+      "text": "Vay can cho toi 1 ky nhe, mua ve chia ca nha an.",
+      "options": [
+        { "label": "Da con can du 1 ky cho co/chu!", "next": "leaf_buy_medium" },
+        { "label": "Da xoai chin sap het roi a.", "next": "leaf_decline_stock" }
+      ]
+    },
+    "leaf_buy_small": {
+      "leaf": true, "outcome": "buy", "weightKg": 0.8,
+      "speaker": "npc", "text": "Cho 0.8 ky xoai xanh thoi, du an roi."
+    },
+    "leaf_buy_medium": {
+      "leaf": true, "outcome": "buy", "weightKg": 1.2,
+      "speaker": "npc", "text": "1.2 ky nha, can can than kheo dap dap."
+    },
+    "leaf_decline_price": {
+      "leaf": true, "outcome": "no_buy",
+      "speaker": "npc", "text": "Troi oi mac vay, thoi toi qua sap khac coi sao."
+    },
+    "leaf_decline_stock": {
+      "leaf": true, "outcome": "no_buy",
+      "speaker": "npc", "text": "Vay a, thoi luc khac ghe lai vay."
+    }
+  }
+}

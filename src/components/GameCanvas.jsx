@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react'
 import { CHARACTERS, resolveDirection } from '../game/characters.js'
+import { pickDialogForCharacter } from '../game/dialogRegistry.js'
 import DialogBox from './DialogBox.jsx'
+import WeighingScreen from './WeighingScreen.jsx'
 
 const CANVAS_W = 960
 const CANVAS_H = 600
@@ -23,10 +25,12 @@ const STROLL_Y_MAX = COUNTER_TOP_Y - 20 // mép dưới, ngay phía trên quầy
 const SPAWN_INTERVAL = [1800, 3500]   // ms, random giữa 2 mốc
 const MAX_NPCS = 4                    // số lượng NPC tối đa xuất hiện cùng lúc trên màn hình
 const PICK_CUSTOMER_INTERVAL = 6000   // ms, mỗi khoảng này thử chọn 1 khách ghé sạp
+const POST_DIALOG_COOLDOWN = 10000    // ms, sau khi 1 cuộc trò chuyện KẾT THÚC (handleFinishDialog
+                                       // chạy), phải đợi ít nhất khoảng này rồi mới được chọn khách mới
 const CHAR_SCALE = 2             // hệ số phóng to nhân vật
 const SPRITE_H = 110 * CHAR_SCALE   // chiều cao vẽ nhân vật (canvas), width tự scale theo tỉ lệ frame
 const ANIM_FPS = 8    // tốc độ chạy animation (frame/giây) khi đang di chuyển
-const DEBUG_GRID = true // bật/tắt lưới toạ độ y để canh chỉnh mặt đường cho đúng
+const DEBUG_GRID = false // bật/tắt lưới toạ độ y để canh chỉnh mặt đường cho đúng
 
 // Các NPC chỉ có state 'walk_right' (không có walk_down/walk_left...) nên
 // không đủ animation để đi vào sạp trò chuyện -> loại khỏi danh sách được chọn làm khách
@@ -49,7 +53,12 @@ export default function GameCanvas() {
   const lastTsRef = useRef(0)
   const spawnTimerRef = useRef(0)
   const pickTimerRef = useRef(0)
-  const [activeCustomer, setActiveCustomer] = useState(null) // {uid, name}
+  const [activeCustomer, setActiveCustomer] = useState(null) // {uid, name, fruitId, tree}
+  // Khác activeCustomer (điều khiển hiện/ẩn DialogBox), weighingOrder chỉ khác null
+  // khi khách đã ĐỒNG Ý mua ở DialogBox và đang chờ người chơi cân hàng -> điều
+  // khiển hiện/ẩn WeighingScreen thay cho DialogBox (2 UI dùng chung 1 activeCustomer,
+  // không set lại null giữa 2 giai đoạn để NPC không bị coi là "rời sạp" giữa chừng).
+  const [weighingOrder, setWeighingOrder] = useState(null) // { targetWeight } | null
 
   const getImg = useCallback((src) => {
     let img = imgCache.current.get(src)
@@ -190,7 +199,14 @@ export default function GameCanvas() {
               const talkFrameCount = talkSlice ? talkSlice.frameCount : 1
               n.frame = Math.floor(Math.random() * talkFrameCount)
               n.frameTime = 0
-              setActiveCustomer({ uid: n.uid, name: n.character.name })
+              // Chọn cây hội thoại đúng TÍNH CÁCH của NPC này (nếu đã có file
+              // riêng trong dialogs/npc/<id>.json) và đúng loại trái cây khách
+              // muốn mua (xem pickDialogForCharacter trong dialogRegistry.js).
+              // NPC chưa có file riêng sẽ tự fallback về cây chung theo trái
+              // cây (không bị câm). Gán 1 LẦN DUY NHẤT lúc bắt đầu nói chuyện,
+              // giữ nguyên suốt cuộc hội thoại + màn cân hàng.
+              const { fruitId, tree } = pickDialogForCharacter(n.character.id)
+              setActiveCustomer({ uid: n.uid, name: n.character.name, fruitId, tree })
             }
           } else {
             // Ưu tiên walk_down trong khi còn cần tiến xuống sạp (dy đáng kể);
@@ -258,20 +274,8 @@ export default function GameCanvas() {
         const bh = bw * (img.naturalHeight / img.naturalWidth)
         const by = COUNTER_TOP_Y + 6 // giỏ đặt hơi chìm vào mép trên của bàn
         ctx.drawImage(img, cx - bw / 2, by - bh * 0.8+70, bw+30, bh+10)
-
-        // bảng giá gỗ đơn giản (vẽ bằng canvas, không cần asset riêng)
-        ctx.save()
-        ctx.font = 'bold 13px sans-serif'
-        ctx.textAlign = 'center'
-        const labelY = by - bh * 0.8 - 10
-        const tw = ctx.measureText(basket.label).width + 16
-        ctx.fillStyle = '#7a4a25'
-        ctx.fillRect(cx - tw / 2, labelY - 16, tw, 20)
-        ctx.strokeStyle = '#4a2a10'
-        ctx.strokeRect(cx - tw / 2, labelY - 16, tw, 20)
-        ctx.fillStyle = '#fff'
-        ctx.fillText(basket.label, cx, labelY - 2)
-        ctx.restore()
+        // Bảng giá gỗ (tên + giá) đã bỏ theo yêu cầu người dùng - chỉ còn
+        // hình giỏ hoa quả, không còn label "Tên XXk" vẽ đè lên trên.
       })
     }
 
@@ -334,9 +338,10 @@ export default function GameCanvas() {
     return () => cancelAnimationFrame(rafRef.current)
   }, [getImg, activeCustomer])
 
-  // ----- Khi kết thúc hội thoại -----
-  function handleFinishDialog(success) {
-    const n = npcsRef.current.find((x) => x.uid === activeCustomer.uid)
+  // ----- NPC rời sạp + reset activeCustomer + áp cooldown, dùng chung cho cả
+  // trường hợp "khách từ chối ngay ở DialogBox" lẫn "cân xong (đúng hoặc sai)" -----
+  function finishCustomer(success) {
+    const n = npcsRef.current.find((x) => activeCustomer && x.uid === activeCustomer.uid)
     if (n) {
       // Rời sạp theo chiều ngang: ưu tiên đi tiếp về phía đang "hướng mặt" lúc
       // strroll ban đầu nếu còn suy ra được, nếu không thì chọn ngẫu nhiên trái/phải.
@@ -347,7 +352,32 @@ export default function GameCanvas() {
       n.vx = leaveLeft ? -n.speed : n.speed
     }
     setActiveCustomer(null)
+    setWeighingOrder(null)
+    // Sau khi 1 cuộc trò chuyện/cân hàng kết thúc (dù bán được hay không), ép
+    // pickCustomer() phải chờ ít nhất POST_DIALOG_COOLDOWN (10s) trước khi được
+    // thử chọn khách mới, thay vì có thể chọn ngay ở lần update() kế tiếp
+    // (pickTimerRef có thể đang gần 0). Đây là khoảng nghỉ giữa 2 cuộc trò
+    // chuyện, tính từ lúc kết thúc, không phải từ lúc khách cũ đi khuất màn hình.
+    pickTimerRef.current = POST_DIALOG_COOLDOWN
     // TODO: nếu success -> cộng điểm / tiền bán hàng vào state ngoài nếu cần
+  }
+
+  // ----- Khi kết thúc hội thoại (chạm tới lá của cây DIALOG) -----
+  function handleDialogResult(result) {
+    if (result.buy) {
+      // Khách ĐỒNG Ý mua -> chuyển sang màn hình cân, CHƯA cho khách rời sạp
+      // và CHƯA reset activeCustomer (NPC vẫn đứng 'talking' chờ cân xong).
+      setWeighingOrder({ targetWeight: result.weightKg })
+    } else {
+      // Khách từ chối ngay từ hội thoại -> không có gì để cân, khách rời sạp luôn.
+      finishCustomer(false)
+    }
+  }
+
+  // ----- Khi kết thúc màn hình cân hàng (đúng cân trong 5% hoặc hết giờ/xác
+  // nhận sai quá nhiều) -----
+  function handleWeighingResult(success) {
+    finishCustomer(success)
   }
 
   return (
@@ -358,10 +388,21 @@ export default function GameCanvas() {
         height={CANVAS_H}
         style={{ display: 'block', border: '2px solid #333', background: '#000' }}
       />
-      {activeCustomer && (
+      {activeCustomer && !weighingOrder && (
         <DialogBox
+          key={activeCustomer.uid}
           customerName={activeCustomer.name}
-          onFinish={handleFinishDialog}
+          tree={activeCustomer.tree}
+          onFinish={handleDialogResult}
+        />
+      )}
+      {activeCustomer && weighingOrder && (
+        <WeighingScreen
+          key={`${activeCustomer.uid}-weigh`}
+          customerName={activeCustomer.name}
+          fruitId={activeCustomer.fruitId}
+          targetWeight={weighingOrder.targetWeight}
+          onFinish={handleWeighingResult}
         />
       )}
     </div>
