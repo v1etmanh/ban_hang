@@ -15,8 +15,8 @@ const BASKETS = [
   { src: '/apple.png',  label: 'Khoai lang 10k' },
 ]
 
-const STALL_X = CANVAS_W / 10       // vị trí khách "ghé" tới (trung tâm màn hình)
-const STALL_Y = COUNTER_TOP_Y + 20 // hơi lấn vào quầy để bị quầy che bớt chân (hiệu ứng đứng sau quầy)
+const STALL_X = CANVAS_W / 2        // vị trí khách "ghé" tới (trung tâm màn hình)
+const STALL_Y = COUNTER_TOP_Y + 70 // hơi lấn vào quầy để bị quầy che bớt chân (hiệu ứng đứng sau quầy); +50 so với trước để đứng gần quầy/người bán hơn khi trò chuyện
 const ARRIVE_DIST = 10          // khoảng cách coi như "đã tới sạp"
 const STROLL_Y_MIN = 340           // NPC dạo qua dạo lại - nằm TRÊN quầy (chưa bị che)
 const STROLL_Y_MAX = COUNTER_TOP_Y - 20 // mép dưới, ngay phía trên quầy
@@ -100,6 +100,18 @@ export default function GameCanvas() {
   // ----- Chọn ngẫu nhiên 1 NPC đang dạo để cho ghé vào sạp -----
   function pickCustomer() {
     if (activeCustomer) return // đang có khách nói chuyện rồi thì thôi
+    // QUAN TRỌNG: activeCustomer chỉ được set khi NPC đã TỚI sạp (mode='talking'),
+    // không phải lúc bắt đầu đi vào (mode='approach'). Nếu chỉ check activeCustomer,
+    // quãng đường approach dài (~10s) có thể lâu hơn PICK_CUSTOMER_INTERVAL (6s),
+    // khiến 1 NPC thứ 2 bị chọn làm khách trong lúc NPC đầu vẫn đang đi tới ->
+    // cả 2 cùng hội tụ về đúng 1 điểm STALL, ai tới sau sẽ ghi đè activeCustomer
+    // và NPC tới trước bị "mồ côi", đứng kẹt tại chỗ mãi mãi vì không còn gắn với
+    // hộp thoại nào để trigger onFinish. Nên phải check luôn cả các NPC đang
+    // approach/talking trong npcsRef, không chỉ dựa vào state activeCustomer.
+    const alreadyEngaged = npcsRef.current.some(
+      (n) => n.mode === 'approach' || n.mode === 'talking'
+    )
+    if (alreadyEngaged) return
     const candidates = npcsRef.current.filter(
       (n) => n.mode === 'stroll' && !CUSTOMER_EXCLUDED_IDS.has(n.character.id)
     )
@@ -140,7 +152,11 @@ export default function GameCanvas() {
             const count = slice ? slice.frameCount : 1
             n.frame = (n.frame + 1) % count
           }
-        } else {
+        } else if (n.mode !== 'talking') {
+          // Không reset frame khi mode='talking': frame ngẫu nhiên đã được set
+          // 1 lần lúc chuyển sang talking (xem nhánh arrival phía dưới), phải
+          // giữ nguyên suốt cuộc trò chuyện chứ không cho vòng lặp này ghi đè
+          // về 0 mỗi frame.
           n.frame = 0
           n.frameTime = 0
         }
@@ -152,24 +168,48 @@ export default function GameCanvas() {
           const dy = STALL_Y - n.y
           const dist = Math.hypot(dx, dy)
           if (dist <= ARRIVE_DIST) {
-            n.mode = 'talking'
-            setActiveCustomer({ uid: n.uid, name: n.character.name })
+            // Lớp bảo vệ phòng hờ: nếu vì lý do gì đó đã có 1 khách khác đang
+            // 'talking' rồi (không nên xảy ra sau khi sửa pickCustomer ở trên),
+            // KHÔNG ghi đè activeCustomer -> tránh NPC này bị mồ côi đứng kẹt
+            // mãi mãi. Cho nó rời đi ngang luôn thay vì đứng lại vô nghĩa.
+            const someoneElseTalking = npcsRef.current.some(
+              (other) => other !== n && other.mode === 'talking'
+            )
+            if (someoneElseTalking) {
+              const leaveLeft = Math.random() < 0.5
+              n.mode = 'leaving'
+              n.dir = leaveLeft ? 'walk_left' : 'walk_right'
+              n.vx = leaveLeft ? -n.speed : n.speed
+            } else {
+              n.mode = 'talking'
+              // Dừng ở 1 frame NGẪU NHIÊN của walk_down (thay vì luôn về frame 0)
+              // để trông giống đang đứng tự nhiên nhìn mặt người bán nói chuyện,
+              // chứ không phải lúc nào cũng đứng y hệt 1 tư thế.
+              n.dir = 'walk_down'
+              const talkSlice = resolveDirection(n.character, 'walk_down').slice
+              const talkFrameCount = talkSlice ? talkSlice.frameCount : 1
+              n.frame = Math.floor(Math.random() * talkFrameCount)
+              n.frameTime = 0
+              setActiveCustomer({ uid: n.uid, name: n.character.name })
+            }
           } else {
-            n.dir = Math.abs(dx) > Math.abs(dy)
-              ? (dx > 0 ? 'walk_right' : 'walk_left')
-              : 'walk_down'
+            // Ưu tiên walk_down trong khi còn cần tiến xuống sạp (dy đáng kể);
+            // chỉ chuyển sang trái/phải khi đã gần ngang hàng với điểm đến (dy nhỏ).
+            n.dir = dy > 6
+              ? 'walk_down'
+              : (dx > 0 ? 'walk_right' : 'walk_left')
             n.x += (dx / dist) * n.speed * (dt / 1000)
             n.y += (dy / dist) * n.speed * (dt / 1000)
           }
         } else if (n.mode === 'leaving') {
-          n.y += n.speed * (dt / 1000) // đi xuống khuất màn hình
+          n.x += n.vx * (dt / 1000) // rời sạp theo chiều ngang (trái/phải) ra khỏi màn hình
         }
       }
 
       // dọn NPC đã ra khỏi màn hình
       npcsRef.current = npcsRef.current.filter((n) => {
         if (n.mode === 'stroll') return n.x > -100 && n.x < CANVAS_W + 100
-        if (n.mode === 'leaving') return n.y < CANVAS_H + 100
+        if (n.mode === 'leaving') return n.x > -100 && n.x < CANVAS_W + 100
         return true
       })
     }
@@ -298,9 +338,13 @@ export default function GameCanvas() {
   function handleFinishDialog(success) {
     const n = npcsRef.current.find((x) => x.uid === activeCustomer.uid)
     if (n) {
+      // Rời sạp theo chiều ngang: ưu tiên đi tiếp về phía đang "hướng mặt" lúc
+      // strroll ban đầu nếu còn suy ra được, nếu không thì chọn ngẫu nhiên trái/phải.
+      const leaveLeft = Math.random() < 0.5
       n.mode = 'leaving'
-      n.dir = 'walk_down'
-      n.speed = 70
+      n.dir = leaveLeft ? 'walk_left' : 'walk_right'
+      n.speed = 60 + Math.random() * 20
+      n.vx = leaveLeft ? -n.speed : n.speed
     }
     setActiveCustomer(null)
     // TODO: nếu success -> cộng điểm / tiền bán hàng vào state ngoài nếu cần
